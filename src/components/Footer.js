@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default () => {
-  return (
-    <footer>
-      <hr/>
-      <p>© Christine Tran</p>
-    </footer>
-  );
-}
+const Footer = () =>
+  <footer>
+    <hr/>
+    <p>© Christine Tran</p>
+  </footer>
+
+export default Footer
