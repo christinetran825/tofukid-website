@@ -4,6 +4,14 @@ class About extends Component {
   render(){
     return (
       <div>
+        <div id="icons">
+          <ul>
+            <li><span className="fa-stack fa-lg fa-1x"><a href="mailto:christinetran825@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true"></i></a></span></li>
+            <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.instagram.com/thetofukid/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a></span></li>
+            <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.linkedin.com/in/christinetran825/" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"></i></a></span></li>
+          </ul>
+        </div>
+        
         <h1>About</h1>
         <p>Coder, Illustrator, Insight-seeker. A lifelong learner who strives on building different skills. I view the world with a child-like awe. I admire the structures and pieces that make things whole by learning how to break things apart and putting them back together. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
 
