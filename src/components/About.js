@@ -9,11 +9,13 @@ class About extends Component {
             <li><span className="fa-stack fa-lg fa-1x"><a href="mailto:christinetran825@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true"></i></a></span></li>
             <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.instagram.com/thetofukid/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a></span></li>
             <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.linkedin.com/in/christinetran825/" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"></i></a></span></li>
+            <li><a href="https://github.com/christinetran825">GitHub</a></li>
+            <li><a href="https://medium.com/@christinetran_81275">Medium Blog</a></li>
           </ul>
         </div>
-        
+
         <h1>About</h1>
-        <p>Coder, Illustrator, Insight-seeker. A lifelong learner who strives on building different skills. I view the world with a child-like awe. I admire the structures and pieces that make things whole by learning how to break things apart and putting them back together. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
+        <p>Coder, Illustrator, Insight-seeker. Full stack web developer with a passion for design, user experience, and data analysis. A lifelong learner who strives on building different skills. I view the world with a child-like awe, admiring the structures and pieces that make things whole by learning how to break things apart and putting them back together. I illustrate imaginative characters fit for children’s books in my spare time while sharing my curiosities of the world with trivial fun-facts and stories. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
 
         <h3>Skills</h3>
           <ul>
