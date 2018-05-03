@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
 import About from './components/About';
 import Bookmaking from './components/Bookmaking';
 import Branding from './components/Branding';
@@ -17,7 +16,6 @@ class Routes extends Component {
       <div>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={LandingPage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/bookmaking" component={Bookmaking} />
           <Route exact path="/branding" component={Branding} />
