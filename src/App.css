@@ -37,7 +37,9 @@ img {
 .navbar a {
   padding: 12px;
   text-decoration: 'none';
-  text-align: center;
+  /* text-align: center; */
+  color: #554135;
+  font-weight: 600;
 }
 
 /* Footer */
@@ -47,6 +49,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
   background-color: #E3DDA5;
+  color: #554135;
 }
 
 ul.socials {
@@ -55,6 +58,10 @@ ul.socials {
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   padding: 0;
   list-style: none;
+}
+
+.socials i {
+  color: #554135;
 }
 
 /* .wrapper */
@@ -197,23 +204,73 @@ ul.socials {
   line-height: 20px;
 }
 
-.illustrations h1 {
+.art-design-work {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "illustrations"
+    "branding"
+    "bookmaking"
+}
+
+/* Illustrations, Branding, BookArts! */
+
+.illustrations,
+.logos,
+.books {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.illustrations,
+.logos {
+  grid-template-areas:
+    "section-name"
+    "section-item"
+    "section-item"
+    "section-item"
+}
+
+.books {
+  grid-template-areas:
+    "section-name"
+    "section-item"
+    "section-item"
+    "section-item"
+    "section-item"
+    "section-item"
+}
+
+.illustrations h1,
+.logos h1,
+.books h1 {
+  grid-column: 1 / -1;
   text-align: center;
 }
 
-.illustration {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #ACB673;
-}
-
-.logo {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #ACB673;
-}
-
+.illustration,
+.logo,
 .book {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #ACB673;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "details"
+    "images"
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.details h3 {
+  grid-column: 1 / 2;
+  border-bottom: 2px solid #554135;
+  color: #554135
+}
+
+.details p {
+  grid-column: 1 / -1;
 }
 
 .images {
