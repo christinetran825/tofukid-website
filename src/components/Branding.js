@@ -7,7 +7,7 @@ class Branding extends Component {
         <h1>Logos</h1>
         <div className="logo">
           <div className="details">
-            <h4>Finches' Publishing</h4>
+            <h3>Finches' Publishing</h3>
             <p>I designed a logo for a fictional publishing company. I named it "Finches" after the character Atticus Finch from "To Kill A Mockingbird."</p>
           </div>
           <div className="images">
@@ -16,7 +16,7 @@ class Branding extends Component {
         </div>
         <div className="logo">
           <div className="details">
-            <h4>Cynergy</h4>
+            <h3>Cynergy</h3>
             <p>An Organizational Development Specialist reached out for a personal logo for their freelancing services. Their ask was to merge their name with the word synergy, convey professionalism, and include a magnolia flower.</p>
           </div>
           <div className="images">
@@ -25,7 +25,7 @@ class Branding extends Component {
         </div>
         <div className="logo">
           <div className="details">
-            <h4>Asia Homemart Inc.</h4>
+            <h3>Asia Homemart Inc.</h3>
             <p>Company reached out for a logo for their homeware goods. Their ask was to add the company's name in Chinese, express a homely feel, and convey their specialty in Asian home appliances and cookware. Here are a few of my ideas.</p>
           </div>
           <div className="images">
