@@ -206,6 +206,16 @@ ul.socials {
   border-bottom: 2px solid #ACB673;
 }
 
+.logo {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ACB673;
+}
+
+.book {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ACB673;
+}
+
 .images {
   display: grid;
   grid-gap: 20px;
