@@ -14,7 +14,17 @@ img {
 }
 
 /* Navigation */
+.navbar {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
 
+.navbar a {
+  padding: 12px;
+  text-decoration: 'none';
+  text-align: center;
+}
 
 /* Footer */
 
