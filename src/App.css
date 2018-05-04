@@ -87,12 +87,35 @@ footer {
   justify-content: center;
 }
 
+.things-know h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
 .things-do {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
   justify-content: center;
+}
+
+.things-do h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.things-like {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: center;
+}
+
+.things-like h3 {
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .experience {
