@@ -1,11 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 const Footer = () =>
   <footer>
     <hr/>
-    <p>© Christine Tran</p>
     <div id="icons">
-      <ul>
+      <ul className="socials">
         <li><span className="fa-stack fa-lg fa-1x"><a href="mailto:christinetran825@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true"></i></a></span></li>
 
         <li><span className="fa-stack fa-lg fa-1x"><a href="https://github.com/christinetran825" target="_blank"><i className="fa fa-github"></i></a></span></li>
@@ -17,6 +17,7 @@ const Footer = () =>
         <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.instagram.com/thetofukid/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a></span></li>
       </ul>
     </div>
+    <p>© Christine Tran</p>
   </footer>
 
 export default Footer
