@@ -41,8 +41,14 @@ class About extends Component {
             <h4 className="experience">Visual Design</h4>
             <h4 className="experience">Illustration</h4>
             <h4 className="experience">Book Arts</h4>
-            <h4 className="experience">Content</h4>
-            <h4 className="experience">Strategy</h4>
+            <h4 className="experience">Content Strategy</h4>
+          </div>
+
+          <div className="things-like">
+            <h3>Things I Like</h3>
+            <h4 className="experience">Vintage Children's Books</h4>
+            <h4 className="experience"><a href="https://www.atlasobscura.com/">Atlas Obscura</a></h4>
+            <h4 className="experience">Photography</h4>
           </div>
         </section>
       </div>
