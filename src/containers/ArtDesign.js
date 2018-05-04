@@ -11,9 +11,11 @@ class ArtDesign extends Component {
           <h1>Art + Design</h1>
           <p>When it comes to my style, I'm inspired by children's book illustrations, emphera, animation, and nature. Here are a few of my artworks.</p>
         </div>
+        <div className="art-design-work">
           <Illustrations/>
           <Branding/>
           <Bookmaking/>
+        </div>
       </div>
     )
   }
