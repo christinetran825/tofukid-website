@@ -10,7 +10,7 @@ import './App.css';
 class Routes extends Component {
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <Navigation />
         <Switch>
           <Route exact path="/" component={About} />
