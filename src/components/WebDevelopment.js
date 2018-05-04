@@ -53,7 +53,7 @@ class WebDevelopment extends Component {
             <div className="project">
               <div className="details">
                 <h2>SeedPicker</h2>
-                <p>Idea: I like vegetables. </p>
+                <p>Idea: I like vegetables. I chose a fun seed website to practice my CLI skills</p>
                 <p>Challenge: Build a CLI Gem using Nokogiri.</p>
                 <button>GitHub</button>
                 <button>YouTube</button>
