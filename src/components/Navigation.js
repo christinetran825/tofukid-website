@@ -7,9 +7,8 @@ class Navigation extends Component {
       <div className='navbar'>
         <NavLink to="/">About</NavLink>
         <NavLink to="/web_development">Web Development</NavLink>
-        <NavLink to="/illustrations">Illustrations</NavLink>
-        <NavLink to="/bookmaking">Bookmaking</NavLink>
-        <NavLink to="/branding">Branding</NavLink>
+        <NavLink to="/art_design">Art + Design</NavLink>
+        <NavLink to="https://medium.com/@christinetran_81275" target="_blank">Blog</NavLink>
       </div>
     )
   }
