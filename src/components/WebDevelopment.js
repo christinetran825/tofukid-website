@@ -4,7 +4,7 @@ class WebDevelopment extends Component {
   render(){
     return (
       <div className="wrapper">
-        <div className="web-dev">
+        <div className="container">
           <h1>Web Development</h1>
           <div className="content">
             <p>What can I say, separating the designer from the developer is hard. While keeping up with my curiousity for human centered interactions, I craft products that delight people. When building things, I like to be product minded while keeping the end-user in mind. I see the technical details and end goal because people will use what I build. So, I treat all web development products as if they were interactive illustrative artworks.</p>

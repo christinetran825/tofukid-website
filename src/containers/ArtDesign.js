@@ -7,7 +7,7 @@ class ArtDesign extends Component {
   render(){
     return (
       <div className="wrapper">
-        <div className="art-design">
+        <div className="container">
           <h1>Art + Design</h1>
           <div className="content">
             <p>When it comes to my style, I'm inspired by children's book illustrations, emphera, animation, and nature. Here are a few of my artworks.</p>
