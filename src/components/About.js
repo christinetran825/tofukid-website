@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
   render(){
     return (
-      <div className="wrapper">
+      <div className="container">
         <div className="hero">
           <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/>
           <div className="cover-title">
