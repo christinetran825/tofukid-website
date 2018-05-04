@@ -1,6 +1,10 @@
+h1, h2, h3, h4 {
+  font-family: 'Arvo', serif;
+}
+
 body {
   font-size: 15px;
-  font-family: Georgia;
+  font-family: 'Lato', serif;
 }
 
 /* button {
@@ -61,12 +65,11 @@ footer {
 
 .about p:first-child:first-letter {
   color: #903;
-  float: left;
-  font-family: Georgia;
-  font-size: 75px;
-  line-height: 60px;
-  padding-right: 8px;
-  padding-bottom: auto;
+  /* float: left; */
+  font-family:  'Arvo', serif;
+  font-size: 30px;
+  line-height: 20px;
+  /* padding-bottom: auto; */
 }
 
 /* Skills! */
