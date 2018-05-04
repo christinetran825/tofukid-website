@@ -16,7 +16,7 @@ class Routes extends Component {
       <div>
         <Navigation />
         <Switch>
-          <Route exact path="/about" component={About} />
+          <Route exact path="/" component={About} />
           <Route exact path="/bookmaking" component={Bookmaking} />
           <Route exact path="/branding" component={Branding} />
           <Route exact path="/web_development" component={WebDevelopment} />
