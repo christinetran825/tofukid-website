@@ -5,10 +5,10 @@ class Navigation extends Component {
   render(){
     return (
       <div className='navbar'>
-        <NavLink to="/">About</NavLink>
-        <NavLink to="/web_development">Web Development</NavLink>
-        <NavLink to="/art_design">Art + Design</NavLink>
-        <NavLink to="https://medium.com/@christinetran_81275" target="_blank">Blog</NavLink>
+        <NavLink to="/">ABOUT</NavLink>
+        <NavLink to="/web_development">WEB DEVELOPMENT</NavLink>
+        <NavLink to="/art_design">ART + DESIGN</NavLink>
+        <NavLink to="https://medium.com/@christinetran_81275" target="_blank">BLOG</NavLink>
       </div>
     )
   }
