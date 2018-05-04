@@ -5,7 +5,7 @@ class About extends Component {
     return (
       <div className="wrapper">
         <div className="about">
-          <div className="Hero">
+          <div className="hero">
             <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/>
             <h1>Christine Tran</h1>
             <span>Coder, Illustrator, Insight-seeker.</span>
@@ -15,33 +15,37 @@ class About extends Component {
           </div>
         </div>
 
-        <div className="Experience">
-          <h3>Things I Know</h3>
+        <section className="experiences">
+          <div className="things-know">
+            <h3>Things I Know</h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Rails</li>
-              <li>Ruby</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Illustrator</li>
-              <li>Photoshop</li>
-              <li>InDesign</li>
-              <li>User Interface/Experience</li>
+              <li className="experience">HTML</li>
+              <li className="experience">CSS</li>
+              <li className="experience">Javascript</li>
+              <li className="experience">Rails</li>
+              <li className="experience">Ruby</li>
+              <li className="experience">React</li>
+              <li className="experience">Redux</li>
+              <li className="experience">Illustrator</li>
+              <li className="experience">Photoshop</li>
+              <li className="experience">InDesign</li>
+              <li className="experience">User Interface/Experience</li>
             </ul>
+          </div>
 
-          <h3>Things I Can Do</h3>
+          <div className="things-do">
+            <h3>Things I Can Do</h3>
             <ul>
-              <li>Web Development/Design</li>
-              <li>Graphic Design</li>
-              <li>Visual Design</li>
-              <li>Illustration</li>
-              <li>Book Arts</li>
-              <li>Content</li>
-              <li>Strategy</li>
+              <li className="experience">Web Development/Design</li>
+              <li className="experience">Graphic Design</li>
+              <li className="experience">Visual Design</li>
+              <li className="experience">Illustration</li>
+              <li className="experience">Book Arts</li>
+              <li className="experience">Content</li>
+              <li className="experience">Strategy</li>
             </ul>
-        </div>
+          </div>
+        </section>
 
       </div>
     )
