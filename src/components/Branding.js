@@ -4,8 +4,8 @@ class Branding extends Component {
   render(){
     return (
       <section className="branding">
+        <h1>Logos</h1>
         <section className="logos">
-          <h1>Logos</h1>
           <div className="logo">
             <h4>Finches' Publishing</h4>
             <p>I wanted to create my own logo of a fictional company. I named it "Finches" after the character Atticus Finch from To Kill A Mockingbird.</p>
@@ -20,8 +20,8 @@ class Branding extends Component {
           </div>
         </section>
 
+        <h1>Art Direction</h1>
         <section className="art-direction">
-          <h1>Art Direction</h1>
           <div className="campaign">
             <h4>Hunt's Ketchup</h4>
             <p>One of the most common rituals to everyday American dining is squirting some red ketchup to our burgers, fries, hot dogs, and eggs. For some of us, ketchup isn't just a ritual, it's a must-have item with a purpose. I wanted to explore just how far some people would go with their must-have golden red savior through photos.</p>
