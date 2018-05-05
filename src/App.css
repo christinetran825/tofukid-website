@@ -264,7 +264,6 @@ ul.socials {
   text-align: center;
   border: 3px solid #554135;
   background-color: #E3DDA5;
-
 }
 
 .illustration,
@@ -275,4 +274,52 @@ ul.socials {
   grid-template-areas:
     "details"
     "images"
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 50px;
+  }
+
+  .title {
+    grid-template-columns: 320px 1fr 1fr;
+    font-size: 25px;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 100px;
+  }
+
+  .container h1 {
+    font-size: 50px;
+  }
+
+  .things-know,
+  .things-do,
+  .things-like {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .title {
+    grid-template-columns: 1020px 1fr 1fr;
+  }
+
+  .details h3 {
+    border-bottom: 3px solid #554135;
+    font-size: 30px;
+  }
 }
