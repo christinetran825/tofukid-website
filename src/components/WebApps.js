@@ -7,8 +7,8 @@ class WebApps extends Component {
         <div className="project">
           <div className="title">
             <h3>SelfCare</h3>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/SelfCare-C" target="_blank" rel="noopener"><i className="fa fa-github"></i></a></span>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/6Py4HcsAqNQ" target="_blank" rel="noopener"><i className="fa fa-youtube"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/SelfCare-C" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/6Py4HcsAqNQ" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></span>
           </div>
           <div className="details">
             <p><strong>Idea -</strong> There are a variety of habits that can affect mental health. From sleep to making sure medication was taken. Can we determine possible symptoms by tracking daily habits?</p>
@@ -21,8 +21,8 @@ class WebApps extends Component {
         <div className="project">
           <div className="title">
             <h3>Artphilia</h3>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/Artphilia" target="_blank"><i className="fa fa-github"></i></a></span>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/LW-DTvgwrGs" target="_blank"><i className="fa fa-youtube"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/Artphilia" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/LW-DTvgwrGs" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></span>
           </div>
           <div className="details">
             <p><strong>Idea -</strong> There are plenty of artists (non-musicians) creating wonderful works of art. How can we keep a record of all the artists that we like?</p>
@@ -33,8 +33,8 @@ class WebApps extends Component {
         <div className="project">
           <div className="title">
             <h3>Tea Crate</h3>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/tea-crate" target="_blank"><i className="fa fa-github"></i></a></span>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/3LCFISldE2w" target="_blank"><i className="fa fa-youtube"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/tea-crate" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/3LCFISldE2w" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></span>
           </div>
           <div className="details">
             <p><strong>Idea -</strong> There are tea drinkers, then there are tea collectors. From a single tea leaf, tea has evolved into various types, flavors, and cultural influence.</p>
@@ -46,8 +46,8 @@ class WebApps extends Component {
         <div className="project">
           <div className="title">
             <h3>SeedPicker</h3>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/seed-picker-cli-app" target="_blank"><i className="fa fa-github"></i></a></span>
-            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/4QXM_g-vNr8" target="_blank"><i className="fa fa-youtube"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://github.com/christinetran825/seed-picker-cli-app" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></span>
+            <span className="fa-stack fa-lg fa-2x"><a href="https://youtu.be/4QXM_g-vNr8" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></span>
           </div>
           <div className="details">
             <p><strong>Idea -</strong> I like vegetables. I chose a fun seed website to practice my CLI skills.</p>
