@@ -12,7 +12,7 @@ class Branding extends Component {
           </div>
           <div className="images">
             <img src="../images/finches-pub.jpg" alt="finches logo" />
-            <img />
+            <img alt="blank"/>
           </div>
         </div>
         <div className="logo">
@@ -22,8 +22,8 @@ class Branding extends Component {
           </div>
           <div className="images">
             <img src="../images/cynergy-rgb-03.jpg" alt="cynergy logo" />
-            <img />
-            <img />
+            <img alt="blank"/>
+            <img alt="blank"/>
           </div>
         </div>
         <div className="logo">
