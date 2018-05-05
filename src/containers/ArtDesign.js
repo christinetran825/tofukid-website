@@ -21,6 +21,6 @@ class ArtDesign extends Component {
   }
 }
 
-
-
 export default ArtDesign;
+
+//if user clicks on illustrations show Illustrations component; otherwise don't show anything
