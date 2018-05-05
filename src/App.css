@@ -91,14 +91,13 @@ ul.socials {
     "cover-title"
 }
 
-.about {
-  padding: 0 30px;
+.blurb {
   text-align: left;
 }
 
-.about p:first-child:first-letter {
+.blurb p:first-child:first-letter {
   color: #903;
-  font-family:  'Arvo', serif;
+  font-family: 'Arvo', serif;
   font-size: 30px;
   line-height: 20px;
 }
@@ -107,48 +106,37 @@ ul.socials {
 .experiences {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr, 1fr));
+  grid-template-areas:
+    "skills-1"
+    "skills-2"
+    "skills-3";
 }
 
-.experiences h3 {
+.experience {
+  text-align: center;
+  align-items: center;
+}
+
+.things-know,
+.things-do,
+.things-like {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.things-know h3,
+.things-do h3,
+.things-like h3 {
   grid-column: 1 / -1;
   text-align: center;
 }
 
-.experiences h4 {
-  font-weight: 300;
-}
-
-.things-know {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+.things-know h4,
+.things-do h4,
+.things-like h4 {
   align-items: center;
-  justify-content: center;
-}
-
-.things-do {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  align-items: center;
-  justify-content: center;
-}
-
-.things-like {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  align-items: center;
-  justify-content: center;
-}
-
-.experience {
-  /* background: #E3DDA5; */
-  padding: 10px;
-  border: 2px dotted white;
-  text-align: center;
-  /* box-shadow: 0 0 4px  rgba(0,0,0,0.1); */
 }
 
 /* Drop Cap */
@@ -159,6 +147,33 @@ ul.socials {
   font-family:  'Arvo', serif;
   font-size: 30px;
   line-height: 20px;
+}
+
+/* Shared between ArtDesign & Web Development */
+
+.details {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.details h3 {
+  grid-column: 1 / 2;
+  border-bottom: 2px solid #554135;
+  color: #554135
+}
+
+.details p {
+  grid-column: 1 / -1;
+}
+
+.images {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+.images img {
+  width: 100%;
 }
 
 /* Web Development */
@@ -246,29 +261,4 @@ ul.socials {
   grid-template-areas:
     "details"
     "images"
-}
-
-.details {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-}
-
-.details h3 {
-  grid-column: 1 / 2;
-  border-bottom: 2px solid #554135;
-  color: #554135
-}
-
-.details p {
-  grid-column: 1 / -1;
-}
-
-.images {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-}
-
-.images img {
-  width: 100%;
 }
