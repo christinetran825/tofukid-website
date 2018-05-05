@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WebApps from './WebApps'
+import WebApps from '../components/WebApps'
 
 class WebDevelopment extends Component {
   render(){
