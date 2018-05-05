@@ -23,6 +23,7 @@ class Branding extends Component {
           <div className="images">
             <img src="../images/cynergy-rgb-03.jpg" alt="cynergy logo" />
             <img />
+            <img />
           </div>
         </div>
         <div className="logo">
