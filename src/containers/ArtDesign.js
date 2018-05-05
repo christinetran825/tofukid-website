@@ -9,7 +9,7 @@ class ArtDesign extends Component {
       <div className="container">
         <div className="art-design">
           <h1>Art + Design</h1>
-          <p>When it comes to my style, I'm inspired by children's book illustrations, emphera, animation, and nature. Here are a few of my artworks.</p>
+          <p>When it comes to my style, I'm inspired by children's book illustrations, emphera, animation, and nature. Here are a few of my artworks. You can purchase this and other artworks and photography through my <a href="https://society6.com/tofukidSociety6">Society6</a>.</p>
         </div>
         <div className="art-design-work">
           <Illustrations/>

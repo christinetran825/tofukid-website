@@ -9,7 +9,6 @@ class Illustrations extends Component {
           <div className="details">
             <h3>Taste Addiction</h3>
             <p>I was playing with the idea of what kinds of 'dipping' or 'sauces' most people are addicted to. I expressed the gluttony of the addiction by having the source of ingredient drool and ooze its glorious goodness.</p>
-            <p>You can purchase this and other artworks at my <a href="https://society6.com/tofukidSociety6">Society6</a></p>
           </div>
           <div className="images">
             <img src="../images/taste_all_sauces.jpg" alt="drooling sauces" />
