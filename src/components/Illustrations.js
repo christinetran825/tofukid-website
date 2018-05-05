@@ -25,7 +25,6 @@ class Illustrations extends Component {
           <div className="images">
             <img src="../images/teachers-1.jpg" alt="Teachers Sketch" />
             <img src="../images/teachers-2.jpg" alt="Teachers Sketch" />
-            <img src="../images/teachers-3.jpg" alt="Teachers Sketch" />
           </div>
         </div>
         <div className="illustration">
