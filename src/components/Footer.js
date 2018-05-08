@@ -14,9 +14,10 @@ const Footer = () =>
         <li><span className="fa-stack fa-lg fa-1x"><a href="https://twitter.com/thetofukid"  target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter" aria-hidden="false"></i></a></span></li>
 
         <li><span className="fa-stack fa-lg fa-1x"><a href="https://www.instagram.com/thetofukid/"  target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" aria-hidden="false"></i></a></span></li>
+
+        <li className="copyright">© Christine Tran</li>
       </ul>
     </div>
-    <p>© Christine Tran</p>
   </footer>
 
 export default Footer
