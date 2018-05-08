@@ -6,8 +6,12 @@ class Illustrations extends Component {
       <section className="illustrations">
         <h1>Illustrations</h1>
         <div className="illustration">
+          <div className="title">
+            <div className="project-name">
+              <h3>Taste Addiction</h3>
+            </div>
+          </div>
           <div className="details">
-            <h3>Taste Addiction</h3>
             <p>I was playing with the idea of what kinds of 'dipping' or 'sauces' most people are addicted to. I expressed the gluttony of the addiction by having the source of ingredient drool and ooze its glorious goodness.</p>
           </div>
           <div className="images">
@@ -18,8 +22,12 @@ class Illustrations extends Component {
           </div>
         </div>
         <div className="illustration">
+          <div className="title">
+            <div className="project-name">
+              <h3>Thank You, Teachers</h3>
+            </div>
+          </div>
           <div className="details">
-            <h3>Thank You, Teachers</h3>
             <p>In honor of Teacher's Day, I've drawn a series of portraits of the teachers who inspired me in many ways throughout my education. Check out my Tumblr <a href="http://thanksforteachers.tumblr.com/" target="blank">"thanksforteacher"</a> to view more portraits.</p>
           </div>
           <div className="images">
@@ -28,8 +36,12 @@ class Illustrations extends Component {
           </div>
         </div>
         <div className="illustration">
+          <div className="title">
+            <div className="project-name">
+              <h3>Taco Time</h3>
+            </div>
+          </div>
           <div className="details">
-            <h3>Taco Time</h3>
             <p>Who doesn't like tacos? These digital art posters were made for an imaginary taco brand. Each poster has a pattern showing foods and objects related to tacos like chilies, hot sauce, sombreros.</p>
           </div>
           <div className="images">
@@ -39,12 +51,8 @@ class Illustrations extends Component {
           </div>
         </div>
       </section>
-
-
     )
   }
 }
-
-
 
 export default Illustrations;
