@@ -174,7 +174,6 @@ p.notes {
 /************* Web Development! *************/
 
 .webapp {
-  display: grid;
   grid-template-areas:
     "title-info"
     "details";
@@ -187,29 +186,19 @@ p.notes {
   grid-template-areas: "title links";
 }
 
-.webapp .project-name {
-  grid-area: title;
-}
-
 .webapp .details {
   grid-area: details;
 }
 
-.links {
+.webapp .project-name {
+  grid-area: title;
+}
+
+.webapp .links {
   grid-area: links;
 }
 
 /************* Illustrations, Branding, BookArts! *************/
-
-/* .illustrations h1,
-.logos h1,
-.books h1 {
-  grid-column: 1 / -1;
-}
-
-.details p {
-  grid-column: 1 / -1;
-} */
 
 .images {
   display: grid;
@@ -221,3 +210,194 @@ p.notes {
 .images img {
   width: 100%;
 }
+
+/******* media queries *******/
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd   hd   hd"
+      "main main main"
+      "ft   ft   ft";
+  }
+
+  footer {
+    padding: 0 50px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .blurb {
+    padding-top: 20px;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    text-align: center;
+  }
+
+  /*** All components! ***/
+
+  .illustrations,
+  .books,
+  .brands,
+  .webapps,
+  .illustration,
+  .book,
+  .brand {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .webapps {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    grid-template-columns:  repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  .illustration,
+  .brand {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .book {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .webapp .details {
+    padding: 0 10px;
+  }
+
+  .illustration .title,
+  .book .title,
+  .brand .title {
+    border: none;
+    font-size: 20px;
+    border: 4px dotted #ACB673;
+    border-radius: 5px;
+  }
+
+  .illustration .details,
+  .book .details,
+  .brand .details {
+    grid-column: 2 / -1;
+  }
+
+  .illustration .images,
+  .book .images {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .brand .images {
+    grid-column: 2 / -1;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd   hd   hd"
+      "main main main"
+      "ft   ft   ft";
+  }
+
+  footer {
+    padding: 0 100px;
+  }
+
+  .container {
+    padding: 0 100px;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .blurb {
+    padding-top: 20px;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+
+  .webapps {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .webapp .title {
+    grid-column: 1 / -1;
+  }
+
+  .illustration,
+  .brand,
+  .webapp {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .brand {
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+  }
+
+  .brand .images {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .details p {
+    grid-column: 1 / -1;
+  }
+
+  .images {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .images img {
+    width: 100%;
+  }
