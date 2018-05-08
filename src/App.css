@@ -92,7 +92,8 @@ for mobile
 .container {
   /* display: grid;
   grid-gap: 20px;
-  padding: 30px; */
+  */
+  padding: 30px;
   grid-area: main;
 }
 
@@ -128,7 +129,7 @@ nav a {
 .socials {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   list-style: none;
   padding: 0;
 }
@@ -202,7 +203,6 @@ nav a {
 
 .blurb {
   text-align: left;
-  padding: 0 40px;
 }
 
   /** Drop Cap **/
@@ -213,6 +213,8 @@ nav a {
   font-size: 30px;
   line-height: 20px;
 }
+
+
 
 .details {
   display: grid;
@@ -251,35 +253,41 @@ nav a {
     "project"
 }
 
-.project {
+/* .project {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     "proj-title"
     "proj-details"
     "project-images"
+} */
+
+.title {
+  /* border: 2px solid #ACB673; */
+  /* border-radius: 5px; */
+  /* background-color: #ACB673; */
+  max-width: 400px;
 }
 
 .title {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 150px 1fr 1fr;
-  align-items: center;
-  text-align: center;
-  background-color: #ACB673;
-  font-size: 18px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "title links";
+  margin-bottom: 1em;
 }
 
-/************* Art & Design *************/
-
-.page-work {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "illustrations"
-    "branding"
-    "bookmaking"
+.project-name {
+  grid-area: title;
+  border-right: 2px solid #ACB673;
+  padding: 0 40px 0 20px;
 }
+
+.links {
+  grid-area: links;
+  align-self: center;
+  justify-self: end;
+}
+
 
 /************* Illustrations, Branding, BookArts! *************/
 
