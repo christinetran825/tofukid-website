@@ -6,15 +6,15 @@ class About extends Component {
       <div className="container">
         <div className="hero">
           <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/>
-          <div className="cover-title">
-            <h1>Christine Tran</h1>
-            <span>Coder, Illustrator, Insight-seeker.</span>
-          </div>
-          <section className="blurb">
-            <p>Full stack web developer with a passion for design, user experience, and data analysis. A lifelong learner who strives on building different skills.</p>
-            <p>I view the world with a child-like awe, admiring the structures and pieces that make things whole by learning how to break things apart and putting them back together.</p>
-            <p>I illustrate imaginative characters fit for children’s books in my spare time while sharing my curiosities of the world with trivial fun-facts and stories. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
-          </section>
+        </div>
+        <div className="cover-title">
+          <h1>Christine Tran</h1>
+          <span>Coder, Illustrator, Insight-seeker.</span>
+        </div>
+        <div className="blurb">
+          <p>Full stack web developer with a passion for design, user experience, and data analysis. A lifelong learner who strives on building different skills.</p>
+          <p>I view the world with a child-like awe, admiring the structures and pieces that make things whole by learning how to break things apart and putting them back together.</p>
+          <p>I illustrate imaginative characters fit for children’s books in my spare time while sharing my curiosities of the world with trivial fun-facts and stories. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
         </div>
 
         <section className="experiences">

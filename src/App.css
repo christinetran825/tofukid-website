@@ -152,18 +152,6 @@ nav a {
   text-align: center;
 }
 
-.blurb {
-  text-align: left;
-  padding: 0 40px;
-}
-
-.blurb p:first-child:first-letter {
-  color: #903;
-  font-family: 'Arvo', serif;
-  font-size: 30px;
-  line-height: 20px;
-}
-
 /************* Skills! *************/
 .experiences {
   display: grid;
@@ -201,22 +189,29 @@ nav a {
   grid-area: skills-3;
 }
 
-/************* Drop Cap *************/
+/************* Shared Pages *************/
 
-.web-dev p:first-letter,
-.art-design p:first-letter {
-  color: #903;
-  font-family:  'Arvo', serif;
-  font-size: 30px;
-  line-height: 20px;
-}
-
-/************* Shared between ArtDesign & Web Development *************/
-
-.web-dev,
-.art-design {
+.page {
   display: grid;
   grid-gap: 20px;
+}
+
+.page h1 {
+  text-align: center;
+}
+
+.blurb {
+  text-align: left;
+  padding: 0 40px;
+}
+
+  /** Drop Cap **/
+
+.blurb p:first-child:first-letter {
+  color: #903;
+  font-family: 'Arvo', serif;
+  font-size: 30px;
+  line-height: 20px;
 }
 
 .details {
@@ -277,7 +272,7 @@ nav a {
 
 /************* Art & Design *************/
 
-.art-design-work {
+.page-work {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
