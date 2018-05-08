@@ -106,7 +106,7 @@ footer {
   color: #554135;
 }
 
-/* Navigation */
+/************ Navigation *************/
 
 nav {
   display: grid;
@@ -123,7 +123,7 @@ nav a {
   color: #554135;
 }
 
-/* Footer */
+/************* Footer *************/
 
 .socials {
   display: grid;
@@ -137,19 +137,24 @@ nav a {
   color: #554135;
 }
 
-/* Hero! */
+/************* Hero! *************/
+
 .hero {
-  align-content: center;
-  justify-content: center;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     "hero"
     "cover-title"
+    "blurb";
+}
+
+.cover-title {
+  text-align: center;
 }
 
 .blurb {
   text-align: left;
+  padding: 0 40px;
 }
 
 .blurb p:first-child:first-letter {
@@ -159,11 +164,7 @@ nav a {
   line-height: 20px;
 }
 
-.container h1 {
-  text-align: center;
-}
-
-/* Skills! */
+/************* Skills! *************/
 .experiences {
   display: grid;
   grid-gap: 20px;
@@ -175,37 +176,32 @@ nav a {
 }
 
 .experience {
-  text-align: center;
-  align-items: center;
-}
-
-.things-know,
-.things-do,
-.things-like {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.things-know h3,
-.things-do h3,
-.things-like h3 {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 16px 0;
-  border: 3px solid #554135;
-  background-color: #E3DDA5;
-  color: #554135;
-}
-
-.things-know h4,
-.things-do h4,
-.things-like h4 {
   align-items: center;
+  text-align: center;
+}
+
+.experience h3 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  /* border: 3px solid #554135; */
+  /* background-color: #E3DDA5; */
   color: #554135;
 }
 
-/* Drop Cap */
+.know {
+  grid-area: skills-1;
+}
+.do {
+  grid-area: skills-2;
+}
+.like {
+  grid-area: skills-3;
+}
+
+/************* Drop Cap *************/
 
 .web-dev p:first-letter,
 .art-design p:first-letter {
@@ -215,7 +211,7 @@ nav a {
   line-height: 20px;
 }
 
-/* Shared between ArtDesign & Web Development */
+/************* Shared between ArtDesign & Web Development *************/
 
 .web-dev,
 .art-design {
@@ -248,7 +244,7 @@ nav a {
   width: 100%;
 }
 
-/* Web Development */
+/************* Web Development *************/
 
 .projects {
   display: grid;
@@ -279,7 +275,7 @@ nav a {
   font-size: 18px;
 }
 
-/* Art & Design */
+/************* Art & Design *************/
 
 .art-design-work {
   display: grid;
@@ -290,7 +286,7 @@ nav a {
     "bookmaking"
 }
 
-/* Illustrations, Branding, BookArts! */
+/************* Illustrations, Branding, BookArts! *************/
 
 .illustrations,
 .logos,
@@ -337,7 +333,7 @@ nav a {
     "images"
 }
 
-/* @media (min-width: 1024px) {
+/************* @media (min-width: 1024px) {
   .container {
     padding: 50px;
   }
@@ -354,7 +350,7 @@ nav a {
   }
 } */
 
-/* @media (min-width: 1920px) {
+/************* @media (min-width: 1920px) {
   body {
     font-size: 20px;
   }
