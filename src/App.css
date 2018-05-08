@@ -232,7 +232,7 @@ p.notes {
     align-content: center;
   }
 
-  footer {
+  .socials {
     padding: 0 50px;
   }
 
@@ -327,9 +327,9 @@ p.notes {
 /****************** Queries ******************/
 
 @media (min-width: 1024px) {
-  /* body {
-    font-size: 15px;
-  } */
+  body {
+    font-size: 20px;
+  }
 
   .wrapper {
     display: grid;
@@ -341,7 +341,7 @@ p.notes {
       "ft   ft   ft   ft";
   }
 
-  footer {
+  .socials {
     padding: 0 100px;
   }
 
@@ -382,9 +382,9 @@ p.notes {
 /******** DESKTOP *********/
 
 @media (min-width: 1920px) {
-  /* body {
+  body {
     font-size: 40px;
-  } */
+  }
 
   .wrapper {
     display: grid;
@@ -396,7 +396,7 @@ p.notes {
       "ft   ft   ft";
   }
 
-  footer {
+  .socials {
     padding: 0 400px;
   }
 
