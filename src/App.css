@@ -318,6 +318,7 @@ p.notes {
 
 /****************** Queries ******************/
 
+
 @media (min-width: 1024px) {
   .wrapper {
     display: grid;
@@ -334,7 +335,7 @@ p.notes {
   }
 
   .container {
-    padding: 0 50px;
+    padding: 0 100px;
   }
 
   .copyright {
@@ -365,6 +366,119 @@ p.notes {
   .book .title,
   .brand .title {
     padding: 0 20px;
+  }
+
+}
+
+/******** DESKTOP *********/
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 40px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd   hd   hd"
+      "main main main"
+      "ft   ft   ft";
+  }
+
+  footer {
+    padding: 0 400px;
+  }
+
+  .socials {
+    grid-gap: 300px;
+  }
+
+  .container {
+    padding: 0 100px;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .blurb {
+    padding: 50px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+  }
+
+  .blurb p:first-child:first-letter {
+    font-size: 50px;
+  }
+
+  .experiences {
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+  }
+
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    text-align: center;
+    padding: 0 80px;
+  }
+
+  /*** All components! ***/
+
+  .page {
+    padding-bottom: 100px;
+  }
+
+  .page h1 {
+    font-size: 80px;
+  }
+
+  p.notes {
+    font-size: 30px;
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    grid-gap: 100px;
+    grid-template-columns:  repeat(auto-fit, minmax(1000px, 1fr));
+  }
+
+  .illustrations h1,
+  .books h1,
+  .brands h1 {
+    grid-column: 1 / -1;
+    font-size: 75px;
+    border: 8px solid #ACB673;
+    padding: 40px;
+  }
+
+  .illustration .title,
+  .book .title,
+  .brand .title {
+    grid-column: 1 / -1;
+    font-size: 50px;
+    border: none;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    padding-bottom: 50px;
+    border-bottom: 8px dotted #ACB673;
+  }
+
+  .illustration .details,
+  .book .details,
+  .brand .details {
+    grid-column: 1 / -1;
+  }
+
+  .brand .images {
+    grid-column: 1 / -1;
   }
 
 }
