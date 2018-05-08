@@ -263,29 +263,30 @@ nav a {
 } */
 
 .title {
-  /* border: 2px solid #ACB673; */
-  /* border-radius: 5px; */
+  border: 2px solid #ACB673;
+  border-radius: 5px;
   /* background-color: #ACB673; */
   max-width: 400px;
+  align-items: center;
+  justify-items: center;
 }
 
 .title {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "title links";
-  margin-bottom: 1em;
+  margin-bottom: 15px;
 }
 
 .project-name {
   grid-area: title;
   border-right: 2px solid #ACB673;
-  padding: 0 40px 0 20px;
+  padding: 0 50px 0 20px;
 }
 
 .links {
   grid-area: links;
-  align-self: center;
-  justify-self: end;
+  padding-left: 20px;
 }
 
 
