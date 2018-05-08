@@ -161,6 +161,12 @@ nav a {
   line-height: 20px;
 }
 
+/* .page-work {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr));
+} */
+
 .illustrations,
 .books,
 .brands,
@@ -227,20 +233,10 @@ p.notes {
   grid-column: 1 / -1;
 }
 
-.illustration,
-.book,
-.brand {
-  grid-template-areas:
-    "title"
-    "details"
-    "images";
-}
-
 .illustration .title,
 .book .title,
 .brand .title {
   text-align: center;
-  /* border: none; */
 }
 
 .illustration .project-name,
@@ -277,10 +273,82 @@ p.notes {
       "ft   ft   ft";
   }
 
+  footer {
+    padding: 0 50px;
+  }
+
+  .container {
+    padding: 50px;
+  }
+
   .copyright {
     grid-column: 6 / -1;
   }
 
+  .blurb {
+    padding-top: 20px;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  .project .title {
+    grid-column: 1 / -1;
+  }
+
+  .illustration,
+  .brand,
+  .project {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .brand {
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+  }
+
+  .brand .images {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .details p {
+    grid-column: 1 / -1;
+  }
+
+  .images {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .images img {
+    width: 100%;
+  }
 
 }
 
