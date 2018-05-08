@@ -23,6 +23,7 @@ img {
     "hd"
     "main"
     "ft";
+  align-items: center;
 }
 
 .header {
@@ -42,6 +43,9 @@ footer {
   align-self: center;
   background-color: #E3DDA5;
   color: #554135;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .copyright {
@@ -55,6 +59,9 @@ nav {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: minmax(80px, auto);
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 nav a {
@@ -318,16 +325,19 @@ p.notes {
 
 /****************** Queries ******************/
 
-
 @media (min-width: 1024px) {
+  /* body {
+    font-size: 15px;
+  } */
+
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
-      "hd   hd   hd"
-      "main main main"
-      "ft   ft   ft";
+      "hd   hd   hd   hd"
+      "main main main main"
+      "ft   ft   ft   ft";
   }
 
   footer {
@@ -354,8 +364,6 @@ p.notes {
     text-align: center;
   }
 
-  /*** All components! ***/
-
   .illustrations,
   .books,
   .brands {
@@ -373,9 +381,9 @@ p.notes {
 /******** DESKTOP *********/
 
 @media (min-width: 1920px) {
-  body {
+  /* body {
     font-size: 40px;
-  }
+  } */
 
   .wrapper {
     display: grid;
@@ -425,8 +433,6 @@ p.notes {
     text-align: center;
     padding: 0 80px;
   }
-
-  /*** All components! ***/
 
   .page {
     padding-bottom: 100px;
