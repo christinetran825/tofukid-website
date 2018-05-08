@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class WebApps extends Component {
   render(){
     return (
-      <section className="projects">
-        <div className="project">
+      <section className="webapps">
+        <div className="webapp">
           <div className="title">
             <div className="project-name">
               <h3>SelfCare</h3>
@@ -22,7 +22,7 @@ class WebApps extends Component {
           </div>
         </div>
 
-        <div className="project">
+        <div className="webapp">
           <div className="title">
             <div className="project-name">
               <h3>Artphilia</h3>
@@ -38,7 +38,7 @@ class WebApps extends Component {
           </div>
         </div>
 
-        <div className="project">
+        <div className="webapp">
           <div className="title">
             <div className="project-name">
               <h3>Tea Crate</h3>
@@ -55,7 +55,7 @@ class WebApps extends Component {
           </div>
         </div>
 
-        <div className="project">
+        <div className="webapp">
           <div className="title">
             <div className="project-name">
               <h3>SeedPicker</h3>
