@@ -14,7 +14,7 @@ strong {
 }
 
 body {
-  font-size: 15px;
+  font-size: 1em;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -31,7 +31,7 @@ img {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(6.25em, auto);
   grid-template-areas:
     "hd"
     "main"
@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0 2em;
   grid-area: main;
 }
 
@@ -52,9 +52,9 @@ img {
 
 nav {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-auto-rows: minmax(80px, auto);
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  grid-auto-rows: minmax(5em, auto);
   left: 0;
   top: 0;
   width: 100%;
@@ -73,7 +73,7 @@ nav a {
 footer {
   grid-area: ft;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
   text-align: center;
   align-self: center;
   background-color: #CBE6DA;
@@ -89,8 +89,8 @@ footer {
 
 .socials {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-gap: 0.625em;
+  grid-template-columns: repeat(auto-fit, minmax(3.75em, 1fr));
   list-style: none;
   padding: 0;
   align-items: center;
@@ -104,7 +104,7 @@ footer {
 
 .about {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
   grid-template-areas:
     "hero"
     "cover-title"
@@ -130,8 +130,8 @@ span {
 /************* Skills! *************/
 .experiences {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr, 1fr));
+  grid-gap: 1.25em;
+  grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr, 1fr));
   grid-template-areas:
     "skills-1"
     "skills-2"
@@ -140,8 +140,8 @@ span {
 
 .experience {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 0.625em;
+  grid-template-columns: repeat(auto-fit, minmax(6.25em, 1fr));
   align-items: center;
   text-align: center;
 }
@@ -149,7 +149,7 @@ span {
 .experience h3 {
   grid-column: 1 / -1;
   background-color: #CBE6DA;
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .experience h4 {
@@ -160,7 +160,7 @@ span {
 
 .page {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
 }
 
 .page h1 {
@@ -170,14 +170,14 @@ span {
 
 .project-name h3 {
   background-color: #E5B3A3;
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .blurb p:first-child:first-letter {
   color: #617B6F;
   font-family: 'Arvo', serif;
-  font-size: 30px;
-  line-height: 20px;
+  font-size: 1.875em;
+  line-height: 1.25em;
 }
 
 .illustrations,
@@ -185,8 +185,8 @@ span {
 .brands,
 .webapps {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1.25em;
+  grid-template-columns: repeat(auto-fit, minmax(9.375em, 1fr));
 }
 
 .title {
@@ -198,7 +198,7 @@ span {
 p.notes {
   color: #554135;
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 /************* Web Development! *************/
@@ -232,9 +232,9 @@ p.notes {
 
 .images {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  padding-bottom: 20px;
+  grid-gap: 1.25em;
+  grid-template-columns: repeat(auto-fit, minmax(4.375, 1fr));
+  padding-bottom: 1.25em;
 }
 
 .images img {
@@ -247,7 +247,7 @@ p.notes {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(6.25em, auto);
     grid-template-areas:
       "hd   hd   hd"
       "main main main"
@@ -256,11 +256,11 @@ p.notes {
   }
 
   .socials {
-    padding: 0 50px;
+    padding: 0 3.125em;
   }
 
   .container {
-    padding: 0 50px;
+    padding: 0 3.125em;
   }
 
   .copyright {
@@ -269,8 +269,8 @@ p.notes {
 
   .experience {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 0.625em;
+    grid-template-columns: repeat(auto-fit, minmax(9.375em, 1fr));
     align-items: center;
     text-align: center;
   }
@@ -285,36 +285,36 @@ p.notes {
   .book,
   .brand {
     display: grid;
-    /* grid-gap: 20px; */
+    grid-gap: 1.25em;
   }
 
   .webapps {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
   }
 
   .illustrations,
   .books,
   .brands {
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(31.875em, 1fr));
   }
 
   .illustration,
   .brand {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
   }
 
   .book {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11.25em, 1fr));
   }
 
   .webapp .details {
-    padding: 0 10px;
+    padding: 0 0.625em;
   }
 
   .illustration .title,
   .book .title,
   .brand .title {
-    font-size: 15px;
+    font-size: 1em;
   }
 
   .illustration .details,
@@ -324,19 +324,12 @@ p.notes {
   }
 
   .illustration .images,
-  .book .images {
+  .book .images,
+  .brand .images  {
     grid-column: 1 / -1;
-    display: grid;
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
   }
 
-  .brand .images {
-    grid-column: 2 / -1;
-  }
-
-  .images img {
-    width: 100%;
-  }
 
 }
 
@@ -347,7 +340,7 @@ p.notes {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(6.25em, auto);
     grid-template-areas:
       "hd   hd   hd   hd"
       "main main main main"
@@ -355,11 +348,11 @@ p.notes {
   }
 
   .socials {
-    padding: 0 100px;
+    padding: 0 6.25em;
   }
 
   .container {
-    padding: 0 100px;
+    padding: 0 6.25em;
   }
 
   .copyright {
@@ -367,13 +360,13 @@ p.notes {
   }
 
   p.notes {
-    font-size: 13px;
+    font-size: 0.8125em;
   }
 
   .experience {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 0.625em;
+    grid-template-columns: repeat(auto-fit, minmax(9.375em, 1fr));
     align-items: center;
     text-align: center;
   }
@@ -381,20 +374,26 @@ p.notes {
   .illustrations,
   .books,
   .brands {
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28.75em, 1fr));
   }
 
   .illustration,
   .book,
   .brand {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, minmax(6.25em, 1fr));
   }
 
   .illustration .title,
   .brand .title {
     align-self: center;
+  }
+
+  .illustration .images,
+  .brand .images,
+  .book .images {
+    grid-template-columns: repeat(auto-fit, minmax(6.25em, 1fr));
   }
 
 }
@@ -403,13 +402,13 @@ p.notes {
 
 @media (min-width: 1920px) {
   body {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(6.25em, auto);
     grid-template-areas:
       "hd   hd   hd"
       "main main main"
@@ -417,15 +416,15 @@ p.notes {
   }
 
   .socials {
-    padding: 0 400px;
+    padding: 0 25em;
   }
 
   .socials {
-    grid-gap: 300px;
+    grid-gap: 18.75em;
   }
 
   .container {
-    padding: 0 100px;
+    padding: 0 6.25em;
   }
 
   .copyright {
@@ -434,56 +433,56 @@ p.notes {
 
   .blurb {
     display: grid;
-    grid-gap: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    grid-gap: 6.25em;
+    grid-template-columns: repeat(auto-fit, minmax(62.5em, 1fr));
   }
 
   .blurb p:first-child:first-letter {
-    font-size: 50px;
+    font-size: 3.125em;
   }
 
   .experiences {
-    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(62.5em, 1fr));
   }
 
   .experience {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
     align-items: center;
     text-align: center;
   }
 
   .page {
-    padding-bottom: 100px;
+    padding-bottom: 6.25em;
   }
 
   .page h1 {
-    font-size: 80px;
+    font-size: 5em;
   }
 
   p.notes {
-    font-size: 30px;
+    font-size: 1.875em;
   }
 
   .illustrations,
   .books,
   .brands {
-    grid-gap: 100px;
-    grid-template-columns:  repeat(auto-fit, minmax(1000px, 1fr));
+    grid-gap: 6.25em;
+    grid-template-columns:  repeat(auto-fit, minmax(62.5em, 1fr));
   }
 
   .illustrations h1,
   .books h1,
   .brands h1 {
     grid-column: 1 / -1;
-    font-size: 75px;
+    font-size: 4.6875em;
   }
 
   .illustration .title,
   .book .title,
   .brand .title {
     grid-column: 1 / -1;
-    font-size: 50px;
+    font-size: 3.125em;
     border: none;
   }
 
