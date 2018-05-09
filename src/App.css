@@ -131,7 +131,7 @@ span {
 .experiences {
   display: grid;
   grid-gap: 1.25em;
-  grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(8em, 1fr)); */
   grid-template-areas:
     "skills-1"
     "skills-2"
@@ -266,11 +266,16 @@ p.notes {
   .copyright {
     grid-column: 6 / -1;
   }
+  .experiences {
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    grid-template-areas:
+      "skills-1 skills-2 skills-3";
+  }
 
   .experience {
     display: grid;
     grid-gap: 0.625em;
-    grid-template-columns: repeat(auto-fit, minmax(9.375em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
     align-items: center;
     text-align: center;
   }
@@ -296,11 +301,6 @@ p.notes {
   .books,
   .brands {
     grid-template-columns: repeat(auto-fit, minmax(31.875em, 1fr));
-  }
-
-  .illustration,
-  .brand {
-    grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
   }
 
   .book {
@@ -347,7 +347,7 @@ p.notes {
   }
 
   .socials {
-    padding: 0 6.25em;
+    padding: 0 10em;
   }
 
   .container {
@@ -355,7 +355,7 @@ p.notes {
   }
 
   .copyright {
-    grid-column: 6 / -1;
+    grid-column: 7 / -1;
   }
 
   p.notes {
@@ -401,7 +401,7 @@ p.notes {
 
 @media (min-width: 1920px) {
   body {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .wrapper {
@@ -415,74 +415,61 @@ p.notes {
   }
 
   .socials {
-    padding: 0 25em;
+    padding: 0 8em;
   }
 
   .socials {
-    grid-gap: 18.75em;
+    grid-gap: 8em;
   }
 
   .container {
-    padding: 0 6.25em;
+    padding: 0 6em;
   }
 
-  .copyright {
-    grid-column: 6 / -1;
+  .blurb p:first-child:first-letter {
+    font-size: 2em;
   }
 
   .blurb {
     display: grid;
-    grid-gap: 6.25em;
-    grid-template-columns: repeat(auto-fit, minmax(62.5em, 1fr));
-  }
-
-  .blurb p:first-child:first-letter {
-    font-size: 3.125em;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   }
 
   .experiences {
-    grid-template-columns: repeat(auto-fit, minmax(62.5em, 1fr));
-  }
-
-  .experience {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
     align-items: center;
-    text-align: center;
   }
 
-  .page {
-    padding-bottom: 6.25em;
-  }
+  /* .experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
+  } */
 
   .page h1 {
-    font-size: 5em;
-  }
-
-  p.notes {
-    font-size: 1.875em;
+    font-size: 2em;
   }
 
   .illustrations,
   .books,
   .brands {
-    grid-gap: 6.25em;
-    grid-template-columns:  repeat(auto-fit, minmax(62.5em, 1fr));
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(50em, 1fr));
   }
 
   .illustrations h1,
   .books h1,
   .brands h1 {
     grid-column: 1 / -1;
-    font-size: 4.6875em;
+    font-size: 2.5em;
   }
 
   .illustration .title,
   .book .title,
   .brand .title {
     grid-column: 1 / -1;
-    font-size: 3.125em;
-    border: none;
+    font-size: 1em;
   }
 
   .illustration .details,
