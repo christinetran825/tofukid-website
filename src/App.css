@@ -3,10 +3,14 @@ h1, h2, h3, h4 {
   color: #302B25;
 }
 
+h3 {
+  color: #634056;
+  justify-self: center;
+}
+
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  /* background-color: #CBE6DA; */
 }
 
 img {
@@ -39,23 +43,6 @@ img {
   grid-area: main;
 }
 
-footer {
-  grid-area: ft;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  text-align: center;
-  align-self: center;
-  background-color: #CBE6DA;
-  color: #634056;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.copyright {
-  grid-column: 1 / -1;
-}
-
 /************ Navigation *************/
 
 nav {
@@ -77,6 +64,23 @@ nav a {
 }
 
 /************* Footer *************/
+
+footer {
+  grid-area: ft;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  align-self: center;
+  background-color: #CBE6DA;
+  color: #634056;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+}
 
 .socials {
   display: grid;
@@ -135,10 +139,7 @@ span {
 
 .experience h3 {
   grid-column: 1 / -1;
-  justify-self: center;
-  color: #634056;
   background-color: #CBE6DA;
-  padding: 20px;
 }
 
 .experience h4 {
@@ -157,12 +158,7 @@ span {
   color: #617B6F;
 }
 
-.blurb {
-  text-align: left;
-}
-
 .project-name h3 {
-  color: #634056;
   background-color: #E5B3A3;
   padding: 20px;
 }
@@ -261,10 +257,6 @@ p.notes {
     grid-column: 6 / -1;
   }
 
-  .blurb {
-    padding-top: 20px;
-  }
-
   .experience {
     display: grid;
     grid-gap: 10px;
@@ -283,7 +275,7 @@ p.notes {
   .book,
   .brand {
     display: grid;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
   }
 
   .webapps {
@@ -293,7 +285,7 @@ p.notes {
   .illustrations,
   .books,
   .brands {
-    grid-template-columns:  repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 
   .illustration,
@@ -312,10 +304,7 @@ p.notes {
   .illustration .title,
   .book .title,
   .brand .title {
-    border: none;
-    font-size: 20px;
-    border: 4px dotted #ACB673;
-    border-radius: 5px;
+    font-size: 15px;
   }
 
   .illustration .details,
@@ -368,10 +357,6 @@ p.notes {
 
   .copyright {
     grid-column: 6 / -1;
-  }
-
-  .blurb {
-    padding-top: 20px;
   }
 
   .experience {
@@ -430,7 +415,6 @@ p.notes {
   }
 
   .blurb {
-    padding: 50px;
     display: grid;
     grid-gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
@@ -475,8 +459,6 @@ p.notes {
   .brands h1 {
     grid-column: 1 / -1;
     font-size: 75px;
-    border: 8px solid #ACB673;
-    padding: 40px;
   }
 
   .illustration .title,
@@ -485,13 +467,6 @@ p.notes {
     grid-column: 1 / -1;
     font-size: 50px;
     border: none;
-  }
-
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    padding-bottom: 50px;
-    border-bottom: 8px dotted #ACB673;
   }
 
   .illustration .details,
