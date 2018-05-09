@@ -145,6 +145,7 @@ span {
 .experience h3 {
   grid-column: 1 / -1;
   background-color: #CBE6DA;
+  padding: 20px;
 }
 
 .experience h4 {
@@ -338,9 +339,6 @@ p.notes {
 /****************** Queries ******************/
 
 @media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
 
   .wrapper {
     display: grid;
@@ -364,6 +362,10 @@ p.notes {
     grid-column: 6 / -1;
   }
 
+  p.notes {
+    font-size: 13px;
+  }
+
   .experience {
     display: grid;
     grid-gap: 10px;
@@ -375,13 +377,20 @@ p.notes {
   .illustrations,
   .books,
   .brands {
-    grid-template-columns:  repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  }
+
+  .illustration,
+  .book,
+  .brand {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
   .illustration .title,
-  .book .title,
   .brand .title {
-    padding: 0 20px;
+    align-self: center;
   }
 
 }
