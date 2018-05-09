@@ -6,7 +6,7 @@ class About extends Component {
       <div className="container">
         <div className="about">
           <div className="hero">
-            <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/>
+            {/* <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/> */}
           </div>
           <div className="cover-title">
             <h1>Christine Tran</h1>
