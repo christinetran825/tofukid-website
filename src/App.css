@@ -6,11 +6,15 @@ h1, h2, h3, h4 {
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  background-color: #CBE6DA;
+  /* background-color: #CBE6DA; */
 }
 
 img {
   max-width: 100%;
+}
+
+.fa {
+  color: #634056;
 }
 
 /* BUILD THE GRID */
@@ -41,8 +45,8 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
   align-self: center;
-  background-color: #E3DDA5;
-  color: #554135;
+  background-color: #CBE6DA;
+  color: #634056;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -57,7 +61,7 @@ footer {
 nav {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-auto-rows: minmax(80px, auto);
   left: 0;
   top: 0;
@@ -69,7 +73,7 @@ nav a {
   text-align: center;
   align-self: center;
   font-weight: 500;
-  color: #554135;
+  color: #634056;
 }
 
 /************* Footer *************/
@@ -84,7 +88,7 @@ nav a {
 }
 
 .socials i {
-  color: #554135;
+  color: #634056;
 }
 
 /************* Hero! *************/
@@ -104,6 +108,10 @@ nav a {
 
 .cover-title {
   text-align: center;
+}
+
+span {
+  color: #634056;
 }
 
 /************* Skills! *************/
@@ -128,7 +136,13 @@ nav a {
 .experience h3 {
   grid-column: 1 / -1;
   justify-self: center;
-  color: #554135;
+  color: #634056;
+  background-color: #CBE6DA;
+  padding: 20px;
+}
+
+.experience h4 {
+  font-weight: lighter;
 }
 
 /************* Shared Pages *************/
@@ -140,16 +154,21 @@ nav a {
 
 .page h1 {
   text-align: center;
+  color: #617B6F;
 }
 
 .blurb {
   text-align: left;
 }
 
-  /** Drop Cap **/
+.project-name h3 {
+  color: #634056;
+  background-color: #E5B3A3;
+  padding: 20px;
+}
 
 .blurb p:first-child:first-letter {
-  color: #903;
+  color: #617B6F;
   font-family: 'Arvo', serif;
   font-size: 30px;
   line-height: 20px;
@@ -161,12 +180,10 @@ nav a {
 .webapps {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .title {
-  border: 2px solid #ACB673;
-  border-radius: 5px;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -379,7 +396,7 @@ p.notes {
 
 }
 
-/******** DESKTOP *********/
+/************************ DESKTOP *************************/
 
 @media (min-width: 1920px) {
   body {
@@ -432,7 +449,6 @@ p.notes {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     text-align: center;
-    padding: 0 80px;
   }
 
   .page {
