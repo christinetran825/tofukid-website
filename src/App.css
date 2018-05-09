@@ -330,7 +330,6 @@ p.notes {
     grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
   }
 
-
 }
 
 /****************** Queries ******************/
