@@ -8,6 +8,11 @@ h3 {
   justify-self: center;
 }
 
+strong {
+  color: #617B6F;
+  font-weight: bold;
+}
+
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
