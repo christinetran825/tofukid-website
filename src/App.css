@@ -119,6 +119,10 @@ footer {
   text-align: center;
 }
 
+.cover-title h1 {
+  color: #617B6F;
+}
+
 span {
   color: #634056;
 }
