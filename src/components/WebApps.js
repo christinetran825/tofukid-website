@@ -15,13 +15,13 @@ class WebApps extends Component {
             </div>
           </div>
           <div className="details">
-            <h4>Idea</h4>
+            <h4>IDEA</h4>
             <p>There are a variety of habits that can affect mental health. From sleep to making sure medication was taken. Can we determine possible symptoms by tracking daily habits?</p>
-            <h4>Current Challenge</h4>
+            <h4> CURRENT CHALLENGE</h4>
             <p>How can I apply React & Redux to build the User Profile?</p>
-            <h4>End Goal</h4>
+            <h4>END GOAL</h4>
             <p>Build a mobile health app for users to track their daily habits for a symptom management system.</p>
-            <p className="notes">NoteThe daily entry tracking is a work in progress.</p>
+            <p className="notes">Note - The daily entry tracking is a work in progress.</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ class WebApps extends Component {
             </div>
           </div>
           <div className="details">
-            <h4>Idea</h4>
+            <h4>IDEA</h4>
             <p>There are plenty of artists (non-musicians) creating wonderful works of art. How can we keep a record of all the artists that we like?</p>
             <h4>Challenge</h4>
             <p>Create an app where users can create a library of artists (non-musicians) they like.</p>
@@ -54,11 +54,11 @@ class WebApps extends Component {
             </div>
           </div>
           <div className="details">
-            <h4>Idea</h4>
+            <h4>IDEA</h4>
             <p>There are tea drinkers, then there are tea collectors. From a single tea leaf, tea has evolved into various types, flavors, and cultural influence.</p>
-            <h4>Current Challenge</h4>
+            <h4>CURRENT CHALLENGE</h4>
             <p>Design an app where a user can add teas they've tried or will try.</p>
-            <h4>End Goal</h4>
+            <h4>END GOAL</h4>
             <p>Can we create a worldwide tea database?</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ class WebApps extends Component {
             </div>
           </div>
           <div className="details">
-            <h4>Idea</h4>
+            <h4>IDEA</h4>
             <p>I like vegetables. I chose a fun seed website to practice my CLI skills.</p>
             <h4>Challenge</h4>
             <p>Build a CLI Gem using Nokogiri and Ruby.</p>
