@@ -37,11 +37,14 @@ class About extends Component {
           <div className="experience do">
             <h3>Things I Can Do</h3>
             <h4>Web Design</h4>
+            <h4>Build Web Apps</h4>
             <h4>Graphic Design</h4>
             <h4>Visual Design</h4>
             <h4>Illustration</h4>
             <h4>Book Arts</h4>
+            <h4>Short-Form Videos</h4>
             <h4>Content Strategy</h4>
+            <h4>Consumer Behavior</h4>
           </div>
           <div className="experience like">
             <h3>Things I Like</h3>
