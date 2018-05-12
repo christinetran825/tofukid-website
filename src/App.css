@@ -49,7 +49,7 @@ img {
 }
 
 .container {
-  padding: 0 2em;
+  padding: 0 2em 2em 2em;
   grid-area: main;
 }
 
@@ -85,6 +85,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  background: rgb(179, 221, 195, 0.5);
 }
 
 .copyright {
@@ -177,8 +178,9 @@ span {
   grid-area: projects;
 }
 
-.page-work-header {
-  border-bottom: 0.25em dotted var(--background-color);
+.page-work-header h2{
+  border-bottom: 0.10em solid var(--background-color);
+  padding-bottom: .25em;
 }
 
 .blurb p:first-child:first-letter {
@@ -193,6 +195,13 @@ span {
 .webapps {
   display: grid;
   grid-gap: 1em;
+}
+
+.illustration h3,
+.book h3,
+.brand h3 {
+  background-color: rgb(179, 221, 195, 0.5);
+  padding: 0.25em;
 }
 
 p.notes {
