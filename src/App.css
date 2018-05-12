@@ -176,11 +176,13 @@ span {
 
 .page-work {
   grid-area: projects;
+  font-size: small;
 }
 
-.page-work-header h2{
+.page-work-header h2 {
   border-bottom: 0.10em solid var(--background-color);
   padding-bottom: .25em;
+  font-size: x-large;
 }
 
 .blurb p:first-child:first-letter {
@@ -231,6 +233,7 @@ p.notes {
   display: grid;
   grid-template-areas:
     "project-name links";
+  border-bottom: 0.20em solid var(--background-color);
 }
 
 .webapp .project-name {
