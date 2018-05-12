@@ -4,7 +4,6 @@ class Illustrations extends Component {
   render(){
     return (
       <section className="illustrations">
-        <h1>Illustrations</h1>
         <div className="illustration">
           <div className="title">
             <div className="project-name">

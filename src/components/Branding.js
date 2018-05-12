@@ -4,7 +4,6 @@ class Branding extends Component {
   render(){
     return (
       <section className="brands">
-        <h1>Logos</h1>
         <div className="brand">
           <div className="title">
             <div className="project-name">

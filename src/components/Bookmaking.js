@@ -4,7 +4,6 @@ class Bookmaking extends Component {
   render(){
     return (
       <section className="books">
-        <h1>Book Arts</h1>
         <div className="book">
           <div className="title">
             <div className="project-name">
