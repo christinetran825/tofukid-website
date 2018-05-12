@@ -13,10 +13,8 @@ class Branding extends Component {
           <div className="details">
             <p>I designed a logo for a fictional publishing company. I named it "Finches" after the character Atticus Finch from "To Kill A Mockingbird."</p>
           </div>
-          <div className="images">
-            <img alt=""/>
+          <div className="images unique">
             <img src="../images/finches-pub.jpg" alt="finches logo" />
-            <img alt=""/>
           </div>
         </div>
         <div className="brand">
@@ -28,10 +26,8 @@ class Branding extends Component {
           <div className="details">
             <p>An Organizational Development Specialist reached out for a personal logo for their freelancing services. Their ask was to merge their name with the word synergy, convey professionalism, and include a magnolia flower.</p>
           </div>
-          <div className="images">
-            <img alt=""/>
+          <div className="images unique">
             <img src="../images/cynergy-rgb-03.jpg" alt="cynergy logo" />
-            <img alt=""/>
           </div>
         </div>
         <div className="brand">
