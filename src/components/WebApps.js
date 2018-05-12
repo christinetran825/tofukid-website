@@ -17,7 +17,7 @@ class WebApps extends Component {
           <div className="details">
             <h4>IDEA</h4>
             <p>There are a variety of habits that can affect mental health. From sleep to making sure medication was taken. Can we determine possible symptoms by tracking daily habits?</p>
-            <h4> CURRENT CHALLENGE</h4>
+            <h4>CURRENT CHALLENGE</h4>
             <p>How can I apply React & Redux to build the User Profile?</p>
             <h4>END GOAL</h4>
             <p>Build a mobile health app for users to track their daily habits for a symptom management system.</p>
@@ -38,7 +38,7 @@ class WebApps extends Component {
           <div className="details">
             <h4>IDEA</h4>
             <p>There are plenty of artists (non-musicians) creating wonderful works of art. How can we keep a record of all the artists that we like?</p>
-            <h4>Challenge</h4>
+            <h4>CURRENT CHALLENGE</h4>
             <p>Create an app where users can create a library of artists (non-musicians) they like.</p>
           </div>
         </div>
@@ -76,7 +76,7 @@ class WebApps extends Component {
           <div className="details">
             <h4>IDEA</h4>
             <p>I like vegetables. I chose a fun seed website to practice my CLI skills.</p>
-            <h4>Challenge</h4>
+            <h4>CURRENT CHALLENGE</h4>
             <p>Build a CLI Gem using Nokogiri and Ruby.</p>
           </div>
         </div>
