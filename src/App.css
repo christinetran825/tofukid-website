@@ -342,7 +342,7 @@ p.notes {
 
 /****************** Queries ******************/
 
-@media (min-width: 640px) and (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 736px) {
   body {
     font-size: medium;
   }
