@@ -17,44 +17,58 @@ class About extends Component {
             <p>I illustrate imaginative characters fit for children’s books in my spare time while sharing my curiosities of the world with trivial fun-facts and stories. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
           </div>
           <section className="experiences">
-            <div className="experience know">
-              <div className="title">
-                <h3>Things I Know</h3>
+            <div className="experience">
+              <div className="know">
+                <div className="title">
+                  <h3>Things I Know</h3>
+                </div>
+                <div className="skills">
+                  <h4>HTML</h4>
+                  <h4>CSS</h4>
+                  <h4>Javascript</h4>
+                  <h4>Rails</h4>
+                  <h4>Ruby</h4>
+                  <h4>React</h4>
+                  <h4>Redux</h4>
+                  <h4>Illustrator</h4>
+                  <h4>Photoshop</h4>
+                  <h4>InDesign</h4>
+                  <h4>User Interface</h4>
+                  <h4>User Experience</h4>
+                </div>
               </div>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>Javascript</h4>
-              <h4>Rails</h4>
-              <h4>Ruby</h4>
-              <h4>React</h4>
-              <h4>Redux</h4>
-              <h4>Illustrator</h4>
-              <h4>Photoshop</h4>
-              <h4>InDesign</h4>
-              <h4>User Interface</h4>
-              <h4>User Experience</h4>
             </div>
-            <div className="experience do">
-              <div className="title">
-                <h3>Things I Can Do</h3>
+            <div className="experience">
+              <div className="experience">
+                <div className="do">
+                  <div className="title">
+                    <h3>Things I Can Do</h3>
+                  </div>
+                  <div className="skills">
+                    <h4>Web Design</h4>
+                    <h4>Web Development</h4>
+                    <h4>Graphic Design</h4>
+                    <h4>Visual Design</h4>
+                    <h4>Illustration</h4>
+                    <h4>Book Arts</h4>
+                    <h4>Short-Form Videos</h4>
+                    <h4>Content Strategy</h4>
+                  </div>
+                </div>
               </div>
-              <h4>Web Design</h4>
-              <h4>Web Development</h4>
-              <h4>Graphic Design</h4>
-              <h4>Visual Design</h4>
-              <h4>Illustration</h4>
-              <h4>Book Arts</h4>
-              <h4>Short-Form Videos</h4>
-              <h4>Content Strategy</h4>
             </div>
-            <div className="experience like">
-              <div className="title">
-                <h3>Things I Like</h3>
+            <div className="experience">
+              <div className="like">
+                <div className="title">
+                  <h3>Things I Like</h3>
+                </div>
+                <div className="skills">
+                  <h4>Vintage Children's Books</h4>
+                  <h4><a href="https://www.atlasobscura.com/">Atlas Obscura</a></h4>
+                  <h4>Photography</h4>
+                  <h4>Food</h4>
+                </div>
               </div>
-              <h4>Vintage Children's Books</h4>
-              <h4><a href="https://www.atlasobscura.com/">Atlas Obscura</a></h4>
-              <h4>Photography</h4>
-              <h4>Food</h4>
             </div>
           </section>
         </div>
