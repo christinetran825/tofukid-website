@@ -39,21 +39,19 @@ class About extends Component {
               </div>
             </div>
             <div className="experience">
-              <div className="experience">
-                <div className="do">
-                  <div className="title">
-                    <h3>Things I Can Do</h3>
-                  </div>
-                  <div className="skills">
-                    <h4>Web Design</h4>
-                    <h4>Web Development</h4>
-                    <h4>Graphic Design</h4>
-                    <h4>Visual Design</h4>
-                    <h4>Illustration</h4>
-                    <h4>Book Arts</h4>
-                    <h4>Short-Form Videos</h4>
-                    <h4>Content Strategy</h4>
-                  </div>
+              <div className="do">
+                <div className="title">
+                  <h3>Things I Can Do</h3>
+                </div>
+                <div className="skills">
+                  <h4>Web Design</h4>
+                  <h4>Web Development</h4>
+                  <h4>Graphic Design</h4>
+                  <h4>Visual Design</h4>
+                  <h4>Illustration</h4>
+                  <h4>Book Arts</h4>
+                  <h4>Short-Form Videos</h4>
+                  <h4>Content Strategy</h4>
                 </div>
               </div>
             </div>
