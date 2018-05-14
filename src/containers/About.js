@@ -37,8 +37,6 @@ class About extends Component {
                   <h4>User Experience</h4>
                 </div>
               </div>
-            </div>
-            <div className="experience">
               <div className="do">
                 <div className="title">
                   <h3>Things I Can Do</h3>
@@ -54,8 +52,6 @@ class About extends Component {
                   <h4>Content Strategy</h4>
                 </div>
               </div>
-            </div>
-            <div className="experience">
               <div className="like">
                 <div className="title">
                   <h3>Things I Like</h3>
