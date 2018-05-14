@@ -251,11 +251,17 @@ span {
     "book-5";
 }
 
+.illustration .title,
+.book .title,
+.brand .title {
+  background-color: rgb(179, 221, 195, 0.5);
+  padding: 0.25em;
+}
+
 .illustration h3,
 .book h3,
 .brand h3 {
-  background-color: rgb(179, 221, 195, 0.5);
-  padding: 0.25em;
+  padding-left: 1em;
 }
 
 p.notes {
@@ -384,15 +390,7 @@ p.notes {
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   }
 
-  .brand:nth-child(1) {
-    display: grid;
-    grid-template-areas:
-      "title ."
-      "details image"
-      "details .";
-  }
-
-  .brand:nth-child(2) {
+  .brand:nth-child(1), .brand:nth-child(2) {
     display: grid;
     grid-template-areas:
       "title image"
@@ -407,13 +405,8 @@ p.notes {
   .brand:nth-child(1) .images,
   .brand:nth-child(2) .images {
     grid-area: image;
-    align-items: center;
-  }
-  .brand:nth-child(1) .images {
-    grid-row: 2 / 3;
-  }
-  .brand:nth-child(2) .images {
     grid-row: 1 / -1;
+    align-items: center;
   }
   .brand:nth-child(1) img, .brand:nth-child(2) img {
     width: 60%;
@@ -423,13 +416,9 @@ p.notes {
   }
 }
 
-@media (max-width: 768px) {
-  /* body {
-    font-size: medium;
-  }
-
+@media (min-width: 768px) {
   .socials {
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
   }
 
   .copyright {
@@ -444,36 +433,70 @@ p.notes {
     font-size: small;
   }
 
-  .like .skills {
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-
   .page h1 {
     text-align: center;
   }
 
-  .webapp .title {
+  .page-work-header h2 {
     font-size: x-large;
+  }
+
+  .webapps {
+    grid-gap: 2em;
+    grid-template-areas:
+      "webapp-1 webapp-2"
+      "webapp-3 webapp-4";
+  }
+
+  .webapp .title {
+    font-size: large;
+    align-items: center;
   }
 
   .webapp .links {
-    font-size: x-large;
+    font-size: large;
+  }
+
+  .illustrations {
+    grid-gap: 2em;
+    grid-template-areas:
+      "illustration-1"
+      "illustration-2"
+      "illustration-3";
+  }
+
+  .illustration {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    grid-template-areas:
+      "title details details details"
+      "image image image image";
+  }
+
+  .illustration .images {
+    grid-area: image;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    font-size: large;
+    text-align: center;
+    padding: 0;
   }
 
   .images {
-    grid-gap: 0.5em;
+    grid-gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    padding: 0;
   }
 
-  .brand:nth-child(1) {
-    display: grid;
-    grid-template-areas:
-      "title ."
-      "details image"
-      "details .";
+  .images img {
+    width: 100%;
   }
 
-  .brand:nth-child(2) {
+  .brand:nth-child(1), .brand:nth-child(2) {
     display: grid;
     grid-template-areas:
       "title image"
@@ -483,23 +506,21 @@ p.notes {
 
   .brand:nth-child(1) .details,  .brand:nth-child(2) .details {
     grid-column: 1 / 2;
+    grid-row: 2 /-1;
     grid-area: details;
   }
+
   .brand:nth-child(1) .images,
   .brand:nth-child(2) .images {
     grid-area: image;
+    grid-row: 1 / -1;
     align-items: center;
   }
-  .brand:nth-child(1) .images {
-    grid-row: 2 / 3;
-  }
-  .brand:nth-child(2) .images {
-    grid-row: 1 / -1;
-  }
+
   .brand:nth-child(1) img, .brand:nth-child(2) img {
     width: 60%;
   }
   .brand .images {
     padding: 0;
-  } */
+  }
 }
