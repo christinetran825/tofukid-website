@@ -286,6 +286,7 @@ p.notes {
   grid-template-areas:
     "title"
     "details";
+  align-items: center;
 }
 
 .webapp .title {
@@ -348,7 +349,7 @@ p.notes {
 
 /****************** Queries ******************/
 
-@media (min-width: 640px) and (max-width: 736px) {
+@media (min-width: 640px) and (max-width: 765px) {
   body {
     font-size: medium;
   }
@@ -416,9 +417,13 @@ p.notes {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 912px) {
+  .container {
+    padding: 0 2.5em;
+  }
   .socials {
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    padding: 0 1em;
   }
 
   .copyright {
@@ -430,7 +435,27 @@ p.notes {
   }
 
   .experience {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "skills-1 skills-1 skills-1"
+      "skills-2 skills-2 skills-3";
+  }
+
+  .experience {
     font-size: small;
+  }
+  .know {
+    grid-area: skills-1;
+  }
+  .do {
+    grid-area: skills-2;
+  }
+  .like {
+    grid-area: skills-3;
+  }
+  .like .title{
+    height: 49px;
   }
 
   .page h1 {
@@ -443,6 +468,7 @@ p.notes {
 
   .webapps {
     grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     grid-template-areas:
       "webapp-1 webapp-2"
       "webapp-3 webapp-4";
@@ -450,7 +476,6 @@ p.notes {
 
   .webapp .title {
     font-size: large;
-    align-items: center;
   }
 
   .webapp .links {
@@ -468,10 +493,19 @@ p.notes {
   .illustration {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     grid-template-areas:
       "title details details details"
       "image image image image";
+  }
+
+  .illustration .title {
+    grid-column: 1/2;
+    grid-area: title;
+  }
+
+  .illustration .details {
+    grid-area: details;
   }
 
   .illustration .images {
@@ -496,7 +530,7 @@ p.notes {
     width: 100%;
   }
 
-  .brand:nth-child(1), .brand:nth-child(2) {
+  .brand {
     display: grid;
     grid-template-areas:
       "title image"
@@ -504,14 +538,13 @@ p.notes {
       "details image";
   }
 
-  .brand:nth-child(1) .details,  .brand:nth-child(2) .details {
+  .brand .details {
     grid-column: 1 / 2;
     grid-row: 2 /-1;
     grid-area: details;
   }
 
-  .brand:nth-child(1) .images,
-  .brand:nth-child(2) .images {
+  .brand .images {
     grid-area: image;
     grid-row: 1 / -1;
     align-items: center;
@@ -520,7 +553,663 @@ p.notes {
   .brand:nth-child(1) img, .brand:nth-child(2) img {
     width: 60%;
   }
+
   .brand .images {
+    padding-bottom: 1em;
+  }
+}
+
+
+@media (min-width: 912px) and (max-width: 1080px){
+  nav, footer {
+    font-size: larger;
+  }
+
+  .container {
+    padding: 0 3em;
+  }
+
+  .socials {
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    padding: 0 1em;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .cover-title {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .cover-title span {
+    font-size: large;
+  }
+
+  .blurb {
+    font-size: medium;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "skills-1 skills-1 skills-1"
+      "skills-2 skills-2 skills-3";
+  }
+
+  .experience {
+    font-size: small;
+  }
+  .know {
+    grid-area: skills-1;
+  }
+  .do {
+    grid-area: skills-2;
+  }
+  .like {
+    grid-area: skills-3;
+  }
+  .know .skills {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  }
+
+  .page h1 {
+    text-align: center;
+  }
+
+  .page-work-header h2 {
+    font-size: x-large;
+  }
+
+  p.notes {
+    font-size: small;
+  }
+
+  .details {
+    font-size: larger;
+  }
+
+  .webapps {
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "webapp-1 webapp-2"
+      "webapp-3 webapp-4";
+  }
+
+  .webapp .title {
+    font-size: large;
+  }
+
+  .illustrations,
+  .books,
+  .brands,
+  .webapps {
+    grid-gap: 2em;
+  }
+
+  .illustrations {
+    grid-gap: 2em;
+    grid-template-areas:
+      "illustration-1"
+      "illustration-2"
+      "illustration-3";
+  }
+
+  .illustration {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "title details"
+      "image image";
+  }
+
+  .illustration .title {
+    grid-column: 1/2;
+    grid-area: title;
+  }
+
+  .illustration .details {
+    grid-area: details;
+    align-self: center;
+  }
+
+  .illustration .images {
+    grid-area: image;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    font-size: x-large;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .images {
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     padding: 0;
+  }
+
+  .brand, .book {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+      "title image"
+      "details image";
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+    grid-row: 2 /-1;
+    grid-area: details;
+  }
+
+  .brand .images, .book .images{
+    grid-area: image;
+    grid-row: 1 / -1;
+    align-items: center;
+  }
+
+  .brand:nth-child(1) img, .brand:nth-child(2) img {
+    width: 50%;
+  }
+
+  .brand .images {
+    padding-bottom: 1em;
+  }
+}
+
+
+@media (min-width: 1081px) and (max-width: 1152px) {
+  nav, footer {
+    font-size: larger;
+  }
+  .container {
+    padding: 0 4em;
+  }
+
+  .socials {
+    grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+    padding: 0 2em;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .cover-title {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .cover-title span {
+    font-size: large;
+  }
+
+  .blurb {
+    font-size: medium;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "skills-1 skills-1 skills-1"
+      "skills-2 skills-2 skills-3";
+  }
+
+  .experience {
+    font-size: medium;
+  }
+  .know .skills {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+  .do .skills, .like .skills {
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+
+  .page h1 {
+    text-align: center;
+  }
+
+  .page-work-header h2 {
+    font-size: xx-large;
+  }
+
+  p.notes {
+    font-size: medium;
+  }
+
+  .details {
+    font-size: large;
+  }
+
+  .webapps {
+    grid-gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "webapp-1 webapp-2"
+      "webapp-3 webapp-4";
+  }
+
+  .webapp .title, .webapp .links {
+    font-size: x-large;
+  }
+
+  .illustrations,
+  .books,
+  .brands,
+  .webapps {
+    grid-gap: 2em;
+  }
+
+  .illustrations {
+    grid-gap: 2em;
+    grid-template-areas:
+      "illustration-1"
+      "illustration-2"
+      "illustration-3";
+  }
+
+  .illustration {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "title details"
+      "image image";
+  }
+
+  .illustration .title {
+    grid-column: 1/2;
+    grid-area: title;
+  }
+
+  .illustration .details {
+    grid-area: details;
+    align-self: center;
+  }
+
+  .illustration .images {
+    grid-area: image;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    font-size: x-large;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .images {
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    padding: 0;
+  }
+
+  .brand, .book {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+      "title image"
+      "details image";
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+    grid-row: 2 /-1;
+    grid-area: details;
+  }
+
+  .brand .images, .book .images{
+    grid-area: image;
+    grid-row: 1 / -1;
+    align-items: center;
+  }
+
+  .brand:nth-child(1) img, .brand:nth-child(2) img {
+    width: 50%;
+  }
+
+  .brand .images {
+    padding-bottom: 1em;
+  }
+}
+
+
+@media (min-width: 1153px) and (max-width: 1297px) {
+  nav, footer {
+    font-size: large;
+  }
+
+  .container {
+    padding: 0 4em;
+  }
+
+  .socials {
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    padding: 0 2em;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .cover-title {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .cover-title span {
+    font-size: large;
+  }
+
+  .about .blurb {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  }
+
+  .blurb {
+    font-size: medium;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "skills-1 skills-1 skills-1"
+      "skills-2 skills-2 skills-3";
+  }
+
+  .experience {
+    font-size: medium;
+  }
+  .know .skills, .like .skills  {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+
+  .page h1 {
+    text-align: center;
+  }
+
+  .page-work-header h2 {
+    font-size: xx-large;
+  }
+
+  p.notes {
+    font-size: medium;
+  }
+
+  .details {
+    font-size: large;
+  }
+
+  .webapps {
+    grid-gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    grid-template-areas:
+      "webapp-1 webapp-2"
+      "webapp-3 webapp-4";
+  }
+
+  .webapp .title, .webapp .links {
+    font-size: x-large;
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    grid-gap: 2em;
+  }
+
+  .illustrations {
+    grid-gap: 2em;
+    grid-template-areas:
+      "illustration-1"
+      "illustration-2"
+      "illustration-3";
+  }
+
+  .illustration {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "title details"
+      "image image";
+  }
+
+  .illustration .title {
+    grid-column: 1/2;
+    grid-area: title;
+  }
+
+  .illustration .details {
+    grid-area: details;
+    align-self: center;
+  }
+
+  .illustration .images {
+    grid-area: image;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    font-size: x-large;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .images {
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    padding: 0;
+  }
+
+  .brand, .book {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+      "title image"
+      "details image";
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+    grid-row: 2 /-1;
+    grid-area: details;
+  }
+
+  .brand .images, .book .images{
+    grid-area: image;
+    grid-row: 1 / -1;
+    align-items: center;
+  }
+
+  .brand:nth-child(1) img, .brand:nth-child(2) img {
+    width: 50%;
+  }
+
+  .brand .images {
+    padding-bottom: 1em;
+  }
+}
+
+
+
+
+
+@media (min-width: 1298px) and (max-width: 1920px) {
+  nav, footer {
+    font-size: x-large;
+  }
+  .container {
+    padding: 0 4em;
+  }
+
+  .socials {
+    grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+    padding: 0 2em;
+  }
+
+  .copyright {
+    grid-column: 6 / -1;
+  }
+
+  .cover-title {
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .cover-title span {
+    font-size: x-large;
+  }
+
+  .about .blurb {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    font-size: larger;
+  }
+
+  .blurb {
+    font-size: x-large;
+  }
+
+  .experience {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "skills-1 skills-1 skills-2"
+      "skills-3 skills-3 skills-2";
+  }
+
+  .experience {
+    font-size: medium;
+  }
+  .skills {
+    grid-gap: 1em;
+  }
+  .know .skills {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+  .do .skills {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+
+  .page h1 {
+    text-align: center;
+    font-size: 350%;
+  }
+
+  .page-work-header h2 {
+    font-size: xx-large;
+  }
+
+  p.notes {
+    font-size: medium;
+  }
+
+  .details {
+    font-size: x-large;
+  }
+
+  .webapps {
+    grid-gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+    grid-template-areas:
+      "webapp-1 webapp-2"
+      "webapp-3 webapp-4";
+  }
+
+  .webapp .title, .webapp .links {
+    font-size: x-large;
+  }
+
+  .illustrations,
+  .books,
+  .brands {
+    grid-gap: 2em;
+  }
+
+  .illustrations {
+    grid-gap: 2em;
+    grid-template-areas:
+      "illustration-1"
+      "illustration-2"
+      "illustration-3";
+  }
+
+  .illustration {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-areas:
+      "title details"
+      "image image";
+  }
+
+  .illustration .title {
+    grid-column: 1/2;
+    grid-area: title;
+  }
+
+  .illustration .details {
+    grid-area: details;
+    align-self: center;
+  }
+
+  .illustration .images {
+    grid-area: image;
+  }
+
+  .illustration h3,
+  .book h3,
+  .brand h3 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .images {
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    padding: 0;
+  }
+
+  .brand, .book {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+      "title image"
+      "details image";
+  }
+
+  .brand .details {
+    grid-column: 1 / 2;
+    grid-row: 2 /-1;
+    grid-area: details;
+  }
+
+  .brand .images, .book .images{
+    grid-area: image;
+    grid-row: 1 / -1;
+    align-items: center;
+  }
+
+  .brand:nth-child(1) img, .brand:nth-child(2) img {
+    width: 50%;
+  }
+
+  .brand .images {
+    padding-bottom: 1em;
   }
 }
