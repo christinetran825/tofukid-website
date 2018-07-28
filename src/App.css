@@ -23,25 +23,42 @@ html {
   src: local('./web-fonts-with-css/css/fonts/Avenir.ttc');
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: var(--burly-woods);
+  font-weight: lighter;
+}
+
 body {
   max-width: 1920px;
   height: 100%;
   margin: 0;
   padding: 0;
+  color: var(--main-txt);
+}
+
+body, footer {
   font-family: "Avenir", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Goudy Bookletter 1911', serif;
-  color: var(--burly-woods);
-}
-
 footer {
-
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer li {
-  display: inline;
+  display: inline-block;
+}
+
+footer span {
+  padding: 0 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
 }
 
 img {
@@ -49,5 +66,108 @@ img {
 }
 
 .fa {
-  color: var(--burly-woods)
+  color: var(--burly-woods);
+  font-size: 1em;
 }
+
+/* ==========================================================================
+   Header & Nav Styles
+   ========================================================================== */
+
+header {
+  width: 100%;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+nav {
+  padding: 1.5em 0;
+  font-size: 1.25em;
+}
+
+nav ul, #work-navlinks ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li, #work-navlinks li {
+  display: inline-block;
+}
+
+nav a {
+  color: var(--main-txt);
+  text-decoration: none;
+}
+
+#work-navlinks {
+  font-size: 0.75em;
+}
+
+#work-navlinks li{
+  padding: 0 1em;
+}
+
+
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+
+.home-title {
+  text-align: center;
+  line-height: 1em;
+  padding-top: 4em;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h5 {
+  font-size: 1.5em;
+}
+
+/* ==========================================================================
+   About & Work Styles
+   ========================================================================== */
+
+.page-title, .sub-title {
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5em;
+}
+
+.blurb {
+  padding: 0 0.5em;
+}
+
+
+
+
+
+/* .experiences {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.experience h2 {
+
+}
+
+.experience p {
+
+}
+
+.developer {
+  grid-column: 1
+}
+
+.designer {
+  grid-column: 2
+}
+
+.strategist {
+  grid-column: 3
+} */
