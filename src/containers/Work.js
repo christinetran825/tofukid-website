@@ -5,6 +5,52 @@ import Branding from '../components/Branding'
 import Bookmaking from '../components/Bookmaking'
 
 class Work extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isWebDev: false,
+      isDesign: false,
+      isIllust: false,
+      isBooks: false,
+      isStrategy: false,
+    }
+  }
+
+  toggleWebDev = () => {
+    this.setState({
+      isWebDev: !this.state.isWebDev
+    })
+    console.log('The link was clicked.');
+  }
+
+  toggleDesign = () => {
+    this.setState({
+      isDesign: !this.state.isDesign
+    })
+    console.log('The link was clicked.');
+  }
+
+  toggleIllust = () => {
+    this.setState({
+      isIllust: !this.state.isIllust
+    })
+    console.log('The link was clicked.');
+  }
+
+  toggleBooks = () => {
+    this.setState({
+      isBooks: !this.state.isBooks
+    })
+    console.log('The link was clicked.');
+  }
+
+  toggleStrategy = () => {
+    this.setState({
+      isStrategy: !this.state.isStrategy
+    })
+    console.log('The link was clicked.');
+  }
+
   render(){
     return (
       <div className="work">
@@ -14,14 +60,34 @@ class Work extends Component {
         </div>
         <div className="work-navlinks">
           <ul>
-            <li>Web Development</li>
-            <li>Design</li>
-            <li>Illustrations</li>
-            <li>Book Arts</li>
-            <li>Strategy</li>
+            <li onClick={this.toggleWebDev}>Web Development</li>
+            <li onClick={this.toggleDesign}>Design</li>
+            <li onClick={this.toggleIllust}>Illustrations</li>
+            <li onClick={this.toggleBooks}>Book Arts</li>
+            <li onClick={this.toggleStrategy}>Strategy</li>
           </ul>
         </div>
-        {/* if user clicks on illustrations show Illustrations component; otherwise don't show anything <a href="https://society6.com/tofukidSociety6">Society6</a> <Illustrations/> <Branding/> <Bookmaking/> */}
+
+        {!this.state.isWebDev && this.state.isDesign && this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
+          <WebDevelopment/> : null
+        }
+
+        {this.state.isWebDev && !this.state.isDesign && this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
+          <Branding/> : null
+        }
+
+        {this.state.isWebDev && this.state.isDesign && !this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
+          <Illustrations/> : null
+        }
+
+        {this.state.isWebDev && this.state.isDesign && this.state.isIllust && !this.state.isBooks && this.state.isStrategy ?
+          <Bookmaking/> : null
+        }
+
+        {this.state.isWebDev && this.state.isDesign && this.state.isIllust && this.state.isBooks && !this.state.isStrategy ?
+          <p>for strategy</p> : null
+        }
+
       </div>
     )
   }
