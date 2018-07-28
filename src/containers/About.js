@@ -12,14 +12,17 @@ class About extends Component {
         </div>
         <section className="experiences">
           <div className="experience developer">
+            <img src="../images/icons/004-user.png" alt="user diagram" />
             <h2>Developer</h2>
             <p>When building with code, I am product focused while keeping endusers in mind.</p>
           </div>
           <div className="experience designer">
+            <img src="../images/icons/003-gear.png" alt="gear in circle" />
             <h2>Designer</h2>
             <p>Design as a whole is a shapeshifter. It is not a subject matter on its own. As a Designer, I craft solutions through aesthetics, social science, and iterations</p>
           </div>
           <div className="experience strategist">
+            <img src="../images/icons/002-chess.png" alt="chess horse" />
             <h2>Strategist</h2>
             <p>Exploring one subject can lead to a discovery in another. I connect multiple subjects in search of the human centric nugget of truth.</p>
           </div>
