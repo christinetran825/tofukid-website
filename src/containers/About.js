@@ -3,74 +3,33 @@ import React, { Component } from 'react';
 class About extends Component {
   render(){
     return (
-      <div className="container">
-        <div className="about">
-          <div className="hero">
-            {/* <img src="../images/zukan.png" alt="Zukan Logo" width="200" height="200"/> */}
-          </div>
-          <div className="cover-title">
-            <h1>Christine Tran</h1>
-            <span>Coder, Illustrator, Insight-seeker.</span>
-          </div>
-          <div className="blurb">
-            <p>Full stack web developer with a passion for design, user experience, and data analysis. A lifelong learner who strives on building different skills. I view the world with a child-like awe, admiring the structures and pieces that make things whole by learning how to break things apart and putting them back together.</p>
-            <p>I illustrate imaginative characters fit for children’s books in my spare time while sharing my curiosities of the world with trivial fun-facts and stories. On some days, you can find me at flea markets or estate sales hunting vintage paper, art, books, and teacups.</p>
-          </div>
-          <section className="experiences">
-            <div className="experience">
-              <div className="know">
-                <div className="title">
-                  <h3>Things I Know</h3>
-                </div>
-                <div className="skills">
-                  <h4>HTML</h4>
-                  <h4>CSS</h4>
-                  <h4>Javascript</h4>
-                  <h4>Rails</h4>
-                  <h4>Ruby</h4>
-                  <h4>React</h4>
-                  <h4>Redux</h4>
-                  <h4>Illustrator</h4>
-                  <h4>Photoshop</h4>
-                  <h4>InDesign</h4>
-                  <h4>User Interface</h4>
-                  <h4>User Experience</h4>
-                </div>
-              </div>
-              <div className="do">
-                <div className="title">
-                  <h3>Things I Can Do</h3>
-                </div>
-                <div className="skills">
-                  <h4>Web Design</h4>
-                  <h4>Web Development</h4>
-                  <h4>Graphic Design</h4>
-                  <h4>Visual Design</h4>
-                  <h4>Illustration</h4>
-                  <h4>Book Arts</h4>
-                  <h4>Short-Form Videos</h4>
-                  <h4>Content Strategy</h4>
-                </div>
-              </div>
-              <div className="like">
-                <div className="title">
-                  <h3>Things I Like</h3>
-                </div>
-                <div className="skills">
-                  <h4>Vintage Children's Books</h4>
-                  <h4><a href="https://www.atlasobscura.com/">Atlas Obscura</a></h4>
-                  <h4>Photography</h4>
-                  <h4>Food</h4>
-                </div>
-              </div>
-            </div>
-          </section>
+      <div className="about">
+        <div className="blurb">
+          <h1>Christine Tran</h1>
+          <h2>Synthesizer</h2>
+          <p>Full stack web developer with a passion for design, user experience, and data.</p>
+          <p>As an abstract  thinker, I’m fascinated by the future. I enjoy seeing the bigger picture while anticipating and  imagining in detail what tomorrow could or should be. Inspired by the adage of making the familiar strange and the strange familiar, I admire the structures and pieces that make things whole through a child-like awe. Art, design, and complex philosophical or scientific concepts are like catnip to me. Wondering, and making connections satisfies my need to see how a story ends. To feel and experience the gratitude and appreciation of people’s delight through making culture, not just consuming it fuels me.</p>
         </div>
+        <section className="quote">
+          <h1>“Every artist was first an amateur.” ~ Ralph Waldo Emerson</h1>
+        </section>
+        <section className="experiences">
+          <div className="experience">
+            <h2>Developer</h2>
+            <p>When building with code, I am product focused while keeping endusers in mind.</p>
+          </div>
+          <div className="experience">
+            <h2>Designer</h2>
+            <p>Design as a whole is a shapeshifter. It is not a subject matter on its own. As a Designer, I craft solutions through aesthetics, social science, and iterations</p>
+          </div>
+          <div className="experience">
+            <h2>Insight - Seeker (Strategist)</h2>
+            <p>Exploring one subject can lead to a discovery in another. I connect multiple subjects in search of the human centric nugget of truth.</p>
+          </div>
+        </section>
       </div>
     )
   }
 }
-
-
 
 export default About;
