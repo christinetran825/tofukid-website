@@ -8,7 +8,7 @@ class Bookmaking extends Component {
           <div className="blurb">
             <h3 className="proj-name">Sending Hugs</h3>
             <h5 className="proj-tools">Type: Custom | Tools: Mix Paper, Book Cloth, Printed Texts</h5>
-            <span className="proj-notes">1st place MFA: Book Arts - AAU Spring Show 2013</span>
+            <p className="proj-notes">1st place MFA: Book Arts - AAU Spring Show 2013</p>
             <p className="proj-description">One day my cousin sent her arm span of a hug by mail. Her sweet gift was a great idea for a children's book. "Sending Hugs" was meant to portray a bright orange colored muppet dressed in a long-sleeve dress shirt symbolizing the innocence and child-like gestures. My colophon (the author's information and comments) was placed on the back of the book as if it was the shirt tag sewn into the shirt. As the whole book expands, the text reads together fluidly from one arm to the other left-to-right AND right-to-left. Best of all, you can wrap the entire book around you for a hug.</p>
           </div>
           <div className="proj-img">
