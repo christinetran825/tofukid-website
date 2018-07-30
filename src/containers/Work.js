@@ -45,7 +45,7 @@ class Work extends Component {
             <Bookmaking/>
           </Tab>
           <Tab eventKey={5} title="Strategy">
-            <p>strategy</p>
+            <h2 className="coming-soon">Coming Soon</h2>
           </Tab>
         </Tabs>
       </div>
