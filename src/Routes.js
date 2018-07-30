@@ -4,6 +4,10 @@ import Navigation from './components/Navigation';
 import Homepage from './containers/Homepage';
 import About from './containers/About';
 import Work from './containers/Work';
+import SelfCare from './components/WebApps/SelfCare';
+import Artphilia from './components/WebApps/Artphilia';
+import TeaCrate from './components/WebApps/TeaCrate';
+import SeedPicker from './components/WebApps/SeedPicker';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -16,6 +20,10 @@ class Routes extends Component {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/work" component={Work} />
+          <Route exact path="/selfcare" component={SelfCare} />
+          <Route exact path="/artphilia" component={Artphilia} />
+          <Route exact path="/teacrate" component={TeaCrate} />
+          <Route exact path="/seedpicker" component={SeedPicker} />
         </Switch>
         <Footer />
       </div>
