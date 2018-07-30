@@ -5,7 +5,7 @@ import Illustrations from '../components/Illustrations'
 import Branding from '../components/Branding'
 import Bookmaking from '../components/Bookmaking'
 
-class Work extends React.Component {
+class Work extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
