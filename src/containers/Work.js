@@ -1,93 +1,53 @@
 import React, { Component } from 'react';
+import { Tabs, Tab } from 'react-bootstrap';
 import WebDevelopment from '../components/WebDevelopment'
 import Illustrations from '../components/Illustrations'
 import Branding from '../components/Branding'
 import Bookmaking from '../components/Bookmaking'
 
-class Work extends Component {
-  constructor(props) {
-    super(props);
+class Work extends React.Component {
+  constructor(props, context) {
+    super(props, context);
     this.state = {
-      isWebDev: false,
-      isDesign: false,
-      isIllust: false,
-      isBooks: false,
-      isStrategy: false,
-    }
+      key: 1
+    };
   }
 
-  toggleWebDev = () => {
+  handleSelect = (key) => {
     this.setState({
-      isWebDev: !this.state.isWebDev
-    })
-    console.log('The link was clicked.');
+      key
+    });
   }
 
-  toggleDesign = () => {
-    this.setState({
-      isDesign: !this.state.isDesign
-    })
-    console.log('The link was clicked.');
-  }
+  render() {
 
-  toggleIllust = () => {
-    this.setState({
-      isIllust: !this.state.isIllust
-    })
-    console.log('The link was clicked.');
-  }
-
-  toggleBooks = () => {
-    this.setState({
-      isBooks: !this.state.isBooks
-    })
-    console.log('The link was clicked.');
-  }
-
-  toggleStrategy = () => {
-    this.setState({
-      isStrategy: !this.state.isStrategy
-    })
-    console.log('The link was clicked.');
-  }
-
-  render(){
     return (
       <div className="work">
         <h1 className="page-title">Work</h1>
         <div className="blurb">
           <p>I’m a curious creature. My inventive mind usually generates more possibilities than I can handle. I’m the kind of person who enjoys unraveling a bundle of knots or putting together a 1,000 piece jigsaw puzzle. I tinker away on new ideas  whenever the inkling captures me, which is very often.</p>
         </div>
-        <div className="work-navlinks">
-          <ul>
-            <li onClick={this.toggleWebDev}>Web Development</li>
-            <li onClick={this.toggleDesign}>Design</li>
-            <li onClick={this.toggleIllust}>Illustrations</li>
-            <li onClick={this.toggleBooks}>Book Arts</li>
-            <li onClick={this.toggleStrategy}>Strategy</li>
-          </ul>
-        </div>
-
-        {!this.state.isWebDev && this.state.isDesign && this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
-          <WebDevelopment/> : null
-        }
-
-        {this.state.isWebDev && !this.state.isDesign && this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
-          <Branding/> : null
-        }
-
-        {this.state.isWebDev && this.state.isDesign && !this.state.isIllust && this.state.isBooks && this.state.isStrategy ?
-          <Illustrations/> : null
-        }
-
-        {this.state.isWebDev && this.state.isDesign && this.state.isIllust && !this.state.isBooks && this.state.isStrategy ?
-          <Bookmaking/> : null
-        }
-
-        {this.state.isWebDev && this.state.isDesign && this.state.isIllust && this.state.isBooks && !this.state.isStrategy ?
-          <p>for strategy</p> : null
-        }
-
+        <Tabs
+          activeKey={this.state.key}
+          onSelect={this.handleSelect}
+          id="controlled-tab-example"
+        >
+          <Tab eventKey={1} title="Web Development">
+            <WebDevelopment/>
+          </Tab>
+          <Tab eventKey={2} title="Design">
+            <Branding/>
+          </Tab>
+          <Tab eventKey={3} title="Illustrations">
+            <Illustrations/>
+          </Tab>
+          <Tab eventKey={4} title="Book Arts">
+            <Bookmaking/>
+          </Tab>
+          <Tab eventKey={5} title="Strategy">
+            <p>strategy</p>
+          </Tab>
+        </Tabs>
       </div>
     )
   }
