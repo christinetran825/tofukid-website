@@ -13,7 +13,7 @@ html {
    ========================================================================== */
 
 :root {
-  --main-txt: #707070;
+  --main-text: #707070;
   --burly-woods: #DF9C8F; /*Burly Wood*/
   --antique-white: #9A8081; /*Antique White*/
 }
@@ -34,7 +34,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: var(--main-txt);
+  color: var(--main-text);
 }
 
 body, footer {
@@ -46,9 +46,15 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
+}
+
+footer ul {
+  align-items: center;
 }
 
 footer li {
+  list-style-type: none;
   display: inline-block;
 }
 
@@ -63,6 +69,7 @@ footer span {
 
 img {
   max-width: 50%;
+  object-fit: cover;
 }
 
 .fa {
@@ -79,24 +86,17 @@ header {
   font-family: 'Goudy Bookletter 1911', serif;
 }
 
-nav {
-  padding: 1.5em 0;
-  font-size: 1.25em;
+.navbar-inverse {
+  background-color: none;
+  border-color: none;
 }
 
-nav ul, #work-navlinks ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.navbar-inverse .navbar-toggle {
+  border-color: none;
 }
 
-nav li, #work-navlinks li {
-  display: inline-block;
-}
-
-nav a {
-  color: var(--main-txt);
-  text-decoration: none;
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: var(--main-text);
 }
 
 #work-navlinks {
@@ -142,32 +142,26 @@ nav a {
   padding: 0 0.5em;
 }
 
-
-
-
-
-/* .experiences {
+.experiences {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  padding: 2em 0;
 }
 
-.experience h2 {
-
-}
-
-.experience p {
-
+.experience {
+  padding: 0 1em;
 }
 
 .developer {
-  grid-column: 1
+  grid-row: 1
 }
 
 .designer {
-  grid-column: 2
+  grid-row: 2
 }
 
 .strategist {
-  grid-column: 3
-} */
+  grid-row: 3
+}
