@@ -33,10 +33,7 @@ class Branding extends Component {
             <p className="proj-description">Company reached out for a logo for their homeware goods. Their ask was to add the company's name in Chinese, express a homely feel, and convey their specialty in Asian home appliances and cookware. Here are a few of my ideas.</p>
           </div>
           <div className="proj-img">
-            <img src="../images/design/asia-homemart-10.jpg" alt="asia homemart logo"/>
             <img src="../images/design/asia-homemart-11.jpg" alt="asia homemart logo"/>
-            <img src="../images/design/asia-homemart-12.jpg" alt="asia homemart logo"/>
-            <img src="../images/design/asia-homemart-14.jpg" alt="asia homemart logo"/>
           </div>
         </div>
       </section>
