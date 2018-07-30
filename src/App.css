@@ -77,6 +77,10 @@ img {
   font-size: 1em;
 }
 
+.coming-soon {
+  text-align: center;
+}
+
 /* ==========================================================================
    Header & Nav Styles
    ========================================================================== */
@@ -148,6 +152,10 @@ header {
   grid-auto-rows: minmax(100px, auto);
   text-align: center;
   padding: 2em 0;
+  grid-template-areas:
+  "developer"
+  "designer"
+  "strategist"
 }
 
 .experience {
@@ -155,13 +163,32 @@ header {
 }
 
 .developer {
-  grid-row: 1
+  grid-area: developer
 }
 
 .designer {
-  grid-row: 2
+  grid-area: designer
 }
 
 .strategist {
-  grid-row: 3
+  grid-area: strategist
+}
+
+.branding, .artwork, .book {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  padding: 2em 0;
+  grid-template-areas:
+  "proj-images"
+  "blurb"
+}
+
+.blurb {
+  grid-area: blurb
+}
+
+.proj-img {
+  grid-area: proj-images;
 }
