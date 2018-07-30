@@ -174,12 +174,15 @@ header {
   grid-area: strategist
 }
 
-.branding, .artwork, .book {
+#web-dev .projects, .branding, .artwork, .book {
   display: grid;
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  text-align: center;
   padding: 2em 0;
+}
+
+.branding, .artwork, .book {
+  text-align: center;
   grid-template-areas:
   "proj-images"
   "blurb"
