@@ -17,7 +17,7 @@ class Navigation extends Component {
               <NavItem eventKey={1} href="/about">
                 About
               </NavItem>
-              <NavItem eventKey={2} href="/work">
+              <NavItem eventKey={2} href="/">
                 Work
               </NavItem>
               <NavItem eventKey={2} href="https://medium.com/@christine_tran">
