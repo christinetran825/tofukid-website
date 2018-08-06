@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SelfCare extends Component {
+class WebApps extends Component {
   render(){
     return (
       <section className="webapps">
@@ -11,4 +11,4 @@ class SelfCare extends Component {
   }
 }
 
-export default SelfCare;
+export default WebApps;
