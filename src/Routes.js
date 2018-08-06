@@ -17,7 +17,7 @@ class Routes extends Component {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Work} />
-          <Route exact path="/about" component={about} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/selfcare" component={SelfCare} />
           <Route exact path="/artphilia" component={Artphilia} />
           <Route exact path="/teacrate" component={TeaCrate} />
