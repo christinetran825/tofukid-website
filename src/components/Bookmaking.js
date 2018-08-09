@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Bookmaking extends Component {
   render(){
     return (
-      <section idbook="books">
+      <section id="books">
         <div className="book">
           <div className="blurb">
             <h3 className="proj-name">Sending Hugs</h3>
