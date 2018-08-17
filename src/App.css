@@ -164,7 +164,13 @@ main h5 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-#about, #contact {
+#about {
+  grid-template-areas:
+    "greeting greeting"
+    "profile blurb";
+}
+
+#contact {
   grid-template-areas:
     "profile greeting"
     "profile blurb";
@@ -182,9 +188,16 @@ main h5 {
 }
 
 #about p,
-#contact p  {
-  text-align: left;
+#contact p {
   grid-area: blurb;
+}
+
+#about p {
+  text-align: left;
+}
+
+#contact p {
+  text-align: center;
 }
 
 /*
@@ -196,8 +209,6 @@ main h5 {
   width: 80%;
   align-self: center;
 }
-
-
 
 /* ==========================================================================
    PROJECTS Styles
@@ -220,10 +231,6 @@ main h5 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
-
-/* #books .project {
-  margin: 0 20px;
-} */
 
 .project {
   background: white;
@@ -291,5 +298,13 @@ main h5 {
   [aria-expanded="true"] .open {
     display: none;
   }
+}
 
+@media (max-width: 700px) {
+  #about, #contact {
+    grid-template-areas:
+      "profile"
+      "greeting"
+      "blurb";
+  }
 }
