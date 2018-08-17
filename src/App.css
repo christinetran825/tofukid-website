@@ -76,7 +76,6 @@ header {
 }
 
 /* Navigation */
-
 .burger {
   background: var(--antique-white);
   border: 0;
@@ -128,21 +127,29 @@ footer {
 }
 
 /* ==========================================================================
-   Homepage Styles
+   All Pages Styles
    ========================================================================== */
 
-.homepage {
+#homepage {
   text-align: center;
   line-height: 1em;
   padding-top: 4em;
 }
 
-.home-title h1 {
+main h1, main h5 {
+  text-align: center;
+}
+
+main h1 {
   font-size: 3em;
 }
 
-.home-title h5 {
+main h5 {
   font-size: 1.5em;
+}
+
+.tab-content {
+  padding: 2em 0;
 }
 
 /* ==========================================================================
@@ -195,54 +202,6 @@ footer {
 
 .latest-projects h2:after {
   --direction: right;
-}
-
-/* ==========================================================================
-   About & Work Styles
-   ========================================================================== */
-
-.page-title, .sub-title {
-  text-align: center;
-}
-
-.page-title {
-  font-size: 2.5em;
-}
-
-.blurb {
-  padding: 0 0.5em;
-}
-
-.experiences {
-  display: grid;
-  grid-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  text-align: center;
-  padding: 2em 0;
-  grid-template-areas:
-  "developer"
-  "designer"
-  "strategist"
-}
-
-.experience {
-  padding: 0 1em;
-}
-
-.developer {
-  grid-area: developer
-}
-
-.designer {
-  grid-area: designer
-}
-
-.strategist {
-  grid-area: strategist
-}
-
-.tab-content {
-  padding: 2em 0;
 }
 
 /* ==========================================================================
