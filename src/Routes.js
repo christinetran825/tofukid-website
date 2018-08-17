@@ -20,10 +20,10 @@ class Routes extends Component {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/work" component={Work} />
-          <Route exact path="/selfcare" component={SelfCare} />
-          <Route exact path="/artphilia" component={Artphilia} />
-          <Route exact path="/teacrate" component={TeaCrate} />
-          <Route exact path="/seedpicker" component={SeedPicker} />
+          <Route exact path="/work/web-dev/selfcare" component={SelfCare} />
+          <Route exact path="/work/web-dev/artphilia" component={Artphilia} />
+          <Route exact path="/work/web-dev/teacrate" component={TeaCrate} />
+          <Route exact path="/work/web-dev/seedpicker" component={SeedPicker} />
         </Switch>
         <Footer />
       </div>
