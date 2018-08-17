@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Homepage from './containers/Homepage';
 import About from './containers/About';
 import Work from './containers/Work';
 import SelfCare from './components/WebApps/SelfCare';
@@ -16,8 +17,9 @@ class Routes extends Component {
       <div className="wrapper">
         <Navigation />
         <Switch>
-          <Route exact path="/" component={Work} />
+          <Route exact path="/" component={Homepage} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/work" component={Work} />
           <Route exact path="/selfcare" component={SelfCare} />
           <Route exact path="/artphilia" component={Artphilia} />
           <Route exact path="/teacrate" component={TeaCrate} />
