@@ -160,6 +160,24 @@ footer {
   width: 100%;
 }
 
+#books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+#books .project {
+  margin: 0 50px;
+}
+
+.project {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+  align-items: center;
+}
+
 .latest-projects h2 {
   display: grid;
   grid-column: 1 / -1;
@@ -177,15 +195,6 @@ footer {
 
 .latest-projects h2:after {
   --direction: right;
-}
-
-.project {
-  background: white;
-  padding: 10px;
-  border: 1px solid white;
-  text-align: center;
-  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
-  align-items: center;
 }
 
 /* ==========================================================================
@@ -235,6 +244,10 @@ footer {
 .tab-content {
   padding: 2em 0;
 }
+
+/* ==========================================================================
+   BREAKPOINT Styles
+   ========================================================================== */
 
 @media (max-width: 1000px) {
   .menu {
