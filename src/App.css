@@ -13,9 +13,11 @@ html {
    ========================================================================== */
 
 :root {
-  --main-text: #707070;
-  --burly-woods: #DF9C8F; /*Burly Wood*/
-  --antique-white: #FAF2D4; /*Antique White*/
+  --main-text: #414140;
+  /* --burly-woods: #DF9C8F; */
+  --burly-woods: #CC6C69;
+  --antique-white: #FAF2D4;
+  --goldenrod: #FDD278;
 }
 
 @font-face {
@@ -23,10 +25,13 @@ html {
   src: local('./web-fonts-with-css/css/fonts/Avenir.ttc');
 }
 
+h1, h2, h3, h4, h5, h6, body {
+  font-family: "Avenir", Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Goudy Bookletter 1911', serif;
   color: var(--burly-woods);
-  font-weight: lighter;
+  font-weight: 600;
 }
 
 body {
@@ -35,10 +40,6 @@ body {
   margin: 0;
   padding: 0;
   color: var(--main-text);
-}
-
-body, header, footer, .proj-tools {
-  font-family: "Avenir", sans-serif;
 }
 
 .wrapper {
@@ -53,14 +54,23 @@ body, header, footer, .proj-tools {
   border: 1px solid black;
 }
 
-button {
-  background-color: white;
-  border: 1px solid grey;
+.button {
+  background: var(--goldenrod);
+  color: var(--main-text);
+}
+
+a.button {
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .fa {
   color: var(--burly-woods);
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .coming-soon {
@@ -72,8 +82,29 @@ button {
    ========================================================================== */
 
 header {
+  margin: 0 auto;
   width: 100%;
   grid-area: hd;
+}
+
+#masthead {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+#site-branding {
+  margin-left: 50px;
+}
+
+#site-branding a {
+  text-decoration: none;
+}
+
+#logo {
+  color: var(--burly-woods);
 }
 
 /* Navigation */
@@ -82,23 +113,31 @@ header {
   background: var(--antique-white);
   border: 0;
   padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+}
+
+.menu {
+  margin-right: 50px;
 }
 
 .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: right;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 .menu a {
   padding: 10px;
-  display: inline-block;
-  text-decoration: none;
   color: var(--main-text);
   font-size: 20px;
+  text-decoration: none;
 }
 
 [aria-controls="menu-list"] {
@@ -112,6 +151,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 50px 0;
   grid-area: ft;
 }
 
@@ -146,8 +186,10 @@ main h1 {
   font-size: 3em;
 }
 
-main h5 {
+main h3 {
   font-size: 1.5em;
+  font-weight: 300;
+  color: var(--dark-gray);
 }
 
 /* ==========================================================================
@@ -190,6 +232,7 @@ main h5 {
 #about p,
 #contact p {
   grid-area: blurb;
+  align-self: center;
 }
 
 #about p {
