@@ -15,7 +15,7 @@ html {
 :root {
   --main-text: #707070;
   --burly-woods: #DF9C8F; /*Burly Wood*/
-  --antique-white: #9A8081; /*Antique White*/
+  --antique-white: #FAF2D4; /*Antique White*/
 }
 
 @font-face {
@@ -37,39 +37,23 @@ body {
   color: var(--main-text);
 }
 
-body, footer {
+body, header, footer, .proj-tools {
   font-family: "Avenir", sans-serif;
-}
-
-footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-}
-
-footer ul {
-  align-items: center;
-}
-
-footer li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-footer span {
-  padding: 0 10px;
 }
 
 .wrapper {
   margin: 0 auto;
   width: 90%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hd"
+    "main"
+    "ft";
 }
 
 img {
-  max-width: 50%;
-  object-fit: cover;
+  max-width: 20%;
 }
 
 .fa {
@@ -82,36 +66,65 @@ img {
 }
 
 /* ==========================================================================
-   Header & Nav Styles
+   Header, Footer, & Nav Styles
    ========================================================================== */
 
 header {
   width: 100%;
-  font-family: 'Goudy Bookletter 1911', serif;
+  grid-area: hd;
 }
 
-.navbar-inverse {
-  background-color: none;
-  border-color: none;
+/* Navigation */
+
+button {
+  background: var(--antique-white);
+  border: 0;
+  padding: 10px 20px;
 }
 
-.navbar-inverse .navbar-toggle {
-  border-color: none;
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: var(--main-text);
+.menu a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-text);
+  font-size: 20px;
 }
 
-#work-navlinks {
-  font-size: 0.75em;
+[aria-controls="menu-list"] {
+  display: none;
 }
 
-#work-navlinks li{
-  padding: 0 1em;
+/* Footer */
+
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  grid-area: ft;
 }
 
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
 
+footer li {
+  display: block;
+  text-align: center;
+}
 /* ==========================================================================
    Homepage Styles
    ========================================================================== */
@@ -174,24 +187,79 @@ header {
   grid-area: strategist
 }
 
-#web-dev .projects, .branding, .artwork, .book {
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+.tab-content {
   padding: 2em 0;
 }
 
+#web-dev, #designs, #illustrations, #books {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 250px 250px; */
+}
+
+#web-dev {
+  grid-template-rows: 200px 200px;
+}
+
+#books {
+  grid-template-rows: 1fr minmax(5em, auto);
+}
+
 .branding, .artwork, .book {
-  text-align: center;
-  grid-template-areas:
-  "proj-images"
-  "blurb"
+  display: grid;
+  grid-template-rows: 1fr minmax(5em, auto);
 }
 
 .blurb {
-  grid-area: blurb
+  grid-row: 2;
+  grid-column: 1;
 }
 
 .proj-img {
-  grid-area: proj-images;
+  grid-row: 1 / 2;
+  grid-column: 1;
+}
+
+.proj-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    order: -1;
+    perspective: 800px;
+  }
+  [aria-controls="menu-list"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
 }

@@ -1,31 +1,20 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom'
 
 class Navigation extends Component {
   render(){
     return (
       <header>
-        <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="/">Christine Tran</a>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <NavItem eventKey={1} href="/about">
-                About
-              </NavItem>
-              <NavItem eventKey={2} href="/">
-                Work
-              </NavItem>
-              <NavItem eventKey={2} href="https://medium.com/@christine_tran">
-                Blog
-              </NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+        <nav className="menu">
+          <NavLink to="/" id="logo">Christine Tran</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/work">Work</NavLink>
+          <NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink>
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="close">x</span>
+          </button>
+        </nav>
       </header>
     )
   }
