@@ -10,6 +10,7 @@ class Navigation extends Component {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/work">Work</NavLink>
           <NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
           <button className="burger" aria-expanded="false" aria-controls="menu-list">
             <span className="open"><i className="fa fa-bars" aria-hidden="true"></i></span>
             <span className="close">x</span>

@@ -154,35 +154,50 @@ main h5 {
    ABOUT Styles
    ========================================================================== */
 
-#about, #work {
+#about, #work, #contact {
   margin: 0 50px;
   display: grid;
   grid-gap: 30px;
 }
 
-#about {
+#about, #contact {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#about, #contact {
   grid-template-areas:
-    "greeting greeting"
+    "profile greeting"
     "profile blurb";
 }
 
-#about img {
+#about img,
+#contact img {
   grid-area: profile;
+  align-self: center;
 }
 
-#about h1 {
+#about h1,
+#contact h1 {
   grid-area: greeting;
 }
 
-#about p {
+#about p,
+#contact p  {
   text-align: left;
   grid-area: blurb;
 }
+
 /*
 .nav[role="tablist"] {
   align-items: center;
 } */
+
+#contact img {
+  width: 80%;
+  align-self: center;
+}
+
+
 
 /* ==========================================================================
    PROJECTS Styles
@@ -196,7 +211,8 @@ main h5 {
 }
 
 .latest-projects img,
-.projects img {
+.projects img,
+#about img {
   width: 100%;
 }
 
