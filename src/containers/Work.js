@@ -22,7 +22,7 @@ class Work extends Component {
   render() {
 
     return (
-      <main>
+      <main id="work">
         <h1>Work</h1>
         <p>Anything that can be experienced can be designed. UX Design is a varied field that allows me to explore my combination of skills that speak to my unique strengths and interests through a multichannel and omnichannel strategy and UXR Research.</p>
         <Tabs
