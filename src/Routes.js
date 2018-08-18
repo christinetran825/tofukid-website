@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Homepage from './containers/Homepage';
-import About from './containers/About';
 import Work from './containers/Work';
 import Contact from './containers/Contact';
 import SelfCare from './components/WebApps/SelfCare';
@@ -19,7 +18,6 @@ class Routes extends Component {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/about" component={About} />
           <Route exact path="/work" component={Work} />
           <Route exact path="/work/web-dev/selfcare" component={SelfCare} />
           <Route exact path="/work/web-dev/artphilia" component={Artphilia} />
