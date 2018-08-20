@@ -14,9 +14,17 @@ class Homepage extends Component {
         </section>
         <section className="latest-projects">
           <h2>Latest Projects</h2>
-          <img src="#" alt="selfcare-still"/>
-          <img src="../images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg" alt="artphilia-still"/>
-          <img src="../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-still"/>
+          <Link to="/work/web-dev/selfcare">
+            <img src="#" alt="selfcare-still"/>
+          </Link>
+
+          <Link to="/work/web-dev/artphilia">
+            <img src="../images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg" alt="artphilia-still"/>
+          </Link>
+
+          <Link to="/work/web-dev/teacrate">
+            <img src="../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-still"/>
+          </Link>
         </section>
         <div className="cta">
           <Link to="/work" className="button" title="View Full Portfolio">View Full Portfolio</Link>

@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class WebDevelopment extends Component {
   render(){
     return (
       <section id="web-dev" className="projects">
         <div className="project">
-          <a href="/selfcare"><img src="#" alt="selfcare-still"/></a>
+          <Link to="/work/web-dev/selfcare"><img src="#" alt="selfcare-still"/></Link>
           <h3>SelfCare</h3>
         </div>
-        
+
         <div className="project">
-          <a href="/artphilia"><img src="../images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg" alt="artphilia-still"/></a>
+          <Link to="/work/web-dev/artphilia"><img src="../images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg" alt="artphilia-still"/></Link>
           <h3>Artphilia</h3>
         </div>
 
         <div className="project">
-          <a href="/teacrate"><img src="../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-still"/></a>
+          <Link to="/work/web-dev/teacrate"><img src="../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-still"/></Link>
           <h3>Tea Crate</h3>
         </div>
 
         <div className="project">
-          <a href="/seedpicker"><img src="#" alt="seed-picker-still"/></a>
+          <Link to="/work/web-dev/seedpicker"><img src="#" alt="seed-picker-still"/></Link>
           <h3>Seed Picker</h3>
         </div>
       </section>
