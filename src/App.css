@@ -49,7 +49,7 @@ p {
 
 .wrapper {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -93,6 +93,8 @@ header {
   grid-area: hd;
 }
 
+/* Navigation */
+
 #masthead {
   padding: 35px 0;
   justify-content: space-between;
@@ -111,8 +113,6 @@ header {
 #logo {
   color: var(--burly-woods);
 }
-
-/* Navigation */
 
 .burger {
   background: var(--antique-white);
@@ -173,12 +173,6 @@ footer li {
    All Pages Styles
    ========================================================================== */
 
-#homepage {
-  text-align: center;
-  line-height: 1em;
-  padding-top: 4em;
-}
-
 main {
   text-align: center;
 }
@@ -187,8 +181,17 @@ main h1 {
   font-size: 3em;
 }
 
-main h3 {
-  font-size: 1.5em;
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+
+#homepage {
+  line-height: 1em;
+  padding-top: 4em;
+}
+
+#homepage h3 {
+  font-size: 2em;
   font-weight: 300;
   color: var(--dark-gray);
 }
@@ -197,8 +200,8 @@ main h3 {
    ABOUT Styles
    ========================================================================== */
 
-#work, #contact {
-  margin: 0 50px;
+#homepage, #work, #contact {
+  margin: 0 100px;
   display: grid;
   grid-gap: 30px;
 }
@@ -207,33 +210,27 @@ main h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-#contact {
-  grid-template-areas:
-    "profile greeting"
-    "profile blurb";
-}
-
-#contact img {
-  grid-area: profile;
+#contact .cta {
   align-self: center;
 }
 
-#contact h1 {
-  grid-area: greeting;
-}
-
-#contact p {
-  grid-area: blurb;
-  align-self: center;
-}
-
-#contact p {
-  text-align: center;
+.cta h1 {
+  margin-bottom: 20px;
 }
 
 #contact img {
   width: 80%;
   align-self: center;
+}
+
+.nav-tabs {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.nav-tabs li {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
@@ -261,8 +258,17 @@ main h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.about, .projects {
+.projects {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0 20px;
+}
+
+.about p {
+  text-align: justify;
 }
 
 /* .about {
@@ -359,11 +365,10 @@ main h3 {
 }
 
 @media (max-width: 700px) {
-  #about, #contact {
+  #contact {
     grid-template-areas:
       "profile"
       "greeting"
       "blurb";
   }
-
 }
