@@ -248,7 +248,7 @@ main h1 {
    ABOUT & PROJECTS Styles
    ========================================================================== */
 
-.about, .latest-projects, .projects {
+.about, .latest-projects, .projects, .visuals {
   margin: 30px;
   display: grid;
   grid-gap: 40px;
@@ -271,12 +271,13 @@ main h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 } */
 
-.projects {
+.projects, .visuals {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .latest-projects img,
-.projects img {
+.projects img,
+.visuals img {
   width: 100%;
 }
 
@@ -321,6 +322,38 @@ main h1 {
 
 .about h2:after, .latest-projects h2:after {
   --direction: right;
+}
+
+/* ==========================================================================
+   WebApps Styles
+   ========================================================================== */
+
+.hero-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#selfcare .hero-image {
+  /* background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg"); */
+}
+
+#artphilia .hero-image {
+  background-image: url("/images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg");
+}
+
+#teacrate .hero-image {
+  background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg");
+}
+
+#seedpicker .hero-image {
+  /* background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg"); */
+}
+
+.webapps {
+  padding: 0 100px;
 }
 
 /* ==========================================================================
