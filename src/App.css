@@ -182,7 +182,7 @@ main h1 {
 }
 
 /* ==========================================================================
-   Homepage Styles
+   HOMEPAGE Styles
    ========================================================================== */
 
 #homepage {
@@ -197,7 +197,7 @@ main h1 {
 }
 
 /* ==========================================================================
-   ABOUT Styles
+   Contact & Work Styles
    ========================================================================== */
 
 #homepage, #work, #contact {
@@ -214,7 +214,7 @@ main h1 {
   align-self: center;
 }
 
-.cta h1 {
+#contact .cta h1 {
   margin-bottom: 20px;
 }
 
@@ -245,7 +245,7 @@ main h1 {
 }
 
 /* ==========================================================================
-   PROJECTS Styles
+   ABOUT & PROJECTS Styles
    ========================================================================== */
 
 .about, .latest-projects, .projects {
@@ -254,16 +254,8 @@ main h1 {
   grid-gap: 40px;
 }
 
-.latest-projects {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.projects {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
 .about {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   padding: 0 20px;
 }
 
@@ -271,10 +263,17 @@ main h1 {
   text-align: justify;
 }
 
-/* .about {
-  grid-template-columns: repeat(auto-fit, 1fr);
-  margin: 50px;
+.latest-projects {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* .latest-projects {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 } */
+
+.projects {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 .latest-projects img,
 .projects img {
@@ -317,7 +316,7 @@ main h1 {
   display: block;
   content: '';
   height: 10px;
-  background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+  background: linear-gradient(to var(--direction, left), var(--antique-white), transparent);
 }
 
 .about h2:after, .latest-projects h2:after {
@@ -333,6 +332,7 @@ main h1 {
     order: -1;
     perspective: 800px;
   }
+
   [aria-controls="menu-list"] {
     display: block;
     margin-bottom: 10px;
@@ -361,14 +361,5 @@ main h1 {
 
   [aria-expanded="true"] .open {
     display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  #contact {
-    grid-template-areas:
-      "profile"
-      "greeting"
-      "blurb";
   }
 }
