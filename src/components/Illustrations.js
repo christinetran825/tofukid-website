@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
 
 class Illustrations extends Component {
   render(){
@@ -6,10 +8,20 @@ class Illustrations extends Component {
       <section id="illustrations" className="projects">
         <div className="project">
           <div className="proj-img">
-            <img src="../images/illust/taste_all_sauces.jpg" alt="drooling sauces" />
-            <img src="../images/illust/taste_ketchup.jpg" alt="drooling ketchup" />
-            <img src="../images/illust/taste_peanut-butter.jpg" alt="drooling peanut butter" />
-            <img src="../images/illust/taste_guacamole.jpg" alt="drooling avocado" />
+            <Carousel>
+              <div>
+                <img src="../images/illust/taste_all_sauces.jpg" alt="drooling sauces" />
+              </div>
+              <div>
+                <img src="../images/illust/taste_ketchup.jpg" alt="drooling ketchup" />
+              </div>
+              <div>
+                <img src="../images/illust/taste_guacamole.jpg" alt="drooling avocado" />
+              </div>
+              <div>
+                <img src="../images/illust/taste_peanut-butter.jpg" alt="drooling peanut" />
+              </div>
+            </Carousel>
           </div>
           <h3>Taste Addiction</h3>
           <h5>Tools: Illustrator</h5>
@@ -18,9 +30,17 @@ class Illustrations extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/illust/ortega-chili.jpg" alt="chili poster" />
-            <img src="../images/illust/ortega-sauce.jpg" alt="sauce poster" />
-            <img src="../images/illust/ortega-sombrero.jpg" alt="sombrero poster" />
+            <Carousel>
+              <div>
+                <img src="../images/illust/ortega-chili.jpg" alt="chili poster" />
+              </div>
+              <div>
+                <img src="../images/illust/ortega-sauce.jpg" alt="sauce poster" />
+              </div>
+              <div>
+                <img src="../images/illust/ortega-sombrero.jpg" alt="sombrero poster" />
+              </div>
+            </Carousel>
           </div>
           <h3>Taco Time</h3>
           <h5>Tools: Illustrator</h5>
@@ -29,8 +49,14 @@ class Illustrations extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/illust/teachers-1.jpg" alt="Teachers Sketch" />
-            <img src="../images/illust/teachers-2.jpg" alt="Teachers Sketch" />
+            <Carousel>
+              <div>
+                <img src="../images/illust/teachers-1.jpg" alt="Teachers Sketch" />
+              </div>
+              <div>
+                <img src="../images/illust/teachers-2.jpg" alt="Teachers Sketch" />
+              </div>
+            </Carousel>
           </div>
           <h3>Thank You, Teachers</h3>
           <h5>Tools: Pen & Ink</h5>

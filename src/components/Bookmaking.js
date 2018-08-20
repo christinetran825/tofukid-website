@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
 
 class Bookmaking extends Component {
   render(){
@@ -6,10 +8,20 @@ class Bookmaking extends Component {
       <section id="books" className="projects">
         <div className="project">
           <div className="proj-img">
-            <img src="../images/books/book-sendinghugs-1.jpg" alt="sending hugs book" />
-            <img src="../images/books/book-sendinghugs-2.jpg" alt="sending hugs book" />
-            <img src="../images/books/book-sendinghugs-3.jpg" alt="sending hugs book" />
-            <img src="../images/books/book-sendinghugs-4.jpg" alt="sending hugs book" />
+            <Carousel>
+              <div>
+                <img src="../images/books/book-sendinghugs-1.jpg" alt="sending hugs book" />
+              </div>
+              <div>
+                <img src="../images/books/book-sendinghugs-2.jpg" alt="sending hugs book" />
+              </div>
+              <div>
+                <img src="../images/books/book-sendinghugs-3.jpg" alt="sending hugs book" />
+              </div>
+              <div>
+                <img src="../images/books/book-sendinghugs-4.jpg" alt="sending hugs book" />
+              </div>
+            </Carousel>
           </div>
           <h3>Sending Hugs</h3>
           <h5>Type: Custom | Tools: Mix Paper, Book Cloth, Printed Texts</h5>
@@ -19,10 +31,20 @@ class Bookmaking extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/books/art-of-03.jpg" alt="art of presentation book" />
-            <img src="../images/books/art-of-17.jpg" alt="art of presentation book" />
-            <img src="../images/books/art-of-18.jpg" alt="art of presentation book" />
-            <img src="../images/books/art-of-22.jpg" alt="art of presentation book" />
+            <Carousel>
+              <div>
+                <img src="../images/books/art-of-03.jpg" alt="art of presentation book" />
+              </div>
+              <div>
+                <img src="../images/books/art-of-17.jpg" alt="art of presentation book" />
+              </div>
+              <div>
+                <img src="../images/books/art-of-18.jpg" alt="art of presentation book" />
+              </div>
+              <div>
+                <img src="../images/books/art-of-22.jpg" alt="art of presentation book" />
+              </div>
+            </Carousel>
           </div>
           <h3>The Art of Presentation</h3>
           <h5>Type: Accordion | Tools: Mix Paper</h5>
@@ -31,10 +53,20 @@ class Bookmaking extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/books/seahorse-05.jpg" alt="seahorse book" />
-            <img src="../images/books/seahorse-07.jpg" alt="seahorse book" />
-            <img src="../images/books/seahorse-08.jpg" alt="seahorse book" />
-            <img src="../images/books/seahorse-09.jpg" alt="seahorse book" />
+            <Carousel>
+              <div>
+                <img src="../images/books/seahorse-05.jpg" alt="seahorse book" />
+              </div>
+              <div>
+                <img src="../images/books/seahorse-07.jpg" alt="seahorse book" />
+              </div>
+              <div>
+                <img src="../images/books/seahorse-08.jpg" alt="seahorse book" />
+              </div>
+              <div>
+                <img src="../images/books/seahorse-09.jpg" alt="seahorse book" />
+              </div>
+            </Carousel>
           </div>
           <h3>A Seahorse's Journey</h3>
           <h5>Type: Accordion | Tools: Mix Paper</h5>
@@ -43,10 +75,20 @@ class Bookmaking extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/books/snake-04.jpg" alt="snake book" />
-            <img src="../images/books/snake-06.jpg" alt="snake book" />
-            <img src="../images/books/snake-08.jpg" alt="snake book" />
-            <img src="../images/books/snake-09.jpg" alt="snake book" />
+            <Carousel>
+              <div>
+                <img src="../images/books/snake-04.jpg" alt="snake book" />
+              </div>
+              <div>
+                <img src="../images/books/snake-06.jpg" alt="snake book" />
+              </div>
+              <div>
+                <img src="../images/books/snake-08.jpg" alt="snake book" />
+              </div>
+              <div>
+                <img src="../images/books/snake-09.jpg" alt="snake book" />
+              </div>
+            </Carousel>
           </div>
           <h3>A Very Hungry Snake</h3>
           <h5>Type: Accordion with Prochoir Method | Tools: Mix Paper, Ink, Stamps</h5>
@@ -55,10 +97,20 @@ class Bookmaking extends Component {
 
         <div className="project">
           <div className="proj-img">
-            <img src="../images/books/hopes-04.jpg" alt="auspicious book" />
-            <img src="../images/books/hopes-06.jpg" alt="auspicious book" />
-            <img src="../images/books/hopes-09.jpg" alt="auspicious book" />
-            <img src="../images/books/hopes-12.jpg" alt="auspicious book" />
+            <Carousel>
+              <div>
+                <img src="../images/books/hopes-04.jpg" alt="auspicious book" />
+              </div>
+              <div>
+                <img src="../images/books/hopes-06.jpg" alt="auspicious book" />
+              </div>
+              <div>
+                <img src="../images/books/hopes-09.jpg" alt="auspicious book" />
+              </div>
+              <div>
+                <img src="../images/books/hopes-12.jpg" alt="auspicious book" />
+              </div>
+            </Carousel>
           </div>
           <h3>Auspicious Hopes</h3>
           <h5>Type: Custom | Tools: Mix Paper, Print Text, Book Cloth, Personal Trinkets</h5>
