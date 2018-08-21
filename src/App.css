@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   max-width: 1920px;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   color: var(--main-text);
@@ -50,6 +50,7 @@ p {
 .wrapper {
   margin: 0 auto;
   width: 100%;
+  padding: 0 100px;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -87,31 +88,25 @@ a.button {
    Header, Footer, & Nav Styles
    ========================================================================== */
 
+/* Navigation */
+
 header {
   margin: 0 auto;
   width: 100%;
+  padding: 35px 0;
+  position: relative;
+  z-index: 2;
   grid-area: hd;
 }
 
-/* Navigation */
-
-#masthead {
-  padding: 35px 0;
-  justify-content: space-between;
-  position: relative;
-  z-index: 2;
-}
-
 .masthead-wrapper {
-  margin: 0 50px;
-}
-
-#site-branding a {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
-  color: var(--burly-woods);
+  height: 150px;
 }
 
 .burger {
@@ -126,7 +121,6 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: right;
 }
 
 .menu li {
@@ -322,38 +316,6 @@ main h1 {
 
 .about h2:after, .latest-projects h2:after {
   --direction: right;
-}
-
-/* ==========================================================================
-   WebApps Styles
-   ========================================================================== */
-
-.hero-image {
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#selfcare .hero-image {
-  /* background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg"); */
-}
-
-#artphilia .hero-image {
-  background-image: url("/images/web-dev/artphilia/prototypes/artphilia-landing-page-high-2x.jpg");
-}
-
-#teacrate .hero-image {
-  background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg");
-}
-
-#seedpicker .hero-image {
-  /* background-image: url("/images/web-dev/tea-crate/prototypes/landing-page-high.jpg"); */
-}
-
-.webapps {
-  padding: 0 100px;
 }
 
 /* ==========================================================================

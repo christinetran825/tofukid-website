@@ -6,11 +6,7 @@ class Navigation extends Component {
     return (
       <header id="masthead">
         <div className="masthead-wrapper">
-          <div id="site-branding">
-            <h1 class="site-title">
-              <NavLink to="/" id="logo">Christine Tran</NavLink>
-            </h1>
-          </div>
+          <NavLink to="/"><img id="logo" src="./images/zukan.png" alt="tea cup ninja"/></NavLink>
           <nav className="menu">
             <ul>
               <li><NavLink to="/work">Work</NavLink></li>
