@@ -21,12 +21,12 @@ class TeaCrate extends Component {
             <p>Tea represents a culture, flavors, and reflection. How it’s collected, processed, practiced, and consume varies from culture to culture and person to person. Usually, you can tell the level of tea devotion by the drinker’s tea collection. A casual drinker will have maybe three types of tea. Tea Lovers can have five or seven. True tea connoisseurs will an entire cupboard bursting with blends and flavors for any and every tea occasion.</p>
             <ul>
               <li>
-                <Link to="tea-crate.application.heroku.com" target="_blank">Testing</Link>
+                <Link to="https://tea-crate.herokuapp.com/" target="_blank">Testing</Link>
               </li>
               <li>
                 <Link to="https://youtu.be/3LCFISldE2w" target="_blank">Walkthrough</Link></li>
               <li>
-                <Link to="" target="_blank">Blog Post</Link></li>
+                <Link to="https://medium.com/@christine_tran/portfolio-project-2-sinatra-mvc-tea-crate-9377a07c5a3a" target="_blank">Blog Post</Link></li>
               <li>
                 <Link to="https://github.com/christinetran825/tea-crate" target="_blank">GitHub</Link></li>
             </ul>
@@ -59,14 +59,14 @@ class TeaCrate extends Component {
           </div>
         </section>
 
-        <section clasdName="design-process">
+        <section className="design-process">
           <h2>Sitemapping</h2>
-          <div className="visuals">
+          <div id="sitemap" className="visuals">
             <img src="../../images/web-dev/tea-crate/tea-crate-site-mapping.jpg" alt="tea-crate-site-mapping"/>
           </div>
 
           <h2>Wireframing</h2>
-          <div className="visuals">
+          <div id="wireframes" className="visuals">
             <img className="wireframes" src="../../images/web-dev/tea-crate/wireframes/landing-page.jpg" alt="tea-crate-landing-page"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/wireframes/my-tea-crate.jpg" alt="tea-crate-tea-list"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/wireframes/tea-resources-web-pages.jpg" alt="tea-crate-tea-resources-web-pages"/>
@@ -75,15 +75,14 @@ class TeaCrate extends Component {
           </div>
 
           <h2>Prototypes</h2>
-          <div className="visuals">
+          <div id="prototypes" class="visuals">
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-landing-page"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/my-tea-crate.jpg" alt="tea-crate-tea-list"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/tea-resources-web-pages.jpg" alt="tea-crate-tea-resources-web-pages"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/brew-timer.jpg" alt="tea-crate-brew-timer"/>
             <img className="forms" src="../../images/web-dev/tea-crate/prototypes/add-tea-form-modal.jpg" alt="tea-crate-add-tea-form"/>
           </div>
-        </section>
-
+      </section>
       </div>
     )
   }

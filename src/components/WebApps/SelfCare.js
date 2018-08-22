@@ -30,7 +30,7 @@ class SelfCare extends Component {
                 <li>
                   <Link to="https://youtu.be/6Py4HcsAqNQ" target="_blank">Walkthrough</Link></li>
                 <li>
-                  <Link to="" target="_blank">Blog Post</Link></li>
+                  <Link to="https://medium.com/@christine_tran/portfolio-project-5-react-redux-rails-api-selfcare-42aa58311d3f" target="_blank">Blog Post</Link></li>
                 <li>
                   <Link to="https://github.com/christinetran825/SelfCare-C" target="_blank">GitHub</Link></li>
               </ul>
@@ -62,17 +62,17 @@ class SelfCare extends Component {
 
         <section className="design-process">
           <h2>Sitemapping</h2>
-          <div className="visuals">
+          <div id="sitemap" className="visuals">
 
           </div>
 
           <h2>Wireframes</h2>
-          <div className="visuals">
+          <div id="wireframes" className="visuals">
 
           </div>
 
           <h2>Prototypes</h2>
-          <div className="visuals">
+          <div id="prototypes" className="visuals">
 
           </div>
         </section>
