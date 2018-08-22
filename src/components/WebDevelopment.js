@@ -21,7 +21,7 @@ class WebDevelopment extends Component {
         </div>
 
         <div className="project">
-          <Link to="/work/web-dev/seedpicker"><img src="../images/web-dev/seed-picker/cli-1.png" alt="seed-picker-still"/></Link>
+          <Link to="/work/web-dev/seedpicker"><img src="../images/web-dev/seed-picker/cli-2.png" alt="seed-picker-still"/></Link>
           <h3>Seed Picker</h3>
         </div>
       </section>
