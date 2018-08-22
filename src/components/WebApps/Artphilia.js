@@ -6,7 +6,9 @@ class Artphilia extends Component {
     return (
       <main id="artphilia" className="webapps">
         <div className="hero-image">
+          <div className="hero-text">
             <h1>Artphilia</h1>
+          </div>
         </div>
 
         <div classname="breadcrumbs">
