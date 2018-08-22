@@ -317,13 +317,7 @@ footer li {
 
 
 .webapps {
-  padding: 0 100px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "hero"
-    "details"
-    "process"
+  margin: 0 50px;
 }
 
 .webapps li {
@@ -331,18 +325,21 @@ footer li {
 }
 
 .hero-image {
-  height: 100%;
-  margin-bottom: 150px;
-  padding: 50px;
+  height: 300px;
+  margin-bottom: 50px;
   text-align: center;
-  grid-area: hero;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
 }
 
 .hero-image h1 {
   font-size: 5em;
+}
+
+.hero-text {
+  padding: 100px;
 }
 
 #teacrate h1 {
