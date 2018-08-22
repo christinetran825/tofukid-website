@@ -12,7 +12,7 @@ class TeaCrate extends Component {
         </div>
 
         <div classname="breadcrumbs">
-          <span><a href="/work">Back to Web Development</a></span>
+          <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
         <section className="webapp">
@@ -38,7 +38,6 @@ class TeaCrate extends Component {
               <li>
                 <Link to="https://github.com/christinetran825/tea-crate" target="_blank">GitHub</Link></li>
             </ul>
-            <p>Below are my User Experience Design Process featuring Wireframing and Prototyping details.</p>
           </div>
         </section>
 
