@@ -70,8 +70,6 @@ class SeedPicker extends Component {
               <h2>CLI Images</h2>
               <div id="CLI" className="visuals">
                 <img src="../../images/web-dev/seed-picker/cli-1.png" alt="seedpicker-cli-1"/>
-                <img src="../../images/web-dev/seed-picker/cli-2.png" alt="seedpicker-cli-2"/>
-                <img src="../../images/web-dev/seed-picker/cli-3.png" alt="seedpicker-cli-3"/>
                 <img src="../../images/web-dev/seed-picker/cli-4.png" alt="seedpicker-cli-4"/>
               </div>
             </section>
