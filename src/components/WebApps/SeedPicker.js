@@ -52,8 +52,13 @@ class SeedPicker extends Component {
               <h2>User Journey</h2>
               <p>From inspecting the web pages, I’ve noted two user journey design patterns.</p>
 
+              <h4>Pattern A</h4>
               <div id="journey" className="visuals">
                 <img src="../../images/web-dev/seed-picker/seed-picker-user-journey-a.jpg" alt="seedpicker-user-journey-a"/>
+              </div>
+
+              <h4>Pattern B</h4>
+              <div id="journey" className="visuals">
                 <img src="../../images/web-dev/seed-picker/seed-picker-user-journey-b.jpg" alt="seedpicker-user-journey-b"/>
               </div>
 
@@ -66,11 +71,11 @@ class SeedPicker extends Component {
             </section>
 
             <section className="solution">
-              <h2>CLI Images</h2>
-              <div id="CLI" className="visuals">
-                <img src="../../images/web-dev/seed-picker/cli-1.png" alt="seedpicker-cli-1"/>
-                <img src="../../images/web-dev/seed-picker/cli-4.png" alt="seedpicker-cli-4"/>
-              </div>
+              <h2>CLI</h2>
+              <h4>Pattern A</h4>
+              <embed src="../../videos/seed-picker-cli-pattern-a.mp4" autostart="false" height="500" width="500" />
+              <h4>Pattern B</h4>
+              <embed src="../../videos/seed-picker-cli-pattern-b.mp4" autostart="false" height="500" width="500" />
             </section>
 
           </div>
