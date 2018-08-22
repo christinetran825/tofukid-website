@@ -135,6 +135,10 @@ header {
   text-decoration: none;
 }
 
+.menu li:hover {
+  border-bottom: 5px solid var(--goldenrod);
+}
+
 [aria-controls="menu-list"] {
   display: none;
 }
@@ -167,21 +171,15 @@ footer li {
    All Pages Styles
    ========================================================================== */
 
-main {
+#homepage,
+#work {
   text-align: center;
 }
 
-main h1 {
+#homepage h1,
+#work h1,
+#contact h1 {
   font-size: 3em;
-}
-
-/* ==========================================================================
-   HOMEPAGE Styles
-   ========================================================================== */
-
-#homepage {
-  line-height: 1em;
-  padding-top: 4em;
 }
 
 #homepage h3 {
@@ -190,32 +188,27 @@ main h1 {
   color: var(--dark-gray);
 }
 
-/* ==========================================================================
-   Contact & Work Styles
-   ========================================================================== */
-
-#homepage, #work, #contact {
-  margin: 0 100px;
+#homepage, #work {
+  margin: 0 75px;
   display: grid;
   grid-gap: 30px;
 }
 
-#contact {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-#contact .cta {
-  align-self: center;
-}
-
-#contact .cta h1 {
-  margin-bottom: 20px;
+#contact  {
+  padding: 50px;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
 }
 
 #contact img {
-  width: 80%;
-  align-self: center;
+  max-width: 100%;
 }
+
+/* ==========================================================================
+   Work TABS Styles
+   ========================================================================== */
 
 .nav-tabs {
   display: inline-block;
@@ -230,7 +223,7 @@ main h1 {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   color: var(--burly-woods);
   border: none;
-  border-bottom: 3px solid #E29C79;
+  border-bottom: 3px solid var(--goldenrod);
   font-weight: bolder;
 }
 
@@ -316,6 +309,78 @@ main h1 {
 
 .about h2:after, .latest-projects h2:after {
   --direction: right;
+}
+
+/* ==========================================================================
+   WebApps Styles
+   ========================================================================== */
+
+
+.webapps {
+  padding: 0 100px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hero"
+    "details"
+    "process"
+}
+
+.webapps li {
+  list-style: none;
+}
+
+.hero-image {
+  height: 100%;
+  margin-bottom: 150px;
+  padding: 50px;
+  text-align: center;
+  grid-area: hero;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image h1 {
+  font-size: 5em;
+}
+
+#teacrate h1 {
+  color: white;
+}
+
+#artphilia .hero-image {
+  background-image: url("/images/web-dev/artphilia/kelli-tungay-309722-unsplash.jpg");
+}
+
+#selfcare .hero-image {
+}
+
+#teacrate .hero-image {
+  background-image: url("/images/web-dev/tea-crate/nathan-dumlao-527816-unsplash.jpg");
+  background-size: auto;
+}
+
+#seedpicker .hero-image {
+  background-image: url("/images/web-dev/seed-picker/cli-5.png");
+  background-position: left;
+}
+
+.webapp {
+  display: grid;
+  grid-template-columns: fit-content(auto-fit, minmax(200px, 1fr));
+}
+
+
+/*
+.specs {
+  grid-area: specs;
+  align-self: center;
+  border-left: 3px solid var(--goldenrod);
+} */
+
+#sitemap.visuals img {
+  width: 50%;
 }
 
 /* ==========================================================================
