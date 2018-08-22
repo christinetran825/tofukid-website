@@ -15,7 +15,7 @@ class Homepage extends Component {
         <section className="latest-projects">
           <h2>Latest Projects</h2>
           <Link to="/work/web-dev/selfcare">
-            <img src="#" alt="selfcare-still"/>
+            <img src="../images/web-dev/selfcare/prototypes/selfcare-landing-page.jpg" alt="selfcare-still"/>
           </Link>
 
           <Link to="/work/web-dev/artphilia">
