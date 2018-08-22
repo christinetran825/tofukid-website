@@ -6,9 +6,7 @@ class Artphilia extends Component {
     return (
       <main id="artphilia" className="webapps">
         <div className="hero-image">
-          <div className="hero-text">
             <h1>Artphilia</h1>
-          </div>
         </div>
 
         <div classname="breadcrumbs">
@@ -23,10 +21,6 @@ class Artphilia extends Component {
               <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, jQuery, Javascript</li>
               <li>Tools: Adobe XD, Google Draw</li>
             </ul>
-            {/* <p>My Role: UX, UI, Branding, Developer</p>
-            <p>Platform: Web App</p>
-            <p>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, jQuery, Javascript</p>
-            <p>Tools: Adobe XD, Google Draw</p> */}
           </div>
           <div className="summary">
             <h2>Developing Artphilia</h2>

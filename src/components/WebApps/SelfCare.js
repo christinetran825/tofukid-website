@@ -6,18 +6,24 @@ class SelfCare extends Component {
     return (
       <div id="selfcare" className="webapps">
         <div className="hero-image">
+          <div className="hero-text">
+            <h1>SelfCare</h1>
+          </div>
+        </div>
+
+        <div classname="breadcrumbs">
           <span><a href="/work">Back to Web Development</a></span>
         </div>
 
         <section className="webapp">
-          <h1>SelfCare</h1>
           <div className="specs">
-            <p>My Role: UX, UI, Branding, Developer</p>
-            <p>Platform: Web App</p>
-            <p>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, React, Redux, ES6</p>
-            <p>Tools: Adobe XD, Google Draw</p>
+            <ul>
+              <li>My Role: UX, UI, Branding, Developer</li>
+              <li>Platform: Web App</li>
+              <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, React, Redux, ES6</li>
+              <li>Tools: Adobe XD, Google Draw</li>
+            </ul>
           </div>
-
           <div className="summary">
             <h1>Developing SelfCare</h1>
             <p>I was inspired by HelloClue. The app tracks a female’s monthly menstrual cycle and fertility accuracy by entering data about one’s period, mood, sexual activity, and personal notes. The app is more than an app, it serves as a technology company with a platform educating society about women’s health, menstrual cycles, data analysis, and research.</p>

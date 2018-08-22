@@ -6,15 +6,23 @@ class TeaCrate extends Component {
     return (
       <div id="teacrate" className="webapps">
         <div className="hero-image">
+          <div className="hero-text">
+            <h1>Tea Crate</h1>
+          </div>
+        </div>
+
+        <div classname="breadcrumbs">
           <span><a href="/work">Back to Web Development</a></span>
         </div>
 
         <section className="webapp">
-          <h1>Tea Crate</h1>
           <div className="specs">
-            <p>My Role: UX, UI, Branding, Developer</p>
-            <p>Platform: Web App</p>
-            <p>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
+            <ul>
+              <li>My Role: UX, UI, Branding, Developer</li>
+              <li>Platform: Web App</li>
+              <li>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</li>
+              <li>Tools: Adobe XD, Google Draw</li>
+            </ul>
           </div>
           <div className="summary">
             <h2>Developing Tea Crate</h2>
