@@ -16,30 +16,32 @@ class SelfCare extends Component {
         </div>
 
         <section className="webapp">
-          <div className="specs">
-            <ul>
-              <li>My Role: UX, UI, Branding, Developer</li>
-              <li>Platform: Web App</li>
-              <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, React, Redux, ES6</li>
-              <li>Tools: Adobe XD, Google Draw</li>
-            </ul>
-          </div>
           <div className="summary">
             <h1>Developing SelfCare</h1>
-            <p>I was inspired by HelloClue. The app tracks a female’s monthly menstrual cycle and fertility accuracy by entering data about one’s period, mood, sexual activity, and personal notes. The app is more than an app, it serves as a technology company with a platform educating society about women’s health, menstrual cycles, data analysis, and research.</p>
-            <p>For the past year, I’ve been playing with the idea of building a mental health app. There are many health tracking apps out in the world, but certain features weren’t included or if it did, it played a minor role. From my perspective, health tracking apps do help some user manage their physical health. Though, I wanted to create something that would help manage mental health instead, where users can track possible trigger points. The app could be something like HelloClue, creating a platform to bring awareness and education to mental health and provide resources like coping strategies.</p>
-            <p>Built as my final Flatiron School project, my primary goal was to develop the application. SelfCare is an app I’m putting a lot of energy and thought into. It’s a work in progress and as such, the app can be tested and reviewed at:</p>
+            <div className="specs">
               <ul>
-                <li>
-                  <Link to="selfcare.application.heroku.com" target="_blank">Testing</Link>
-                </li>
-                <li>
-                  <Link to="https://youtu.be/6Py4HcsAqNQ" target="_blank">Walkthrough</Link></li>
-                <li>
-                  <Link to="https://medium.com/@christine_tran/portfolio-project-5-react-redux-rails-api-selfcare-42aa58311d3f" target="_blank">Blog Post</Link></li>
-                <li>
-                  <Link to="https://github.com/christinetran825/SelfCare-C" target="_blank">GitHub</Link></li>
+                <li>My Role: UX, UI, Branding, Developer</li>
+                <li>Platform: Web App</li>
+                <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, React, Redux, ES6</li>
+                <li>Tools: Adobe XD, Google Draw</li>
               </ul>
+            </div>
+            <div>
+              <p>I was inspired by HelloClue. The app tracks a female’s monthly menstrual cycle and fertility accuracy by entering data about one’s period, mood, sexual activity, and personal notes. The app is more than an app, it serves as a technology company with a platform educating society about women’s health, menstrual cycles, data analysis, and research.</p>
+              <p>For the past year, I’ve been playing with the idea of building a mental health app. There are many health tracking apps out in the world, but certain features weren’t included or if it did, it played a minor role. From my perspective, health tracking apps do help some user manage their physical health. Though, I wanted to create something that would help manage mental health instead, where users can track possible trigger points. The app could be something like HelloClue, creating a platform to bring awareness and education to mental health and provide resources like coping strategies.</p>
+              <p>Built as my final Flatiron School project, my primary goal was to develop the application. SelfCare is an app I’m putting a lot of energy and thought into. It’s a work in progress and as such, the app can be tested and reviewed at:</p>
+                <ul>
+                  <li>
+                    <Link to="selfcare.application.heroku.com" target="_blank">Testing</Link>
+                  </li>
+                  <li>
+                    <Link to="https://youtu.be/6Py4HcsAqNQ" target="_blank">Walkthrough</Link></li>
+                  <li>
+                    <Link to="https://medium.com/@christine_tran/portfolio-project-5-react-redux-rails-api-selfcare-42aa58311d3f" target="_blank">Blog Post</Link></li>
+                  <li>
+                    <Link to="https://github.com/christinetran825/SelfCare-C" target="_blank">GitHub</Link></li>
+                </ul>
+              </div>
           </div>
         </section>
 
@@ -66,7 +68,9 @@ class SelfCare extends Component {
         </section>
 
         <section className="design-process">
-          <h2>Sitemapping</h2>
+          <h2>Design Process</h2>
+          <p>In progress</p>
+          {/* <h2>Sitemapping</h2>
           <div id="sitemap" className="visuals">
 
           </div>
@@ -79,7 +83,7 @@ class SelfCare extends Component {
           <h2>Prototypes</h2>
           <div id="prototypes" className="visuals">
 
-          </div>
+          </div> */}
         </section>
 
       </div>

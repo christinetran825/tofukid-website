@@ -16,16 +16,16 @@ class TeaCrate extends Component {
         </div>
 
         <section className="webapp">
-          <div className="specs">
-            <ul>
-              <li>My Role: UX, UI, Branding, Developer</li>
-              <li>Platform: Web App</li>
-              <li>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</li>
-              <li>Tools: Adobe XD, Google Draw</li>
-            </ul>
-          </div>
           <div className="summary">
-            <h2>Developing Tea Crate</h2>
+            <h1>Developing Tea Crate</h1>
+            <div className="specs">
+              <ul>
+                <li>My Role: UX, UI, Branding, Developer</li>
+                <li>Platform: Web App</li>
+                <li>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</li>
+                <li>Tools: Adobe XD, Google Draw</li>
+              </ul>
+            </div>
             <p>Tea represents a culture, flavors, and reflection. How it’s collected, processed, practiced, and consume varies from culture to culture and person to person. Usually, you can tell the level of tea devotion by the drinker’s tea collection. A casual drinker will have maybe three types of tea. Tea Lovers can have five or seven. True tea connoisseurs will an entire cupboard bursting with blends and flavors for any and every tea occasion.</p>
             <ul>
               <li>

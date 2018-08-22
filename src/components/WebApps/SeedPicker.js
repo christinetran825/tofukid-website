@@ -16,16 +16,16 @@ class SeedPicker extends Component {
         </div>
 
         <section className="webapp">
-          <div className="specs">
-            <ul>
-              <li>My Role: Developer</li>
-              <li>Platform: CLI Gem</li>
-              <li>Languages & Frameworks: Ruby, CLI, Nokogiri</li>
-              <li>Tools: CLI</li>
-            </ul>
-          </div>
           <div className="summary">
-            <h2>Developing Seed Picker</h2>
+            <h1>Developing Seed Picker</h1>
+            <div className="specs">
+              <ul>
+                <li>My Role: Developer</li>
+                <li>Platform: CLI Gem</li>
+                <li>Languages & Frameworks: Ruby, CLI, Nokogiri</li>
+                <li>Tools: CLI</li>
+              </ul>
+            </div>
             <p>When I first learned how to code, I started with the basics - HTML and CSS. I wasn’t aware of any language beyond those two. And so, I made it a goal to learn new languages and functionalities of web design. This eventually lead me towards a Full-Stack program with Flatiron.</p>
             <p>Built as one of my Flatiron School projects, my primary goal was to develop a Ruby Gem. The gem provides a Command Line Interface (CLI) to an external data source through the use of Nokogiri. The CLI is composed entirely as an Object Oriented Ruby application. We’re essentially stripping the entire external data source down to its data. No imagery, no color, no styles. Just simple text and numbers. And Nokogiri was perfect for this job.</p>
             <p>The app can be tested and reviewed at:</p>
@@ -49,10 +49,10 @@ class SeedPicker extends Component {
                 <h4>1. Determine Patterns</h4>
                 <p>With the gem, I chose to include only the company’s vegetable seeds catalogue due to time. To prepare the gem, I first reviewed the catalogues’ site mapping to determine patterns. I was seeking patterns in how a user can click on a parent seed and find the seed they’re looking for, with its details and price.</p>
                 <p>From inspecting the web pages, I’ve noted two user journey design patterns. See below for details and the User Journey visuals.</p>
-                <ul>
-                  <li>Pattern A: Takes User from list of vegetables to the Selected Parent Vegetable Seed. A User sees a description paragraph about the selected seed and an image gallery of all the Selected Parent Seed seeds. At this point, a user can select a seed for purchase.</li>
-                  <li>Pattern B: Takes User from list of vegetables to the Selected Parent Vegetable Seed. A User may see a description paragraph about the selected seed. A User also sees an image gallery of the Categories of the Selected Parent Seed. At this point, a user can select a Category. This action takes them to the Category page where the user may see a description along with an image gallery of the variety of seeds in that category. Upon the user's choice a user can select a seed for purchase and proceed to checkout or continue shopping.</li>
-                </ul>
+                
+                <p>Pattern A: Takes User from list of vegetables to the Selected Parent Vegetable Seed. A User sees a description paragraph about the selected seed and an image gallery of all the Selected Parent Seed seeds. At this point, a user can select a seed for purchase.</p>
+                <p>Pattern B: Takes User from list of vegetables to the Selected Parent Vegetable Seed. A User may see a description paragraph about the selected seed. A User also sees an image gallery of the Categories of the Selected Parent Seed. At this point, a user can select a Category. This action takes them to the Category page where the user may see a description along with an image gallery of the variety of seeds in that category. Upon the user's choice a user can select a seed for purchase and proceed to checkout or continue shopping.</p>
+
                 <h4>2. Review HTML & CSS Structure and Patterns</h4>
                 <p>Pattern A worked for most of the parent seeds. Due to that, I had to accommodate a specific Nokogiri scrape for the seeds affected by Pattern B. See visual to see how I determined the pattern.</p>
               </div>

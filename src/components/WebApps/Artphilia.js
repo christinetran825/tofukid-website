@@ -16,16 +16,16 @@ class Artphilia extends Component {
         </div>
 
         <section className="webapp">
-          <div className="specs">
-            <ul>
-              <li>My Role: UX, UI, Branding, Developer</li>
-              <li>Platform: Web App</li>
-              <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, jQuery, Javascript</li>
-              <li>Tools: Adobe XD, Google Draw</li>
-            </ul>
-          </div>
           <div className="summary">
-            <h2>Developing Artphilia</h2>
+            <h1>Developing Artphilia</h1>
+            <div className="specs">
+              <ul>
+                <li>My Role: UX, UI, Branding, Developer</li>
+                <li>Platform: Web App</li>
+                <li>Languages & Frameworks: Ruby, Ruby on Rails, HTML, CSS, jQuery, Javascript</li>
+                <li>Tools: Adobe XD, Google Draw</li>
+              </ul>
+            </div>
             <p>Art can be found just about anywhere. Most art we, as a society, come across are through museums and art galleries. Though, not many artists are found in such places, many can be found at art fairs, convention centers, animations, and social media (like Instagram). As Artists continue to make and share their work, it’s hard to keep track of the ones we come across and like. I thought it’ll be a fun idea to build an app collecting artists (non-musicians) that we find and like; sort of like a rolodex. Users can also record artwork they like, own, or wish to own.</p>
             <p>Built as one of my Flatiron School projects, my primary goal was to develop an application. At the time, I managed the build with an app flow. As such, the app can be tested and reviewed at:</p>
               <ul>
