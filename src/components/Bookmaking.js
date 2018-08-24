@@ -23,7 +23,7 @@ class Bookmaking extends Component {
             </Carousel>
           </div>
           <h3>Sending Hugs</h3>
-          <h5>Type: Custom | Tools: Mix Paper, Book Cloth, Printed Texts</h5>
+          <h5>Type: Custom | Tools: Mix Paper, Book Cloth</h5>
           <p>1st place MFA: Book Arts - AAU Spring Show 2013</p>
           <p>One day my cousin sent her arm span of a hug by mail. Her sweet gift was a great idea for a children's book. "Sending Hugs" was meant to portray a bright orange colored muppet dressed in a long-sleeve dress shirt symbolizing the innocence and child-like gestures. My colophon (the author's information and comments) was placed on the back of the book as if it was the shirt tag sewn into the shirt. As the whole book expands, the text reads together fluidly from one arm to the other left-to-right AND right-to-left. Best of all, you can wrap the entire book around you for a hug.</p>
         </div>
@@ -90,7 +90,7 @@ class Bookmaking extends Component {
             </Carousel>
           </div>
           <h3>A Very Hungry Snake</h3>
-          <h5>Type: Accordion with Prochoir Method | Tools: Mix Paper, Ink, Stamps</h5>
+          <h5>Type: Accordion | Tools: Mix Paper, Ink, Stamps, Prochoir</h5>
           <p>I found some great textured paper that look like a snake's scales. I thought a snake's length would be a great way to express the accordion structure and the story's content. The illustration was made to show the inside of a snake to see what it ate throughout a period of time. Using the Prochoir method, I transfered printed clip arts and text. In the future, I'll recreate this story and technique to create exaggerations for a more humorous story.</p>
         </div>
 
