@@ -26,9 +26,9 @@ class Homepage extends Component {
             <img src="../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-still"/>
           </Link>
         </section>
-        <div className="cta">
+        <section className="redirect">
           <Link to="/work" className="button" title="View Full Portfolio">View Full Portfolio</Link>
-        </div>
+        </section>
       </main>
     )
   }
