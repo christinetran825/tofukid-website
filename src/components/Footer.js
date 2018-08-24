@@ -3,6 +3,7 @@ import '../App.css';
 
 const Footer = () =>
   <footer>
+    <hr></hr>
     <ul>
       <li><span className="fa-stack fa-lg fa-1x"><a href="mailto:christinetran825@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope-o" aria-hidden="false"></i></a></span></li>
 
