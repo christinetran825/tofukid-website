@@ -11,21 +11,21 @@ class TeaCrate extends Component {
           </div>
         </div>
 
-        <div classname="breadcrumbs">
+        <div className="breadcrumbs">
           <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
-        <section className="webapp">
-          <h1>Developing Tea Crate</h1>
+        <section className="intro">
           <div className="specs">
-            <p>My Role: UX, UI, Branding, Developer</p>
-            <p>Platform: Web App</p>
-            <p>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
-            <p>Tools: Adobe XD, Google Draw</p>
+            <p><span>My Role:</span> UX, UI, Branding, Developer</p>
+            <p><span>Platform:</span> Web App</p>
+            <p><span>Languages & Frameworks:</span> Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
+            <p><span>Tools:</span> Adobe XD, Google Draw</p>
           </div>
-          <div className="summary">
+          <article className="summary">
+            <h1 className="title">Developing Tea Crate</h1>
             <p>Tea represents a culture, flavors, and reflection. How it’s collected, processed, practiced, and consume varies from culture to culture and person to person. Usually, you can tell the level of tea devotion by the drinker’s tea collection. A casual drinker will have maybe three types of tea. Tea Lovers can have five or seven. True tea connoisseurs will an entire cupboard bursting with blends and flavors for any and every tea occasion.</p>
-          </div>
+          </article>
           <div className="project-links">
             <Link to="https://tea-crate.herokuapp.com/" target="_blank">Testing</Link>
 
@@ -38,28 +38,31 @@ class TeaCrate extends Component {
         </section>
 
         <section className="details">
-          <div className="goals">
-            <h2>What is Tea Crate</h2>
+          <article className="goals">
+            <h2 className="title">What is Tea Crate</h2>
             <p>Tea Crate is a fictional company seeking to collect teas of the world through the help of their users.</p>
-          </div>
-          <div className="problem">
-            <h2>The Problem</h2>
-            <h4>1. Tracking Teas</h4>
-            <p>All pure teas originate from the same plant species, Camellia Sinensis. Teas become a type because of different processing procedures. Typically there are 7 types of tea - black, green, Oolong, white, roobios, and herbal infusions. Many brands, big and small, produce and market their own version of each type of tea.</p>
-
-            <h4>2. Defining Tea Experiences</h4>
-            <p>There are people who like tea, who love tea, and who can’t function without at least one cup of tea a day. There may be some who might not care or be able to distinguish a tea’s characteristics before adding any other ingredients. Depending on the tea drinker, the “way of tea” varies.</p>
-            <ul>
-              <li>Should tea be consumed neat, straight?</li>
-              <li>Should a flavor or a combination of flavors like milk, cream, sugar, and lemon be added to tea?</li>
-              <li>Should tea leaves be loose or in a teabag?</li>
-              <li>Should the tea be brewed at the exact duration for the perfect flavor?</li>
-            </ul>
-          </div>
-          <div className="solution">
-            <h2>The Solution</h2>
+          </article>
+          <article className="problem">
+            <h2 className="title">The Problem</h2>
+            <div>
+              <h4>1. Tracking Teas</h4>
+              <p>All pure teas originate from the same plant species, Camellia Sinensis. Teas become a type because of different processing procedures. Typically there are 7 types of tea - black, green, Oolong, white, roobios, and herbal infusions. Many brands, big and small, produce and market their own version of each type of tea.</p>
+            </div>
+            <div>
+              <h4>2. Defining Tea Experiences</h4>
+              <p>There are people who like tea, who love tea, and who can’t function without at least one cup of tea a day. There may be some who might not care or be able to distinguish a tea’s characteristics before adding any other ingredients. Depending on the tea drinker, the “way of tea” varies.</p>
+              <ul>
+                <li>Should tea be consumed neat, straight?</li>
+                <li>Should a flavor or a combination of flavors like milk, cream, sugar, and lemon be added to tea?</li>
+                <li>Should tea leaves be loose or in a teabag?</li>
+                <li>Should the tea be brewed at the exact duration for the perfect flavor?</li>
+              </ul>
+            </div>
+          </article>
+          <article className="solution">
+            <h2 className="title">The Solution</h2>
             <p>Design an app allowing users to input the brand name, tea name, and tea type to the tea they’ve tried. They can include the way they brewed and consumed their tea to record their version of the perfect tea. Tea crate can collect the various teas experienced by their users while their users can keep track of how they had their best cup of tea?</p>
-          </div>
+          </article>
         </section>
 
         <section className="design-process">
@@ -78,7 +81,7 @@ class TeaCrate extends Component {
           </div>
 
           <h2>Prototypes</h2>
-          <div id="prototypes" class="visuals">
+          <div id="prototypes" className="visuals">
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/landing-page-high.jpg" alt="tea-crate-landing-page"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/my-tea-crate.jpg" alt="tea-crate-tea-list"/>
             <img className="wireframes" src="../../images/web-dev/tea-crate/prototypes/tea-resources-web-pages.jpg" alt="tea-crate-tea-resources-web-pages"/>
