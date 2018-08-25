@@ -16,28 +16,24 @@ class TeaCrate extends Component {
         </div>
 
         <section className="webapp">
+          <h1>Developing Tea Crate</h1>
+          <div className="specs">
+            <p>My Role: UX, UI, Branding, Developer</p>
+            <p>Platform: Web App</p>
+            <p>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
+            <p>Tools: Adobe XD, Google Draw</p>
+          </div>
           <div className="summary">
-            <h1>Developing Tea Crate</h1>
-            <div className="specs">
-              <ul>
-                <li>My Role: UX, UI, Branding, Developer</li>
-                <li>Platform: Web App</li>
-                <li>Languages & Frameworks: Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</li>
-                <li>Tools: Adobe XD, Google Draw</li>
-              </ul>
-            </div>
             <p>Tea represents a culture, flavors, and reflection. How it’s collected, processed, practiced, and consume varies from culture to culture and person to person. Usually, you can tell the level of tea devotion by the drinker’s tea collection. A casual drinker will have maybe three types of tea. Tea Lovers can have five or seven. True tea connoisseurs will an entire cupboard bursting with blends and flavors for any and every tea occasion.</p>
-            <ul>
-              <li>
-                <Link to="https://tea-crate.herokuapp.com/" target="_blank">Testing</Link>
-              </li>
-              <li>
-                <Link to="https://youtu.be/3LCFISldE2w" target="_blank">Walkthrough</Link></li>
-              <li>
-                <Link to="https://medium.com/@christine_tran/portfolio-project-2-sinatra-mvc-tea-crate-9377a07c5a3a" target="_blank">Blog Post</Link></li>
-              <li>
-                <Link to="https://github.com/christinetran825/tea-crate" target="_blank">GitHub</Link></li>
-            </ul>
+          </div>
+          <div className="project-links">
+            <Link to="https://tea-crate.herokuapp.com/" target="_blank">Testing</Link>
+
+            <Link to="https://youtu.be/3LCFISldE2w" target="_blank">Walkthrough</Link>
+
+            <Link to="https://medium.com/@christine_tran/portfolio-project-2-sinatra-mvc-tea-crate-9377a07c5a3a" target="_blank">Blog Post</Link>
+
+            <Link to="https://github.com/christinetran825/tea-crate" target="_blank">GitHub</Link>
           </div>
         </section>
 
