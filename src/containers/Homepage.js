@@ -5,8 +5,10 @@ class Homepage extends Component {
   render(){
     return (
       <main id="homepage">
-        <h1>Christine Tran</h1>
-        <h3>Full-Stack UX Designer Proficient in UXR</h3>
+        <div className="names">
+          <h1>Christine Tran</h1>
+          <h4><span>Full-Stack UX Designer Proficient in UXR</span></h4>
+        </div>
         <section className="about">
           <h2>About</h2>
           <p>As a UX designer, I’m inspired to make the familiar strange and the strange familiar by finding the balance between scientist, psychologist, sociologist, and artists (among others). I focus on the practicality and functionality of the design process and how to channel a users’ needs. It goes beyond crafting an aesthetically pleasing product. To feel and experience the gratitude of people’s delight by making culture and not just consuming it fuels me.</p>
