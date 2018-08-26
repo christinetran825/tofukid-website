@@ -16,14 +16,8 @@ class SeedPicker extends Component {
         </div>
 
         <section className="intro">
-          <div className="specs">
-            <p><span>My Role:</span> Developer</p>
-            <p><span>Platform:</span> CLI Gem</p>
-            <p><span>Languages & Frameworks:</span> Ruby, CLI, Nokogiri</p>
-            <p><span>Tools:</span> CLI</p>
-          </div>
+          <h1 className="title">Developing Seed Picker</h1>
           <article className="summary">
-            <h1 className="title">Developing Seed Picker</h1>
             <p>When I first learned how to code, I started with the basics - HTML and CSS. I wasn’t aware of any language beyond those two. And so, I made it a goal to learn new languages and functionalities of web design. This eventually lead me towards a Full-Stack program with Flatiron.</p>
             <p>Built as one of my Flatiron School projects, my primary goal was to develop a Ruby Gem. The gem provides a Command Line Interface (CLI) to an external data source through the use of Nokogiri. The CLI is composed entirely as an Object Oriented Ruby application. We’re essentially stripping the entire external data source down to its data. No imagery, no color, no styles. Just simple text and numbers. And Nokogiri was perfect for this job.</p>
             <p>The app can be tested and reviewed at:</p>
@@ -36,6 +30,13 @@ class SeedPicker extends Component {
             <Link to="https://github.com/christinetran825/Artphilia" target="_blank">GitHub </Link>
           </div>
         </section>
+
+        <div className="specs">
+          <p><span>My Role:</span> Developer</p>
+          <p><span>Platform:</span> CLI Gem</p>
+          <p><span>Languages & Frameworks:</span> Ruby, CLI, Nokogiri</p>
+          <p><span>Tools:</span> CLI</p>
+        </div>
 
         <section className="details">
           <article className="problem">

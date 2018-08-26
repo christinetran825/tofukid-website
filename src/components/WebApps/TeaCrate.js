@@ -16,14 +16,8 @@ class TeaCrate extends Component {
         </div>
 
         <section className="intro">
-          <div className="specs">
-            <p><span>My Role:</span> UX, UI, Branding, Developer</p>
-            <p><span>Platform:</span> Web App</p>
-            <p><span>Languages & Frameworks:</span> Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
-            <p><span>Tools:</span> Adobe XD, Google Draw</p>
-          </div>
+          <h1 className="title">Developing Tea Crate</h1>
           <article className="summary">
-            <h1 className="title">Developing Tea Crate</h1>
             <p>Tea represents a culture, flavors, and reflection. How it’s collected, processed, practiced, and consume varies from culture to culture and person to person. Usually, you can tell the level of tea devotion by the drinker’s tea collection. A casual drinker will have maybe three types of tea. Tea Lovers can have five or seven. True tea connoisseurs will an entire cupboard bursting with blends and flavors for any and every tea occasion.</p>
           </article>
           <div className="project-links">
@@ -36,6 +30,13 @@ class TeaCrate extends Component {
             <Link to="https://github.com/christinetran825/tea-crate" target="_blank">GitHub</Link>
           </div>
         </section>
+
+        <div className="specs">
+          <p><span>My Role:</span> UX, UI, Branding, Developer</p>
+          <p><span>Platform:</span> Web App</p>
+          <p><span>Languages & Frameworks:</span> Ruby, Ruby on Rails, Sinatra, Model View Controller (MVC), HTML, CSS</p>
+          <p><span>Tools:</span> Adobe XD, Google Draw</p>
+        </div>
 
         <section className="details">
           <article className="goals">
