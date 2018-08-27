@@ -23,7 +23,9 @@ class Work extends Component {
 
     return (
       <main id="work">
-        <h1>Work</h1>
+        <div className="page-title">
+          <h1>Work</h1>
+        </div>
         <Tabs
           activeKey={this.state.key}
           onSelect={this.handleSelect}

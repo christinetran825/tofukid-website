@@ -5,7 +5,7 @@ class Homepage extends Component {
   render(){
     return (
       <main id="homepage">
-        <div className="names">
+        <div className="page-title">
           <h1>Christine Tran</h1>
           <h4><span>Full-Stack UX Designer Proficient in UXR</span></h4>
         </div>
