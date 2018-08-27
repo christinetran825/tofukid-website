@@ -22,8 +22,8 @@ class Illustrations extends Component {
               </div>
             </Carousel>
           </div>
-          <h3>Taste Addiction</h3>
-          <h5>Tools: Illustrator</h5>
+          <h1 className="proj-title">Taste Addiction</h1>
+          <p><span>Tools: Illustrator</span></p>
           <p>I was playing with the idea of what kinds of 'dipping' or 'sauces' most people are addicted to. I expressed the gluttony of the addiction by having the source of ingredient drool and ooze its glorious goodness.</p>
         </div>
 
@@ -41,8 +41,8 @@ class Illustrations extends Component {
               </div>
             </Carousel>
           </div>
-          <h3>Taco Time</h3>
-          <h5>Tools: Illustrator</h5>
+          <h1 className="proj-title">Taco Time</h1>
+          <p><span>Tools: Illustrator</span></p>
           <p>Who doesn't like tacos? These digital art posters were made for an imaginary taco brand. Each poster has a pattern showing foods and objects related to tacos like chilies, hot sauce, sombreros.</p>
         </div>
 
@@ -57,8 +57,8 @@ class Illustrations extends Component {
               </div>
             </Carousel>
           </div>
-          <h3>Thank You, Teachers</h3>
-          <h5>Tools: Pen & Ink</h5>
+          <h1 className="proj-title">Thank You, Teachers</h1>
+          <p><span>Tools: Pen & Ink</span></p>
           <p>In honor of Teacher's Day, I've drawn a series of portraits of the teachers who inspired me in many ways throughout my education. Check out my Tumblr <a href="http://thanksforteachers.tumblr.com/" target="blank">"thanksforteacher"</a> to view more portraits.</p>
         </div>
       </section>

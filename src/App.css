@@ -219,7 +219,7 @@ main {
 }
 
 #work #controlled-tab-example {
-  grid-column: 2 / span 10;
+  grid-column: 1 / -1;
 }
 
 #contact h1 {
@@ -245,13 +245,7 @@ main {
 
 .nav-tabs {
   display: inline-block;
-  font-size: 10px;
   border-bottom: none;
-}
-
-.nav-tabs li {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
@@ -334,12 +328,12 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.project h3 {
+.project h1 {
   font-weight: 500;
+  font-size: 1.5em;
 }
 
-.project h5 {
-  font-weight: 200;
+.project span {
   font-style: italic;
   color: var(--main-text);
 }
@@ -348,11 +342,6 @@ main {
 .projects, #books, .visuals {
   display: grid;
   grid-gap: 40px;
-}
-
-.about,
-.latest-projects {
-  padding: 0 100px;
 }
 
 .about {
@@ -392,6 +381,10 @@ main {
   justify-content: center;
   align-items: center;
   grid-row: 1;
+}
+
+.item h1 {
+  grid-column: 1 / -1;
 }
 
 .intro,
@@ -506,6 +499,16 @@ article {
   }
 
   .nav-tabs {
-    font-size: 1em;
+    font-size: 15px;
+  }
+
+  .nav-tabs li {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .nav-tabs {
+    font-size: 20px;
   }
 }
