@@ -115,6 +115,7 @@ header {
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: .25em;
+  float: right;
 }
 
 .menu ul {
@@ -137,6 +138,23 @@ header {
 
 [aria-controls="menu-list"] {
   display: none;
+}
+
+.menu-dropdown {
+  border-bottom: 1px solid var(--burly-woods);
+  padding-top: 10px;
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: column;
+  justify-content: space-around;
+  float: right;
+}
+
+.menu-dropdown p {
+  text-transform: uppercase;
+  text-align: right;
+  border-top: 1px solid var(--burly-woods);
+  padding-top: 10px;
 }
 
 /* Footer */
@@ -476,13 +494,13 @@ article {
   }
 
   #contact img {
-    max-width: 40%;
-    grid-column: 2 / -1;
+    max-width: 50%;
+    grid-column: 1 / -1;
     grid-row: 1;
   }
 
   #contact .cta {
-    grid-column: 7 / span 5;
+    grid-column: 8 / span 4;
     grid-row: 1;
     display: grid;
     grid-gap: 10px;
@@ -496,6 +514,15 @@ article {
 
   .item {
     grid-column: 1 / span 9;
+  }
+
+  .fa {
+    color: var(--main-text);
+    font-size: 2em;
+  }
+
+  footer ul {
+    padding: 50px 200px;
   }
 }
 
