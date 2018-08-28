@@ -15,8 +15,8 @@ class SeedPicker extends Component {
           <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
-        <section className="intro">
-          <h1 className="title">Developing Seed Picker</h1>
+        <section className="item intro">
+          <h1 className="title">Seed Picker</h1>
           <div className="specs">
             <p><span>My Role:</span> Developer</p>
             <p><span>Platform:</span> CLI Gem</p>
@@ -29,7 +29,7 @@ class SeedPicker extends Component {
           </article>
         </section>
 
-        <section className="details">
+        <section className="item details">
           <article className="goals">
             <div className="project-links">
               <Link to="https://youtu.be/LW-DTvgwrGs" target="_blank">Walkthrough</Link>
@@ -62,7 +62,7 @@ class SeedPicker extends Component {
           </article>
         </section>
 
-        <section className="design-process">
+        <section className="item design-process">
           <h2 className="title">Sitemapping</h2>
           <div id="sitemap" className="visuals">
             <img src="../../images/web-dev/seed-picker/seed-picker-site-mapping.jpg" alt="seedpicker-site-mapping"/>

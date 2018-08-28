@@ -15,7 +15,7 @@ class SelfCare extends Component {
           <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
-        <section className="intro">
+        <section className="item intro">
           <h1 className="title">SelfCare</h1>
           <div className="specs">
             <p><span>My Role:</span> UX, UI, Branding, Developer</p>
@@ -29,7 +29,7 @@ class SelfCare extends Component {
           </article>
         </section>
 
-        <section className="details">
+        <section className="item details">
           <article className="goals">
             <h2 className="title">What is SelfCare</h2>
             <p>SelfCare is a fictional company seeking to understand mental health through user data entry. Can we find patterns through a user's daily habits that might affect their symptoms? Could these patterns offer new approaches towards symptom management?</p>
@@ -60,7 +60,7 @@ class SelfCare extends Component {
           </article>
         </section>
 
-        <section className="design-process">
+        <section className="item design-process">
           <h2>Design Process</h2>
           <p>In progress</p>
           {/* <h2>Sitemapping</h2>

@@ -15,8 +15,8 @@ class TeaCrate extends Component {
           <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
-        <section className="intro">
-          <h1 className="title">Developing Tea Crate</h1>
+        <section className="item intro">
+          <h1 className="title">Tea Crate</h1>
           <div className="specs">
             <p><span>My Role:</span> UX, UI, Branding, Developer</p>
             <p><span>Platform:</span> Web App</p>
@@ -28,7 +28,7 @@ class TeaCrate extends Component {
           </article>
         </section>
 
-        <section className="details">
+        <section className="item details">
           <article className="goals">
             <h2 className="title">What is Tea Crate</h2>
             <p>Tea Crate is a fictional company seeking to collect teas of the world through the help of their users.</p>
@@ -65,7 +65,7 @@ class TeaCrate extends Component {
           </article>
         </section>
 
-        <section className="design-process">
+        <section className="item design-process">
           <h2 className="title">Sitemapping</h2>
           <div id="sitemap" className="visuals">
             <img src="../../images/web-dev/tea-crate/tea-crate-site-mapping.jpg" alt="tea-crate-site-mapping"/>

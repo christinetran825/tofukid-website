@@ -15,8 +15,8 @@ class Artphilia extends Component {
           <span><Link to="/work">Back to Web Development</Link></span>
         </div>
 
-        <section className="intro">
-          <h1 className="title">Developing Artphilia</h1>
+        <section className="item intro">
+          <h1 className="title">Artphilia</h1>
           <div className="specs">
             <p><span>My Role:</span> UX, UI, Branding, Developer</p>
             <p><span>Platform:</span> Web App</p>
@@ -28,7 +28,7 @@ class Artphilia extends Component {
           </article>
         </section>
 
-        <section className="details">
+        <section className="item details">
           <article className="goals">
             <h2 className="title">What is Artphilia</h2>
             <p>Artphilia is a fictional company seeking to share independent artists we like, their work, and their story.</p>
@@ -37,9 +37,9 @@ class Artphilia extends Component {
 
               <Link to="https://youtu.be/LW-DTvgwrGs" target="_blank">Walkthrough</Link>
 
-              <Link to="https://medium.com/@christine_tran/portfolio-project-3-ruby-on-rails-artphilia-79f3e06cfdf2" target="_blank">Blog Post - Part 1</Link>
+              <Link to="https://medium.com/@christine_tran/portfolio-project-3-ruby-on-rails-artphilia-79f3e06cfdf2" target="_blank">Blog Post I</Link>
 
-              <Link to="https://medium.com/@christine_tran/portfolio-project-4-ruby-on-rails-javascript-artphilia-c25a873dc5a" target="_blank">Blog Post - Part 2</Link>
+              <Link to="https://medium.com/@christine_tran/portfolio-project-4-ruby-on-rails-javascript-artphilia-c25a873dc5a" target="_blank">Blog Post II</Link>
 
               <Link to="https://github.com/christinetran825/Artphilia" target="_blank">GitHub</Link>
             </div>
@@ -55,7 +55,7 @@ class Artphilia extends Component {
           </article>
         </section>
 
-        <section className="design-process">
+        <section className="item design-process">
           <h2 className="title">Sitemapping</h2>
           <div id="sitemap" className="visuals">
             <img src="../../images/web-dev/artphilia/artphilia-site-mapping.jpg" alt="artphilia-site-mapping"/>
