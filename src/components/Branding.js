@@ -10,7 +10,7 @@ class Branding extends Component {
           </div>
           <h1 className="proj-title">Finches' Publishing</h1>
           <p><span>Tools: Illustrator, Photoshop</span></p>
-          <p>I designed a logo for a fictional publishing company. I named it "Finches" after the character Atticus Finch from "To Kill A Mockingbird."</p>
+          <p>I designed a logo for a fictional publishing company. I named it "Finches" after the character Atticus Finch from "To Kill A Mockingbird. The thin serif font blended well to create a sophisticated and classic appearance."</p>
         </div>
 
         <div className="project">
