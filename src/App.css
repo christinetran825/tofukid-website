@@ -189,11 +189,13 @@ footer hr:after {
    ========================================================================== */
 main {
  grid-area: main;
- padding: 0 40px;
+ margin: 0 40px;
 }
 
 #homepage > *,
-#contact > * {
+#contact > *,
+#work > *,
+.webapps > * {
   grid-column: 1 / span 12;
 }
 
@@ -204,6 +206,7 @@ main {
  grid-template-columns: repeat(12, 1fr);
  grid-gap: 20px;
  text-align: center;
+ align-items: center;
 }
 
 #homepage .page-title,
@@ -216,10 +219,6 @@ main {
   font-weight: 300;
   color: var(--dark-gray);
   line-height: normal;
-}
-
-#work #controlled-tab-example {
-  grid-column: 1 / -1;
 }
 
 #contact h1 {
@@ -248,6 +247,10 @@ main {
   border-bottom: none;
 }
 
+.nav-tabs li {
+  /* margin: 0 30px; */
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   color: var(--burly-woods);
   border: none;
@@ -264,17 +267,12 @@ main {
 
 .about,
 .latest-projects {
-  grid-column: 1 / -1;
   display: grid;
 }
 
 .about,
 .latest-projects {
-  grid-gap: 10px;
-}
-
-.about {
-  column-gap: 20px;
+  grid-gap: 20px;
 }
 
 .about p {
@@ -282,14 +280,14 @@ main {
 }
 
 .about h2, .latest-projects h2 {
-  text-transform: uppercase;
   display: grid;
   grid-column: 1 / -1;
   grid-gap: 20px;
 }
 
 .latest-projects img,
-.projects img  {
+.projects img,
+.visuals img {
   width: 100%;
 }
 
@@ -311,6 +309,22 @@ main {
   --direction: right;
 }
 
+.latest-projects,
+.projects {
+  padding-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.visuals {
+  padding-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
 /* Project Card */
 .project {
   background: white;
@@ -319,13 +333,6 @@ main {
   text-align: center;
   box-shadow: 0 0 4px rgba(0,0,0,0.1);
   align-items: center;
-}
-
-.projects {
-  padding-top: 40px;
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project h1 {
@@ -338,27 +345,10 @@ main {
   color: var(--main-text);
 }
 
-/*
-.projects, #books, .visuals {
+#designs .project {
   display: grid;
-  grid-gap: 40px;
+  grid-template-rows: 1fr minmax(4em, auto);
 }
-
-.about {
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-}
-
-.latest-projects {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.projects, .visuals {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 30px;
-}
- */
-
-
 
 /* ==========================================================================
    WebApps Styles
@@ -367,6 +357,7 @@ main {
 .webapps {
   display: grid;
   grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .hero-image {
@@ -383,36 +374,8 @@ main {
   grid-row: 1;
 }
 
-.item h1 {
-  grid-column: 1 / -1;
-}
-
-.intro,
-.details {
-  display: grid;
-  grid-gap: 20px;
-}
-
-article {
-  display: grid;
-  grid-gap: 10px;
-}
-
-/* intro */
-.specs {
-  background: var(--antique-white);
-  align-self: center;
-  padding: 20px;
-  padding-bottom: 10px;
-}
-
-.project-links {
-  display: flex;
-  justify-content: space-around;
-}
-
-#sitemap.visuals img {
-  width: 50%;
+.hero-image h1 {
+  font-size: 4em;
 }
 
 #selfcare .hero-image {
@@ -430,6 +393,34 @@ article {
 #seedpicker .hero-image {
   background-image: url("/images/web-dev/seed-picker/cli-5.png");
   background-position: left;
+}
+
+.intro,
+.details {
+  display: grid;
+  grid-gap: 20px;
+}
+
+article {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.specs {
+  background: var(--antique-white);
+  align-self: center;
+  padding: 20px;
+  padding-bottom: 10px;
+  max-width: 350px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sitemap.visuals img {
+  width: 50%;
 }
 
 /* ==========================================================================
@@ -474,6 +465,11 @@ article {
 }
 
 @media (min-width: 600px) {
+  #homepage .about,
+  #homepage .latest-projects {
+    grid-column: 2 / span 10;
+  }
+
   #contact {
     align-items: center;
     justify-content: center;
@@ -494,21 +490,42 @@ article {
 }
 
 @media (min-width: 700px) {
-  #homepage {
-    padding: 0 60px;
+  .page-title h4 {
+    font-size: 1.5em;
   }
 
-  .nav-tabs {
-    font-size: 15px;
-  }
-
-  .nav-tabs li {
-    margin: 0 10px;
+  .item {
+    grid-column: 1 / span 9;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1123px) {
+  #books {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  #homepage .about,
+  #homepage .latest-projects {
+    grid-column: 3 / span 8;
+  }
+
   .nav-tabs {
     font-size: 20px;
+  }
+
+  .item {
+    grid-column: 1 / span 8;
+  }
+}
+
+@media (min-width: 1400px) {
+  .item {
+    grid-column: 1 / span 7;
+  }
+
+  article p {
+    font-size: 1.2em;
   }
 }
