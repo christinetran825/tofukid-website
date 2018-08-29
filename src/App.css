@@ -68,7 +68,7 @@ span {
 
 a.button {
   display: inline-block;
-  /* font-size: 15px; */
+  font-size: 15px;
   font-weight: bolder;
   letter-spacing: .15em;
   text-transform: uppercase;
@@ -192,7 +192,7 @@ footer hr {
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
-  border-top: medium double var(--main-text);
+  border-top: thin solid var(--main-text);
   color: var(--burly-woods);
   text-align: center;
 }
@@ -202,10 +202,14 @@ footer hr:after {
   display: inline-block;
   position: relative;
   top: -0.7em;
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 0 0.25em;
   background: white;
 }
+
+/* ==========================================================================
+   Images Styles
+   ========================================================================== */
 
 .latest-projects img,
 .projects img,
@@ -213,6 +217,9 @@ footer hr:after {
   width: 100%;
 }
 
+/* ==========================================================================
+   All Pages Styles
+   ========================================================================== */
 main {
   display: grid;
   grid-gap: 20px;
@@ -225,9 +232,21 @@ main {
   display: grid;
 }
 
+.page-title h1 {
+  font-size: 4em;
+}
+
 .page-title span {
   font-weight: 400;
   line-height: normal;
+  font-size: 2em;
+}
+
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+#homepage section {
+  grid-column: 2 / span 10;
 }
 
 .about {
@@ -237,14 +256,6 @@ main {
 
 .about p {
   text-align: justify;
-}
-
-#homepage section {
-  grid-column: 2 / span 10;
-}
-
-#controlled-tab-example {
-  grid-column: 2 / span 10;
 }
 
 .latest-projects {
@@ -257,6 +268,9 @@ main {
   grid-column: 1 / -1;
 }
 
+/* ==========================================================================
+   Contact Styles
+   ========================================================================== */
 .contact-card {
   grid-column: 2 / span 10;
   display: grid;
@@ -272,6 +286,32 @@ main {
   align-self: center;
 }
 
+/* ==========================================================================
+   Work Styles
+   ========================================================================== */
+#controlled-tab-example {
+  grid-column: 2 / span 10;
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: var(--burly-woods);
+  border: none;
+  font-weight: bolder;
+}
+
+.nav-tabs>li>a {
+  color: var(--main-text);
+}
+
+/* ==========================================================================
+   All Projects Styles
+   ========================================================================== */
+
 .projects {
   padding-top: 40px;
   display: grid;
@@ -281,13 +321,6 @@ main {
 
 #books {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.visuals {
-  padding-top: 40px;
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project {
@@ -309,27 +342,19 @@ main {
   grid-template-rows: 1fr minmax(4em, auto);
 }
 
-.nav-tabs {
-  display: inline-block;
-  border-bottom: none;
+.visuals {
+  padding-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: var(--burly-woods);
-  border: none;
-  font-weight: bolder;
-}
-
-.nav-tabs>li>a {
-  color: var(--main-text);
-}
+/* ==========================================================================
+   Web Dev Projects Styles
+   ========================================================================== */
 
 .webapps section {
   text-align: left;
-}
-
-.hero-image {
-  grid-column: 1 / -1;
 }
 
 .hero-image {
@@ -344,6 +369,7 @@ main {
   justify-content: center;
   align-items: center;
   grid-row: 1;
+  grid-column: 1 / -1;
 }
 
 .hero-image h1 {
@@ -425,6 +451,10 @@ article {
 #sitemap.visuals img {
   width: 50%;
 }
+
+/* ==========================================================================
+   BREAKPOINTS Styles
+   ========================================================================== */
 
 @media (max-width: 1024px) {
   .cta h1 {
