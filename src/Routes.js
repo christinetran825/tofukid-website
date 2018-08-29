@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Homepage from './containers/Homepage';
 import Work from './containers/Work';
 import Contact from './containers/Contact';
+import ErrorPage from './containers/ErrorPage';
 import SelfCare from './components/WebApps/SelfCare';
 import Artphilia from './components/WebApps/Artphilia';
 import TeaCrate from './components/WebApps/TeaCrate';
@@ -24,6 +25,7 @@ class Routes extends Component {
           <Route exact path="/work/web-dev/teacrate" component={TeaCrate} />
           <Route exact path="/work/web-dev/seedpicker" component={SeedPicker} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="*" component={ErrorPage} />
         </Switch>
         <Footer />
       </div>
