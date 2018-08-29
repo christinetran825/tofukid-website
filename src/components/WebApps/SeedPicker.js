@@ -41,10 +41,10 @@ class SeedPicker extends Component {
           </article>
           <article className="problem">
             <h2 className="title">The Problem</h2>
-            <div>
+            <article>
               <span>1. Lack of Cohesive HTML Structure</span>
               <p>The external data source I chose was <Link to="https://www.rareseeds.com/" target="_blank">Baker Creek Heirloom Seeds Rare Seeds</Link>. I thought a seed catalogue would be a great way to play with data and learn Object Oriented Ruby. The website's HTML structure wasn't cohesive. Some web pages should've had a templatized design as they followed a patterned.</p>
-            </div>
+            </article>
           </article>
           <article className="solution">
             <h2 className="title">The Solution</h2>
@@ -80,13 +80,16 @@ class SeedPicker extends Component {
           </div>
         </section>
 
-        <section id="cli">
+        <section className="item cli">
           <h2 className="title">CLI in Action</h2>
-          <span>Pattern A</span>
-          <embed src="../../videos/seed-picker-cli-pattern-a.mp4" autostart="false" height="500" width="500" />
-
-          <span>Pattern B</span>
-          <embed src="../../videos/seed-picker-cli-pattern-b.mp4" autostart="false" height="500" width="500" />
+          <div className="visuals">
+            <embed src="../../videos/seed-picker-cli-pattern-a.mp4" autostart="false" height="300" width="300" />
+          </div>
+          <h4>Pattern A</h4>
+          <div className="visuals">
+            <embed src="../../videos/seed-picker-cli-pattern-b.mp4" autostart="false" height="300" width="300" />
+          </div>
+          <h4>Pattern B</h4>
         </section>
       </main>
     )
