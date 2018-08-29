@@ -7,7 +7,7 @@ class Homepage extends Component {
       <main id="homepage">
         <section className="page-title">
           <h1>Christine Tran</h1>
-          <h4><span>Full-Stack UX Designer Proficient in UXR</span></h4>
+          <h4><span>Full-Stack UX Designer & Developer</span></h4>
         </section>
         <section className="about">
           <h2>About</h2>
