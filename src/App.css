@@ -82,6 +82,15 @@ a.button {
   font-size: 1.25em;
 }
 
+.fa-bars {
+  font-size: 3.5em;
+  color: var(--burly-woods);
+}
+
+.fa-bars:hover {
+  color: var(--main-text);
+}
+
 .coming-soon {
   text-align: center;
 }
@@ -141,19 +150,17 @@ header {
 }
 
 .menu-dropdown {
-  border-bottom: 1px solid var(--burly-woods);
-  padding-top: 10px;
+  text-align: right;
+  text-transform: uppercase;
   display: flex;
-  /* flex-direction: row; */
   flex-direction: column;
-  justify-content: space-around;
-  float: right;
+}
+
+.menu-dropdown span {
+  color: var(--burly-woods);
 }
 
 .menu-dropdown p {
-  text-transform: uppercase;
-  text-align: right;
-  border-top: 1px solid var(--burly-woods);
   padding-top: 10px;
 }
 

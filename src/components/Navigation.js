@@ -5,13 +5,25 @@ class Navigation extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      click: false
+      showMenu: false
     };
+    this.showMenu = this.showMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
-  toggleMenuButton = (e) => {
+  showMenu = (e) => {
     this.setState({
-      click: true
+      showMenu: true
+    }, () => {
+      document.addEventListener('click', this.closeMenu);
+    });
+  }
+
+  closeMenu = () => {
+    this.setState({
+      showMenu: false
+    }, () => {
+      document.removeEventListener('click', this.closeMenu);
     });
   }
 
@@ -26,17 +38,35 @@ class Navigation extends Component {
               <li><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
-            <button className="burger" aria-expanded="false" aria-controls="menu-list" onClick={() => this.toggleMenuButton()}>
-              <span className="open"><i className="fa fa-bars" aria-hidden="true"></i> Menu</span>
+            {/* <button className="burger" aria-expanded="false" aria-controls="menu-list" onClick={() => this.showMenu()}>
+              <span className="open">
+                <i className="fa fa-bars" aria-hidden="true"></i>
+              </span>
             </button>
-            {this.state.click ?
+            {this.state.showMenu ?
               <div className="menu-dropdown">
                 <p><NavLink to="/work">Work</NavLink></p>
                 <p><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></p>
                 <p><NavLink to="/contact">Contact</NavLink></p>
               </div>
-             : null
-           }
+             : null} */}
+             {this.state.showMenu ?
+               <div className="menu-dropdown">
+                 <span>X</span>
+                 <p><NavLink to="/work">Work</NavLink></p>
+                 <p><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></p>
+                 <p><NavLink to="/contact">Contact</NavLink></p>
+               </div>
+              :
+              <button className="burger"
+                aria-expanded="false"
+                aria-controls="menu-list"
+                onClick={() => this.showMenu()}>
+                <span className="open">
+                  <i className="fa fa-bars" aria-hidden="true"></i>
+                </span>
+              </button>
+              }
           </nav>
         </div>
       </header>
