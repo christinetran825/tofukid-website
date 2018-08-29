@@ -119,11 +119,8 @@ header {
 }
 
 .burger {
-  background: var(--antique-white);
+  background: white;
   border: 0;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  letter-spacing: .25em;
   float: right;
 }
 
@@ -150,18 +147,20 @@ header {
 }
 
 .menu-dropdown {
+  background: var(--antique-white);
   text-align: right;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
 }
 
-.menu-dropdown span {
+.menu-dropdown span:hover {
   color: var(--burly-woods);
+  font-size: 1.5em;
 }
 
 .menu-dropdown p {
   padding-top: 10px;
+  text-align: left;
 }
 
 /* Footer */

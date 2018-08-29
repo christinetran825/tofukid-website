@@ -38,21 +38,9 @@ class Navigation extends Component {
               <li><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
-            {/* <button className="burger" aria-expanded="false" aria-controls="menu-list" onClick={() => this.showMenu()}>
-              <span className="open">
-                <i className="fa fa-bars" aria-hidden="true"></i>
-              </span>
-            </button>
-            {this.state.showMenu ?
-              <div className="menu-dropdown">
-                <p><NavLink to="/work">Work</NavLink></p>
-                <p><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></p>
-                <p><NavLink to="/contact">Contact</NavLink></p>
-              </div>
-             : null} */}
              {this.state.showMenu ?
                <div className="menu-dropdown">
-                 <span>X</span>
+                 <span>x</span>
                  <p><NavLink to="/work">Work</NavLink></p>
                  <p><NavLink to="https://medium.com/@christine_tran" target="_blank">Blog</NavLink></p>
                  <p><NavLink to="/contact">Contact</NavLink></p>
