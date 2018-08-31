@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './containers/ScrollToTop';
 import Routes from './Routes'
 import './App.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Routes />
+        <ScrollToTop>
+          <Routes />
+        </ScrollToTop>
       </Router>
     );
   }
 }
 
 export default App;
-
-// <div className="App">
-//   <header className="App-header">
-//     <h1 className="App-title">Welcome to React</h1>
-//   </header>
-//   <p className="App-intro">
-//     To get started, edit <code>src/App.js</code> and save to reload.
-//   </p>
-// </div>

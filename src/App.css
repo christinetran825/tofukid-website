@@ -1,1215 +1,545 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   Root Styles
+   ========================================================================== */
+
 :root {
-  --main-txt-color: #302B25; /*Greenish Black*/
-  --header-txt-color: #634056; /*Dim Gray*/
-  --span-txt-color: #9A8081; /*Gray*/
-  --strong-txt-color: #617B6F; /*Slate Gray*/
-  --txt-background-color: #CBE6DA; /*Powder Blue*/
-  --background-color: #BEDDC3; /*Dark Sea Green*/
-  --sub-header-background-color: #E5B3A3 /* Burly Wood */
+  --main-text: #414140;
+  --burly-woods: #CC6C69;
+  --antique-white: #FAF2D4; /* 250, 242, 212 */
+  --goldenrod: #FDD278;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Arvo', serif;
-  color: var(--header-txt-color);
+@font-face {
+  font-family: "Avenir";
+  src: local('./web-fonts-with-css/css/fonts/Avenir.ttc');
 }
 
-strong {
-  color: var(--strong-txt-color);
-  font-weight: bold;
+h1, h2, h3, h4, h5, h6, body {
+  font-family: "Avenir", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--burly-woods);
+  font-weight: 600;
 }
 
 body {
-  font-size: 1em;
-  font-family: 'Poppins', sans-serif;
+  max-width: 1920px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: var(--main-text);
 }
 
-img {
-  max-width: 100%;
+p {
+  font-size: 1.5em;
+  line-height: normal;
 }
 
-.fa {
-  color: var(--header-txt-color)
+span {
+  font-weight: bold;
 }
-
-/* BUILD THE GRID */
 
 .wrapper {
+  margin: 0 auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(6.25em, auto);
+  grid-gap: 20px;
   grid-template-areas:
     "hd"
     "main"
     "ft";
+}
+
+.button {
+  background: var(--antique-white);
+  color: var(--main-text);
+}
+
+a.button {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fa {
+  color: var(--main-text);
+  font-size: 1.25em;
+}
+
+.fa-bars {
+  font-size: 3.5em;
+  color: var(--burly-woods);
+}
+
+.fa-bars:hover {
+  color: var(--main-text);
+}
+
+.coming-soon {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Header, Footer, & Nav Styles
+   ========================================================================== */
+
+/* Navigation */
+header {
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  grid-area: hd
+}
+
+.masthead-wrapper {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.header {
-  grid-area: hd;
+#logo {
+  height: 100px;
 }
 
-.container {
-  padding: 0 2em 2em 2em;
-  grid-area: main;
+.burger {
+  background: white;
+  border: 0;
+  float: right;
 }
 
-/************ Navigation *************/
-
-nav {
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
-  grid-auto-rows: minmax(5em, auto);
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-nav a {
-  text-decoration: none;
-  text-align: center;
-  align-self: center;
-  font-weight: 500;
-  color: var(--header-txt-color);
-}
-
-/************* Footer *************/
-
-footer {
-  grid-area: ft;
-  display: grid;
-  text-align: center;
-  color: var(--header-txt-color);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgb(179, 221, 195, 0.5);
-}
-
-.socials {
-  display: grid;
-  grid-gap: 0.625em;
-  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
-  list-style: none;
+.menu ul {
+  margin: 0;
   padding: 0;
-  align-items: center;
+  list-style: none;
 }
 
-.socials i {
-  color: var(--header-txt-color);
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
 }
 
-.copyright {
-  grid-column: 1 / -1;
+.menu a {
+  padding: 10px;
+  color: var(--main-text);
+  font-size: 20px;
+  text-decoration: none;
 }
 
-/************* Hero! *************/
-
-.about {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "hero"
-    "cover-title"
-    "blurb"
-    "the-experiences";
+[aria-controls="menu-list"] {
+  display: none;
 }
 
-.hero {
-  grid-area: hero;
+.menu-dropdown {
+  background: var(--antique-white);
+  text-align: right;
+  text-transform: uppercase;
+  padding: 20px;
 }
 
-.cover-title {
-  grid-area: cover-title;
-  font-size: larger;
-}
-
-.cover-title span {
-  font-size: medium;
-}
-
-.blurb {
-  grid-area: blurb;
-  font-size: small;
-}
-
-span {
-  color: var(--span-txt-color);
-  grid-area: cover-title;
-}
-
-/************* Skills! *************/
-.experiences {
-  display: grid;
-  grid-gap: 1.5em;
-  grid-template-areas:
-    "experience";
-  grid-area: the-experiences;
-}
-
-.experience {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "skills-1"
-    "skills-2"
-    "skills-3";
-}
-
-.experience .title {
-  grid-column: 1 / -1;
-  background-color: var(--txt-background-color);
-  text-align: center;
-}
-
-.experience h4 {
-  font-weight: lighter;
-  align-self: center;
-}
-
-.skills {
-  display: grid;
-  grid-gap: 0.75em;
-  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-  text-align: center;
-}
-
-.know, .do, .like {
-  display: grid;
-}
-
-.know {
-  grid-area: skills-1;
-}
-.do {
-  grid-area: skills-2;
-}
-.like {
-  grid-area: skills-3;
-}
-
-/************* Shared Pages *************/
-
-.page {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "heading"
-    "blurb"
-    "projects";
-}
-
-.page h1 {
-  grid-area: heading;
-}
-
-.page-work {
-  grid-area: projects;
-  font-size: small;
-}
-
-.page-work-header h2 {
-  border-bottom: 0.10em solid var(--background-color);
-  padding-bottom: .25em;
-  font-size: x-large;
-}
-
-.blurb p:first-letter {
-  color: var(--strong-txt-color);
-  font-family: 'Arvo', serif;
+.menu-dropdown span:hover {
+  color: var(--burly-woods);
   font-size: 1.5em;
 }
 
-.illustrations,
-.books,
-.brands,
-.webapps {
-  display: grid;
-  grid-gap: 1em;
+.menu-dropdown p {
+  padding-top: 10px;
+  text-align: left;
 }
 
-.illustrations {
-  grid-template-areas:
-    "illustration-1"
-    "illustration-2"
-    "illustration-3";
+/* Footer */
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  grid-area: ft;
 }
 
-.brands {
-  grid-template-areas:
-    "brand-1"
-    "brand-2"
-    "brand-3";
-}
-
-.books {
-  grid-template-areas:
-    "book-1"
-    "book-2"
-    "book-3"
-    "book-4"
-    "book-5";
-}
-
-.illustration .title,
-.book .title,
-.brand .title {
-  background-color: rgb(179, 221, 195, 0.5);
-  padding: 0.25em;
-}
-
-.illustration h3,
-.book h3,
-.brand h3 {
-  padding-left: 1em;
-}
-
-p.notes {
-  color: var(--strong-txt-color);
-  font-style: italic;
-  font-size: 0.8em;
-}
-
-/************* Web Development! *************/
-
-.webapps {
-  grid-template-areas:
-    "webapp-1"
-    "webapp-2"
-    "webapp-3"
-    "webapp-4";
-}
-
-.webapp {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "title"
-    "details";
+footer ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-.webapp .title {
-  display: grid;
-  grid-template-areas:
-    "project-name links";
-  border-bottom: 0.20em solid var(--background-color);
-  grid-area: title;
-  text-align: left;
-  font-size: large;
+footer li {
+  display: inline-block;
 }
 
-.webapp .project-name {
-  grid-area: project-name;
+footer span {
+  padding: 0 10px;
 }
 
-.webapp .links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
-  font-size: medium;
-  grid-area: links;
+footer hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: thin solid var(--main-text);
+  color: var(--burly-woods);
+  text-align: center;
 }
 
-.webapp .links a {
-  justify-self: center;
-  align-self: center;
+footer hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 2em;
+  padding: 0 0.25em;
+  background: white;
 }
 
-.details {
-  grid-area: details;
-}
+/* ==========================================================================
+   Images Styles
+   ========================================================================== */
 
-.details h4 {
-  text-align: left;
-  color: var(--strong-txt-color);
-}
-
-/************* Illustrations, Branding, BookArts! *************/
-
-.images {
-  display: grid;
-  grid-gap: 0.25em;
-  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-  padding-bottom: 1em;
-}
-
-.images img {
+.latest-projects img,
+.projects img,
+.visuals img {
   width: 100%;
 }
 
-.brand:nth-child(1) img, .brand:nth-child(2) img {
-  width: 60%;
+/* ==========================================================================
+   All Pages Styles
+   ========================================================================== */
+main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  text-align: center;
 }
 
-.brand:nth-child(1) .images, .brand:nth-child(2) .images {
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  justify-items: center;
+.page-title {
+  grid-column: 1 / -1;
+  display: grid;
 }
 
-
-/****************** Queries ******************/
-
-@media (min-width: 640px) and (max-width: 765px) {
-  body {
-    font-size: medium;
-  }
-
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
-  }
-
-  .copyright {
-    grid-column: 6 / -1;
-  }
-
-  .cover-title {
-    text-align: center;
-  }
-
-  .experience {
-    font-size: small;
-  }
-
-  .like .skills {
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-
-  .page h1 {
-    text-align: center;
-  }
-
-  .webapp .title {
-    font-size: x-large;
-  }
-
-  .webapp .links {
-    font-size: x-large;
-  }
-
-  .images {
-    grid-gap: 0.5em;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-
-  .brand:nth-child(1), .brand:nth-child(2) {
-    display: grid;
-    grid-template-areas:
-      "title image"
-      "details image"
-      "details image";
-  }
-
-  .brand:nth-child(1) .details,  .brand:nth-child(2) .details {
-    grid-column: 1 / 2;
-    grid-area: details;
-  }
-  .brand:nth-child(1) .images,
-  .brand:nth-child(2) .images {
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 60%;
-  }
-  .brand .images {
-    padding: 0;
-  }
+.page-title h1 {
+  font-size: 4em;
 }
 
-@media (min-width: 768px) and (max-width: 912px) {
-  .container {
-    padding: 0 2.5em;
-  }
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    padding: 0 1em;
-  }
-
-  .copyright {
-    grid-column: 6 / -1;
-  }
-
-  .cover-title {
-    text-align: center;
-  }
-
-  .experience {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-      "skills-1 skills-1 skills-1"
-      "skills-2 skills-2 skills-3";
-  }
-
-  .experience {
-    font-size: small;
-  }
-  .know {
-    grid-area: skills-1;
-  }
-  .do {
-    grid-area: skills-2;
-  }
-  .like {
-    grid-area: skills-3;
-  }
-  .like .title{
-    height: 49px;
-  }
-
-  .page h1 {
-    text-align: center;
-  }
-
-  .page-work-header h2 {
-    font-size: x-large;
-  }
-
-  .webapps {
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    grid-template-areas:
-      "webapp-1 webapp-2"
-      "webapp-3 webapp-4";
-  }
-
-  .webapp .title {
-    font-size: large;
-  }
-
-  .webapp .links {
-    font-size: large;
-  }
-
-  .illustrations {
-    grid-gap: 2em;
-    grid-template-areas:
-      "illustration-1"
-      "illustration-2"
-      "illustration-3";
-  }
-
-  .illustration {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    grid-template-areas:
-      "title details details details"
-      "image image image image";
-  }
-
-  .illustration .title {
-    grid-column: 1/2;
-    grid-area: title;
-  }
-
-  .illustration .details {
-    grid-area: details;
-  }
-
-  .illustration .images {
-    grid-area: image;
-  }
-
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    font-size: large;
-    text-align: center;
-    padding: 0;
-  }
-
-  .images {
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    padding: 0;
-  }
-
-  .images img {
-    width: 100%;
-  }
-
-  .brand {
-    display: grid;
-    grid-template-areas:
-      "title image"
-      "details image"
-      "details image";
-  }
-
-  .brand .details {
-    grid-column: 1 / 2;
-    grid-row: 2 /-1;
-    grid-area: details;
-  }
-
-  .brand .images {
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
-
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 60%;
-  }
-
-  .brand .images {
-    padding-bottom: 1em;
-  }
+.page-title span {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 2em;
 }
 
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+#homepage section {
+  grid-column: 2 / span 10;
+}
 
-@media (min-width: 912px) and (max-width: 1080px){
-  nav, footer {
-    font-size: larger;
-  }
+.about {
+  display: grid;
+  grid-gap: 20px;
+}
 
-  .container {
-    padding: 0 3em;
-  }
+.about p {
+  text-align: justify;
+}
 
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
-    padding: 0 1em;
-  }
+.latest-projects {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
-  .copyright {
-    grid-column: 6 / -1;
-  }
+.latest-projects h2 {
+  grid-column: 1 / -1;
+}
 
-  .cover-title {
-    text-align: center;
-    font-size: x-large;
-  }
+/* ==========================================================================
+   Contact Styles
+   ========================================================================== */
+.contact-card {
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-  .cover-title span {
-    font-size: large;
-  }
+.contact-card img {
+  width: 100%;
+}
 
-  .blurb {
-    font-size: medium;
-  }
+.contact-card .cta  {
+  align-self: center;
+}
 
-  .experience {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-      "skills-1 skills-1 skills-1"
-      "skills-2 skills-2 skills-3";
-  }
+/* ==========================================================================
+   Work Styles
+   ========================================================================== */
+#controlled-tab-example {
+  grid-column: 2 / span 10;
+}
 
-  .experience {
-    font-size: small;
-  }
-  .know {
-    grid-area: skills-1;
-  }
-  .do {
-    grid-area: skills-2;
-  }
-  .like {
-    grid-area: skills-3;
-  }
-  .know .skills {
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  }
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+}
 
-  .page h1 {
-    text-align: center;
-  }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: var(--burly-woods);
+  border: none;
+  font-weight: bolder;
+}
 
-  .page-work-header h2 {
-    font-size: x-large;
-  }
+.nav-tabs>li>a {
+  color: var(--main-text);
+}
 
-  p.notes {
-    font-size: small;
-  }
+/* ==========================================================================
+   All Projects Styles
+   ========================================================================== */
 
-  .details {
-    font-size: larger;
-  }
+.projects {
+  padding-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-  .webapps {
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "webapp-1 webapp-2"
-      "webapp-3 webapp-4";
-  }
+#books {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
-  .webapp .title {
-    font-size: large;
-  }
+.project {
+  background: white;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  align-items: center;
+}
 
-  .illustrations,
-  .books,
-  .brands,
-  .webapps {
-    grid-gap: 2em;
-  }
+.project p span {
+  font-style: italic;
+  color: var(--main-text);
+}
 
-  .illustrations {
-    grid-gap: 2em;
-    grid-template-areas:
-      "illustration-1"
-      "illustration-2"
-      "illustration-3";
-  }
+#designs .project {
+  display: grid;
+  grid-template-rows: 1fr minmax(4em, auto);
+}
 
-  .illustration {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "title details"
-      "image image";
-  }
+.visuals {
+  padding-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-  .illustration .title {
-    grid-column: 1/2;
-    grid-area: title;
-  }
+/* ==========================================================================
+   Web Dev Projects Styles
+   ========================================================================== */
 
-  .illustration .details {
-    grid-area: details;
-    align-self: center;
-  }
+.webapps section {
+  text-align: left;
+}
 
-  .illustration .images {
-    grid-area: image;
-  }
+.hero-image {
+  height: 300px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
 
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    font-size: x-large;
-    text-align: center;
-    padding: 1em 0;
-  }
+.hero-image h1 {
+  font-size: 4em;
+}
 
-  .images {
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    padding: 0;
-  }
+#selfcare .hero-image {
+  background-image: url("/images/web-dev/selfcare/scott-webb-186137-unsplash.jpg");
+}
 
-  .brand, .book {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas:
-      "title image"
-      "details image";
-  }
+#artphilia .hero-image {
+  background-image: url("/images/web-dev/artphilia/kelli-tungay-309722-unsplash.jpg");
+}
 
-  .brand .details {
-    grid-column: 1 / 2;
-    grid-row: 2 /-1;
-    grid-area: details;
-  }
+#teacrate .hero-image {
+  background-image: url("/images/web-dev/tea-crate/bright-colors-cups-924006.jpg");
+}
 
-  .brand .images, .book .images{
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
+#seedpicker .hero-image {
+  background-image: url("/images/web-dev/seed-picker/cli-5.png");
+  background-position: left;
+}
 
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 50%;
-  }
+.breadcrumbs {
+  grid-row: 2;
+}
 
-  .brand .images {
-    padding-bottom: 1em;
+.breadcrumbs,
+.webapps .details,
+.webapps .cli {
+  grid-column: 2 / span 6;
+  text-align: left;
+}
+
+.webapps .intro,
+.webapps .design-process {
+  grid-column: 2 / span 10;
+}
+
+.webapps .intro {
+  display: grid;
+  column-gap: 100px;
+  grid-template-areas:
+    "intro intro specs"
+    "blurb blurb specs"
+    "blurb blurb specs";
+}
+
+#seedpicker .intro {
+  grid-column: 2 / span 9;
+}
+
+.intro h1 {
+  grid-area: intro;
+}
+
+.summary {
+  grid-area: blurb;
+}
+
+.specs {
+  grid-area: specs;
+  background-color: rgba(250, 242, 212, 0.5);
+  align-self: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+article {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sitemap.visuals img {
+  width: 50%;
+}
+
+/* ==========================================================================
+   BREAKPOINTS Styles
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .cta h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+    line-height: normal;
   }
 }
 
-
-@media (min-width: 1081px) and (max-width: 1152px) {
-  nav, footer {
-    font-size: larger;
+@media (max-width: 900px) {
+  .contact-card {
+    grid-gap: 70px;
   }
-  .container {
-    padding: 0 4em;
-  }
-
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
-    padding: 0 2em;
-  }
-
-  .copyright {
-    grid-column: 6 / -1;
-  }
-
-  .cover-title {
-    text-align: center;
-    font-size: x-large;
-  }
-
-  .cover-title span {
-    font-size: large;
-  }
-
-  .blurb {
-    font-size: medium;
-  }
-
-  .experience {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-      "skills-1 skills-1 skills-1"
-      "skills-2 skills-2 skills-3";
-  }
-
-  .experience {
-    font-size: medium;
-  }
-  .know .skills {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  }
-  .do .skills, .like .skills {
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  }
-
-  .page h1 {
-    text-align: center;
-  }
-
-  .page-work-header h2 {
-    font-size: xx-large;
-  }
-
-  p.notes {
-    font-size: medium;
-  }
-
-  .details {
-    font-size: large;
-  }
-
-  .webapps {
-    grid-gap: 5em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "webapp-1 webapp-2"
-      "webapp-3 webapp-4";
-  }
-
-  .webapp .title, .webapp .links {
-    font-size: x-large;
-  }
-
-  .illustrations,
-  .books,
-  .brands,
-  .webapps {
-    grid-gap: 2em;
-  }
-
-  .illustrations {
-    grid-gap: 2em;
-    grid-template-areas:
-      "illustration-1"
-      "illustration-2"
-      "illustration-3";
-  }
-
-  .illustration {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "title details"
-      "image image";
-  }
-
-  .illustration .title {
-    grid-column: 1/2;
-    grid-area: title;
-  }
-
-  .illustration .details {
-    grid-area: details;
-    align-self: center;
-  }
-
-  .illustration .images {
-    grid-area: image;
-  }
-
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    font-size: x-large;
-    text-align: center;
-    padding: 1em 0;
-  }
-
-  .images {
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    padding: 0;
-  }
-
-  .brand, .book {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas:
-      "title image"
-      "details image";
-  }
-
-  .brand .details {
-    grid-column: 1 / 2;
-    grid-row: 2 /-1;
-    grid-area: details;
-  }
-
-  .brand .images, .book .images{
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
-
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 50%;
-  }
-
-  .brand .images {
-    padding-bottom: 1em;
+  .webapps .intro {
+    column-gap: 50px;
   }
 }
 
-
-@media (min-width: 1153px) and (max-width: 1297px) {
-  nav, footer {
-    font-size: large;
-  }
-
-  .container {
-    padding: 0 4em;
-  }
-
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-    padding: 0 2em;
-  }
-
-  .copyright {
-    grid-column: 6 / -1;
-  }
-
-  .cover-title {
-    text-align: center;
-    font-size: x-large;
-  }
-
-  .cover-title span {
-    font-size: large;
-  }
-
-  .about .blurb {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-  }
-
-  .blurb {
-    font-size: medium;
-  }
-
-  .experience {
-    display: grid;
-    grid-gap: 1em;
+@media (max-width: 700px) {
+  .webapps .intro {
+    grid-gap: 20px;
     grid-template-areas:
-      "skills-1 skills-1 skills-1"
-      "skills-2 skills-2 skills-3";
+      "intro"
+      "specs"
+      "blurb";
   }
 
-  .experience {
-    font-size: medium;
-  }
-  .know .skills, .like .skills  {
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-
-  .page h1 {
-    text-align: center;
-  }
-
-  .page-work-header h2 {
-    font-size: xx-large;
-  }
-
-  p.notes {
-    font-size: medium;
-  }
-
-  .details {
-    font-size: large;
-  }
-
-  .webapps {
-    grid-gap: 5em;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-    grid-template-areas:
-      "webapp-1 webapp-2"
-      "webapp-3 webapp-4";
-  }
-
-  .webapp .title, .webapp .links {
-    font-size: x-large;
-  }
-
-  .illustrations,
-  .books,
-  .brands {
-    grid-gap: 2em;
-  }
-
-  .illustrations {
-    grid-gap: 2em;
-    grid-template-areas:
-      "illustration-1"
-      "illustration-2"
-      "illustration-3";
-  }
-
-  .illustration {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "title details"
-      "image image";
-  }
-
-  .illustration .title {
-    grid-column: 1/2;
-    grid-area: title;
-  }
-
-  .illustration .details {
-    grid-area: details;
-    align-self: center;
-  }
-
-  .illustration .images {
-    grid-area: image;
-  }
-
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    font-size: x-large;
-    text-align: center;
-    padding: 1em 0;
-  }
-
-  .images {
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    padding: 0;
-  }
-
-  .brand, .book {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas:
-      "title image"
-      "details image";
-  }
-
-  .brand .details {
-    grid-column: 1 / 2;
-    grid-row: 2 /-1;
-    grid-area: details;
-  }
-
-  .brand .images, .book .images{
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
-
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 50%;
-  }
-
-  .brand .images {
-    padding-bottom: 1em;
+  .webapps .details,
+  .breadcrumbs {
+    grid-column: 2 / span 10;
   }
 }
 
-
-
-
-
-@media (min-width: 1298px) and (max-width: 1920px) {
-  nav, footer {
-    font-size: x-large;
+@media (max-width: 633px) {
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
   }
-  .container {
-    padding: 0 4em;
-  }
+}
 
-  .socials {
-    grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
-    padding: 0 2em;
+@media (max-width: 500px) {
+  .menu {
+    order: 2;
+    perspective: 800px;
+    margin-left: 50px;
   }
 
-  .copyright {
-    grid-column: 6 / -1;
+  [aria-controls="menu-list"] {
+    display: block;
+    margin-bottom: 10px;
   }
 
-  .cover-title {
-    text-align: center;
-    font-size: xx-large;
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
   }
 
-  .cover-title span {
-    font-size: x-large;
-  }
-
-  .about .blurb {
+  [aria-expanded="true"] ~ ul {
     display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-    font-size: larger;
+    max-height: 500px;
+    transform: rotateX(0);
   }
 
-  .blurb {
-    font-size: x-large;
+  [aria-expanded="false"] .close {
+    display: none;
   }
 
-  .experience {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-      "skills-1 skills-1 skills-2"
-      "skills-3 skills-3 skills-2";
+  [aria-expanded="true"] .close {
+    display: inline-block;
   }
 
-  .experience {
-    font-size: medium;
-  }
-  .skills {
-    grid-gap: 1em;
-  }
-  .know .skills {
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-  .do .skills {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  [aria-expanded="true"] .open {
+    display: none;
   }
 
-  .page h1 {
-    text-align: center;
-    font-size: 350%;
+  .latest-projects {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .page-work-header h2 {
-    font-size: xx-large;
-  }
-
-  p.notes {
-    font-size: medium;
-  }
-
-  .details {
-    font-size: x-large;
-  }
-
-  .webapps {
-    grid-gap: 5em;
-    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
-    grid-template-areas:
-      "webapp-1 webapp-2"
-      "webapp-3 webapp-4";
-  }
-
-  .webapp .title, .webapp .links {
-    font-size: x-large;
-  }
-
-  .illustrations,
-  .books,
-  .brands {
-    grid-gap: 2em;
-  }
-
-  .illustrations {
-    grid-gap: 2em;
-    grid-template-areas:
-      "illustration-1"
-      "illustration-2"
-      "illustration-3";
-  }
-
-  .illustration {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-template-areas:
-      "title details"
-      "image image";
-  }
-
-  .illustration .title {
-    grid-column: 1/2;
-    grid-area: title;
-  }
-
-  .illustration .details {
-    grid-area: details;
-    align-self: center;
-  }
-
-  .illustration .images {
-    grid-area: image;
-  }
-
-  .illustration h3,
-  .book h3,
-  .brand h3 {
-    font-size: xx-large;
-    text-align: center;
-    padding: 1em 0;
-  }
-
-  .images {
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    padding: 0;
-  }
-
-  .brand, .book {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas:
-      "title image"
-      "details image";
-  }
-
-  .brand .details {
-    grid-column: 1 / 2;
-    grid-row: 2 /-1;
-    grid-area: details;
-  }
-
-  .brand .images, .book .images{
-    grid-area: image;
-    grid-row: 1 / -1;
-    align-items: center;
-  }
-
-  .brand:nth-child(1) img, .brand:nth-child(2) img {
-    width: 50%;
-  }
-
-  .brand .images {
-    padding-bottom: 1em;
+  #books {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
